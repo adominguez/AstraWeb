@@ -10,7 +10,6 @@ export default defineConfig({
     contentLayer: true
   },
   integrations: [tailwind(), preact()],
-  // output: "server",
   output: 'hybrid',
   adapter: vercel({
     edgeMiddleware: true,
