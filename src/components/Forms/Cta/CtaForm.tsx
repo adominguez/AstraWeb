@@ -148,7 +148,6 @@ export default function CtaForm() {
                 placeholder="Tu número de teléfono (opcional)"
                 name="email"
                 value={phone}
-                placeholder="tucorreo@example.com"
                 onChange={(e) => setPhone(e.target.value)}
                 class="px-4 py-2 rounded-full bg-transparent border border-slate-500 focus:border-white transition-colors outline-none"
               />
