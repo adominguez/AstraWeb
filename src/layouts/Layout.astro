@@ -1,22 +1,58 @@
 ---
+import BgRounded from '@components/backgrounds/BgRounded.astro';
+import BgStars from '@components/backgrounds/BgStars.astro';
+import Header from '@components/Header.astro';
+import LogoAstroHeader from '@components/Logos/LogoAstroHeader.astro';
+import CtaForm from '@components/Forms/Cta/CtaForm';
+import Dialog from '@components/ui/Dialog.astro';
+import { ViewTransitions } from 'astro:transitions';
+import '@fontsource/ibm-plex-sans';
+import '@fontsource/ibm-plex-sans/100.css';
+import '@fontsource/ibm-plex-sans/300.css';
+import '@fontsource/ibm-plex-sans/400.css';
+import '@fontsource/ibm-plex-sans/700.css';
+import '@fontsource/ibm-plex-sans-condensed/100.css';
+import '@fontsource/ibm-plex-sans-condensed/300.css';
+import '@fontsource/ibm-plex-sans-condensed/400.css';
+import '@fontsource/ibm-plex-sans-condensed/700.css';
+
 interface Props {
 	title: string;
+	description: string;
+	simpleLogo?: boolean;
 }
 
-const { title } = Astro.props;
+const { title, description, simpleLogo = false } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<meta name="author" content="Alberto Domínguez Martín" />
+		<meta name="description" content={description} />
 		<title>{title}</title>
+		<ViewTransitions />
 	</head>
 	<body>
+		<BgRounded />
+		<BgStars />
+		<LogoAstroHeader simpleLogo={simpleLogo} className="max-h-40 w-min md:max-h-60 transition-all fixed top-3 -z-20 blur-3xl" />
+		<LogoAstroHeader simpleLogo={simpleLogo} className="max-h-40 w-min md:max-h-60 transition-all fixed top-3 z-30 opacity-50" />
+		<Header />
+		<Dialog class="max-w-4xl">
+			<div class="p-4 pt-0 rounded-lg shadow-lg">
+				<header class="bg-slate-900 flex justify-between py-2 px-4 border-b border-solid gap-4 mb-8 sticky top-0 dialog-header">
+					<h2 class="text-2xl font-bold text-accent font-IBMCondensed">Nos gustaría conocer mejor tu proyecto</h2>
+					<button class="bg-white/20 hover:bg-white/40 hover:border-white focus:bg-white/40 focus:border-white transition-colors border-transparent border text-white rounded-full w-8 h-8 close text-lg">✕</button>
+				</header>
+				<CtaForm />
+			</div>
+		</Dialog>
 		<slot />
 	</body>
 </html>
@@ -32,9 +68,18 @@ const { title } = Astro.props;
 			white 60%
 		);
 	}
+
+	.dialog-header::after {
+		content: "";
+    height: 30px;
+    top: 49px;
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+		@apply bg-slate-900 w-full absolute left-0;
+	}
 	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
+		font-family: 'IBM Plex Sans', sans-serif;
+		scroll-behavior: smooth;
+		@apply bg-background;
 	}
 	code {
 		font-family:
@@ -47,4 +92,46 @@ const { title } = Astro.props;
 			Courier New,
 			monospace;
 	}
+
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+
+	@media (prefers-reduced-motion: no-preference) {
+    .bento-item {
+      scale: 0.8;
+      opacity: 0;
+      animation: fade-in linear forwards;
+      animation-timeline: view();
+      animation-range: entry 100px;
+    }
+
+    @keyframes fade-in {
+      to {
+        scale: 1;
+        opacity: 1;
+      }
+    }
+
+		@keyframes animate_border {
+			to {
+				transform: translateX(-50%);
+			}
+		}
+
+		@keyframes moveInTop {
+			0% {
+				opacity: 0;
+				transform: translateY(5rem);
+			}
+			100% {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+  }
 </style>

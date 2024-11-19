@@ -1,0 +1,82 @@
+---
+import BentoItem from "@components/Bento/BentoItem.astro";
+import SectionContainer from "./SectionContainer.astro";
+import BentoGrid from "@components/Bento/BentoGrid.astro";
+import language from '@data/i18n/es.json';
+
+const { TITLE, FIRST_CONTENT, SECOND_CONTENT, THIRD_CONTENT, BENTO, ID } = language.PAGES.HOME.SECTIONS.FEATURES
+---
+
+<SectionContainer id={ID}>
+  <BentoGrid>
+    <BentoItem
+      class="md:col-span-2 text-xl text-white flex flex-col gap-4 p-6 rounded-lg"
+    >
+      <h2 class="text-4xl md:text-5xl text-secondary font-medium text-balance font-IBMCondensed">{TITLE}</h2>
+      <p class="pt-4 text-xl md:text-2xl font-light text-pretty">{FIRST_CONTENT}</p>
+      <p class="pt-4 text-gray-300 font-extralight text-pretty">{SECOND_CONTENT}</p>
+      <p class="pt-4 text-gray-300 font-extralight text-pretty">{THIRD_CONTENT}</p>
+    </BentoItem>
+
+    <BentoItem tag="article" class="bg-gray-800 md:row-span-2 p-6 rounded-lg bento-item">
+      <h3 class="text-2xl font-semibold font-IBMCondensed">{BENTO[0].TITLE}</h3>
+      <p class="pt-4">{BENTO[0].DESCRIPTION}</p>
+      <img src={BENTO[0].IMAGE} alt={BENTO[0].TITLE} class="w-full object-cover rounded-lg mt-4" />
+    </BentoItem>
+
+    <BentoItem tag="article" class="bg-violet-700 md:col-span-2 p-6 rounded-lg bento-item">
+      <h3 class="text-2xl font-semibold mb-4 font-IBMCondensed">{BENTO[1].TITLE}</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <p class="text-pretty pb-4">{BENTO[1].DESCRIPTION}</p>
+        <img src={BENTO[0].IMAGE} alt={BENTO[0].TITLE} />
+      </div>
+    </BentoItem>
+
+    <BentoItem tag="article"
+      class="bg-gradient-to-br from-pink-500 to-purple-600 p-6 rounded-lg bento-item"
+    >
+      <h3 class="text-2xl font-semibold mb-4 font-IBMCondensed">{BENTO[2].TITLE}</h3>
+      <p class="text-pretty pb-4">{BENTO[2].DESCRIPTION}</p>
+    </BentoItem>
+
+    <BentoItem tag="article"
+      class="bg-gradient-to-br p-6 rounded-lg from-yellow-400 to-orange-600 text-gray-900 md:col-span-2 bento-item"
+      >
+      <h3 class="text-2xl font-semibold mb-4 font-IBMCondensed">{BENTO[3].TITLE}</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <img src={BENTO[3].IMAGE} alt={BENTO[3].TITLE} />
+        <p class="text-pretty pb-4">{BENTO[3].DESCRIPTION}</p>
+      </div>
+    </BentoItem>
+
+    <BentoItem tag="article" class="bg-gray-800 md:col-span-2 p-6 rounded-lg bento-item">
+      <h3 class="text-2xl font-semibold mb-4 font-IBMCondensed">{BENTO[4].TITLE}</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <img src={BENTO[4].IMAGE} alt={BENTO[4].TITLE} />
+        <p class="text-pretty pb-4">{BENTO[4].DESCRIPTION}</p>
+      </div>
+    </BentoItem>
+
+    <BentoItem tag="article" class="bg-gradient-to-r md:row-span-2 from-red-400 to-red-700 p-6 rounded-lg bento-item">
+      <img src={BENTO[5].IMAGE} alt={BENTO[5].TITLE} class="w-full object-cover mb-4" />
+      <h3 class="text-2xl font-semibold mb-2 font-IBMCondensed">{BENTO[5].TITLE}</h3>
+      <p class="text-green-100">{BENTO[5].DESCRIPTION}</p>
+    </BentoItem>
+
+    <BentoItem tag="article" class="bg-gradient-to-br from-blue-600 to-indigo-800 md:col-span-2 p-6 rounded-lg bento-item">
+      <h3 class="text-2xl font-semibold mb-2 font-IBMCondensed">{BENTO[6].TITLE}</h3>
+      <p class="text-green-100">{BENTO[6].DESCRIPTION}</p>
+    </BentoItem>
+    <BentoItem tag="article" class="bg-gradient-to-br from-gray-200 to-gray-500 sm:col-span-2 md:col-span-3 text-gray-900 p-6 rounded-lg bento-item">
+      <h3 class="text-2xl font-semibold mb-4 font-IBMCondensed">{BENTO[7].TITLE}</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <img src={BENTO[7].IMAGE} alt={BENTO[7].TITLE} />
+        <div>
+          <p class="text-pretty pb-4">{BENTO[7].FIRST_PARAGRAPH}</p>
+          <p class="text-pretty pb-4">{BENTO[7].SECOND_PARAGRAPH}</p>
+          <p class="text-pretty">{BENTO[7].THIRD_PARAGRAPH}</p>
+        </div>
+      </div>
+    </BentoItem>
+  </BentoGrid>
+</SectionContainer>

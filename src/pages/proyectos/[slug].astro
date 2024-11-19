@@ -1,0 +1,178 @@
+---
+import Layout from '@layouts/Layout.astro';
+import { PROJECTS_DATA, type Project } from '@data/projects';
+import SectionContainer from '@components/Sections/SectionContainer.astro';
+import BackIcon from '@components/Icons/BackIcon.astro';
+import ProjectsGallery from '@components/GalleryImages/ProjectsGallery.astro';
+import { getCollection } from 'astro:content';
+import { CldImage } from 'astro-cloudinary';
+import BentoGrid from '@components/Bento/BentoGrid.astro';
+import BentoItem from '@components/Bento/BentoItem.astro';
+import ProjectsSection from '@components/Sections/ProjectsSection.astro';
+import { getColor } from '@lib/colors';
+
+export function getStaticPaths() {
+  return PROJECTS_DATA.map(({slug}) => ({
+    params: { slug },
+  }));
+}
+
+const { slug } = Astro.params
+const {
+  id,
+  seoTitle,
+  seoDescription,
+  title,
+  description,
+  descriptionAlt,
+  featuresTitle,
+  features = [],
+  logo,
+	imagesTitle,
+  bgColor,
+  titleColor,
+  client,
+  tags = [],
+	ctaTitle,
+	ctaText
+} = PROJECTS_DATA.find((project: Project) => project.slug === slug) as Project;
+
+const images = await getCollection(id);
+const assets = await getCollection(`${id}Assets`);
+const cover = assets.find((asset: Project) => asset.id.includes('cover'));
+const descriptionImage = assets.find((asset: Project) => asset.id.includes('description'));
+---
+
+<Layout simpleLogo title={seoTitle} description={seoDescription}>
+	<main class="text-white flex flex-col items-center">
+		<div class="absolute w-full h-[50dvh] overflow-hidden top-0 left-0">
+			<CldImage
+				class="w-full object-cover brightness-50 h-[50dvh]"
+				src={cover.data.public_id}
+				width={cover.data.width}
+				height={cover.data.height}
+				alt={cover.data.context?.custom.caption || ''}
+			/>
+		</div>
+    <div class:list={[
+			'absolute rounded-full w-36 h-36 p-4 flex justify-center items-center top-[50dvh] -translate-y-1/2',
+			getColor(bgColor)
+		]}>
+			<div class:list={[
+				'logo rounded-full w-36 h-36 p-4 flex justify-center items-center absolute blur-lg z-0',
+				getColor(bgColor)
+			]} />
+    	<img transition:name={`big-image-${slug}`} src={logo} alt="Proyecto de monitoring bbva" class="object-cover max-h-60 z-10" />
+		</div>
+    <SectionContainer class="mt-[calc(50dvh-56px)] px-4 py-12 gap-8">
+      <a href="../#proyectos" class="inline-flex w-min group"><BackIcon width={30} height={30} class="group-hover:scale-125 transition-transform" /></a>
+			<div class="flex flex-col items-center md:flex-row gap-6">
+				<div class="flex-1 flex flex-col gap-4 justify-center items-center">
+					<div>
+						<h1 class:list={[
+							"text-3xl md:text-4xl font-bold text-balance font-IBMCondensed",
+							getColor(titleColor)
+						]}>{title}</h1>
+						<span class="text-white/50">{client}</span>
+					</div>
+					<div set:html={description} class="text-xl text-pretty" />
+				</div>
+				<CldImage
+					loading="lazy"
+					class="object-cover w-full h-auto flex-1 promotion-img"
+					src={descriptionImage.data.public_id}
+					width={descriptionImage.data.width}
+					height={descriptionImage.data.height}
+					alt={descriptionImage.data.context?.custom.caption || ''}
+				/>
+			</div>			
+		</SectionContainer>
+		<SectionContainer class="px-4 py-12">
+			<div class="flex justify-center items-center mb-8">
+				{
+					tags.length > 0 && (
+						<div class="flex flex-wrap gap-4">
+							{
+								tags.map(tag => (
+									<span class="bg-white/10 px-4 py-2 rounded-full">{tag}</span>
+								))
+							}
+						</div>
+					)
+				}
+			</div>
+			<h2 class:list={[
+				"text-2xl md:text-3xl font-bold text-balance mb-8 font-IBMCondensed",
+				getColor(titleColor)
+			]}>{featuresTitle}</h2>
+			<ul class="features-list text-xl text-pretty">
+				{
+					features.map((feature) => (
+						<li class="feature-item mb-4 bg-slate-800 px-4 py-2 rounded-xl font-IBMCondensed border border-transparent hover:border-primary transition-all" set:html={feature} />
+					))
+				}
+			</ul>
+		</SectionContainer>
+		
+		{
+			images && images.length > 0 && (
+				<SectionContainer class="px-4 py-12">
+					<h2 class:list={[
+						"text-2xl md:text-3xl font-bold text-balance mb-8 font-IBMCondensed",
+						getColor(titleColor)
+					]}>{imagesTitle}</h2>
+					<ProjectsGallery images={images} />
+				</SectionContainer>
+			)
+		}
+		<SectionContainer class="px-4 py-12">
+			<div class="flex flex-col items-center md:flex-row gap-6">
+				<div class="flex-1 flex flex-col gap-4 justify-center items-center">
+					<h2 class:list={[
+						"text-2xl md:text-3xl font-bold text-balance mb-8 w-full text-left font-IBMCondensed",
+						getColor(titleColor)
+					]}>{ctaTitle}</h2>
+					<div set:html={ctaText} class="text-xl text-pretty font-thin" />
+				</div>
+				<img loading="lazy" src={descriptionImage} alt={descriptionAlt} class="object-cover w-full h-auto flex-1 promotion-img" />
+			</div>			
+		</SectionContainer>
+		<ProjectsSection projects={PROJECTS_DATA.filter(item => item.slug !== slug)}>
+			<h2 class:list={[
+				"text-2xl md:text-3xl font-bold text-balance mb-8 w-full text-left font-IBMCondensed",
+				getColor(titleColor)
+			]}>¿Quieres ver más proyectos?</h2>
+		</ProjectsSection>
+	</main>
+</Layout>
+
+<style>
+	.promotion-img {
+		filter: drop-shadow(1px 1px 10px rgb(183 228 253));
+	}
+
+	.features-list li {
+		@apply font-thin;
+	}
+
+	.features-list li strong {
+		display: block;
+	}
+
+  @media (prefers-reduced-motion: no-preference) {
+    .feature-item {
+      scale: 0.8;
+      opacity: 0;
+      animation: fade-in linear forwards;
+      animation-timeline: view();
+      animation-range: entry 20px;
+    }
+
+    @keyframes fade-in {
+      to {
+        scale: 1;
+        opacity: 1;
+      }
+    }
+  }
+</style>

@@ -1,0 +1,12 @@
+---
+const { textContent, class: className } = Astro.props;
+---
+
+<button class:list={[
+  "cta rounded-full border-4 border-secondary hover:border-primary text-center px-4 py-2 transition-all hover:scale-110"
+  , className
+  ]}>
+  <slot>
+    <span>{textContent}</span>
+  </slot>
+</button>

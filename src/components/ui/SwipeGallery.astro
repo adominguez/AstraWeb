@@ -1,0 +1,194 @@
+---
+import 'swiper/css/bundle';
+import { PROJECTS_DATA, type Project } from '@data/projects';
+import { getColor } from '@lib/colors';
+
+interface Props {
+  projects?: Project[]; // Move the declaration of 'projects' above its usage
+}
+
+const { projects } = Astro.props;
+const totalProjects = projects || PROJECTS_DATA;
+---
+  <div class="album-cover">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        {
+          totalProjects.map((project) => (
+            <div class="swiper-slide aspect-square">
+              <img loading="lazy" transition:name={`big-image-${project.slug}`} class:list={[
+                getColor(project.bgColor),
+                "p-4"]} src={project.logo} />
+              <div class="overlay">
+                <a href={`../proyectos/${project.slug}`} class="link">
+                  <span>{project.title}</span>
+                </a>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+  
+  <div class="control-wrapper">
+    <h3>Title</h3>
+    <p>Song Name</p>
+  
+    <div class="controls">
+      <button class="backward">
+        <i class="fa-solid fa-backward"></i>
+      </button>
+      <button class="forward">
+        <i class="fa-solid fa-forward"></i>
+      </button>
+    </div>
+  </div>
+
+<style>
+  :root {
+    --primary-clr: rgba(228, 228, 229, 1);
+  }
+
+  .album-cover {
+    width: 100%;
+  }
+
+  .swiper {
+    width: 100%;
+    padding: 40px 0 100px;
+  }
+
+  .swiper-slide {
+    position: relative;
+    max-width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+  }
+
+  .swiper-slide img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    -webkit-box-reflect: below -5px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+    pointer-events: none;
+    user-select: none;
+    opacity: 0.6;
+  }
+
+  .swiper-slide-active img,
+  .swiper-slide:hover img {
+    opacity: 1;
+  }
+
+  .swiper-slide .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+  }
+
+  .swiper-slide:hover .overlay {
+    opacity: 1;
+  }
+
+  .swiper-slide .overlay a {
+    width: 100%;
+    flex: 1;
+  }
+
+  .swiper-slide .overlay span {
+    opacity: 0;
+  }
+
+  .control-wrapper {
+    @apply flex flex-col justify-center items-center w-full px-8 py-3 rounded-2xl
+  }
+
+  .control-wrapper h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+
+  .control-wrapper p {
+    @apply text-base opacity-60;
+  }
+
+  .controls {
+    @apply flex justify-center items-center;
+  }
+
+  .controls button {
+    @apply flex items-center justify-center w-10 aspect-square m-5 bg-white/30 rounded-full border transition-transform;
+  }
+
+  .controls button:is(:hover, :focus-visible) {
+    @apply scale-90
+  }
+
+  .controls button:is(:hover, :focus-visible) {
+    @apply scale-110
+  }
+</style>
+
+<script type="module" define:vars={{ totalProjects }}>
+  
+  import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+
+  const nextButton = document.querySelector(".controls button.forward");
+  const prevButton = document.querySelector(".controls button.backward");
+  const projectName = document.querySelector(".control-wrapper h3");
+  const artistName = document.querySelector(".control-wrapper p");
+  const projectsLength = totalProjects.length;
+
+  let currentProjectIndex = 3;
+
+  function updateProject() {
+    projectName.textContent = totalProjects[currentProjectIndex].title;
+    artistName.textContent = totalProjects[currentProjectIndex].name;
+  }
+
+  nextButton.addEventListener("click", () => {
+    currentProjectIndex = (currentProjectIndex + 1) % projectsLength;
+    updateProject();
+  });
+
+  prevButton.addEventListener("click", () => {
+    currentProjectIndex = (currentProjectIndex - 1 + projectsLength) % projectsLength;
+    updateProject();
+  });
+
+  updateProject();
+
+  var swiper = new Swiper(".swiper", {
+    effect: "coverflow",
+    centeredSlides: true,
+    initialSlide: projectsLength / 2,
+    slidesPerView: "auto",
+    grabCursor: true,
+    spaceBetween: 40,
+    coverflowEffect: {
+      rotate: 25,
+      stretch: 0,
+      depth: 50,
+      modifier: 1,
+      slideShadows: false,
+    },
+    navigation: {
+      nextEl: ".forward",
+      prevEl: ".backward",
+    },
+  });
+
+  swiper.on("slideChange", () => {
+    currentProjectIndex = swiper.activeIndex;
+    updateProject(); 
+  });
+</script>

@@ -1,0 +1,104 @@
+---
+import "photoswipe/style.css";
+import { CldImage } from 'astro-cloudinary';
+
+interface Props {
+  images: {
+    data: {
+      secure_url: string;
+      width: number;
+      height: number;
+      public_id: string;
+      context?: {
+        custom: {
+          caption: string;
+        };
+      };
+    };
+  }[];
+}
+
+const { images = [] } = Astro.props;
+---
+
+<div
+  class="lg:mx-auto grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+  id="gallery"
+>
+  {
+    images.map((image) => {
+      return (
+      <a
+        class="group rounded-xl hover:scale-105 hover:contrast-[110%] transition-all relative max-h-80"
+        href={image.data.secure_url}
+        data-pswp-width={image.data.width}
+        data-pswp-height={image.data.height}
+      >
+        <CldImage
+          loading="lazy"
+          class="rounded-xl object-cover h-full aspect-square max-h-80"
+          src={image.data.public_id}
+          width={image.data.width}
+          height={image.data.height}
+          alt={image.data.context?.custom.caption || ''}
+        />
+        <CldImage
+          loading="lazy"
+          class="blur-md opacity-0 group-hover:opacity-100 absolute inset-0 transition contrast-150 -z-10 object-cover h-full aspect-square max-h-80"
+          src={image.data.public_id}
+          width={image.data.width}
+          height={image.data.height}
+          alt={image.data.context?.custom.caption || ''}
+        />
+        <span class="absolute bottom-0 left-0 right-0 p-4 text-white bg-black bg-opacity-50 rounded-b-xl">
+          {image.data.context?.custom.caption || ''}
+        </span>
+      </a>
+    )})
+  }
+</div>
+
+<script>
+  import PhotoSwipeLightbox from "photoswipe/lightbox";
+
+  document.addEventListener("astro:page-load", () => {
+    const lightbox = new PhotoSwipeLightbox({
+      gallery: "#gallery",
+      children: "a",
+      pswpModule: () => import("photoswipe"),
+    });
+
+    lightbox.init();
+  });
+</script>
+
+<style is:global>
+  .pswp {
+    --pswp-bg: #13151a;
+  }
+
+  .pswp__img {
+    @apply rounded-xl;
+  }
+
+  #gallery a {
+    cursor: zoom-in;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    #gallery img {
+      scale: 0.8;
+      opacity: 0;
+      animation: fade-in linear forwards;
+      animation-timeline: view();
+      animation-range: entry 100px;
+    }
+
+    @keyframes fade-in {
+      to {
+        scale: 1;
+        opacity: 1;
+      }
+    }
+  }
+</style>

@@ -1,0 +1,44 @@
+---
+import BentoItem from "@components/Bento/BentoItem.astro";
+import SectionContainer from "./SectionContainer.astro";
+import BentoGrid from "@components/Bento/BentoGrid.astro";
+import { PROJECTS_DATA, type Project } from '@data/projects';
+import language from '@data/i18n/es.json';
+import SwipeGallery from "@components/ui/SwipeGallery.astro";
+
+const { HOME } = language.PAGES
+const { TITLE, FIRST_PARAGRAPH, SECOND_PARAGRAPH, THIRD_CONTENT } = HOME.SECTIONS.PROJECTS
+
+interface Props {
+  projects?: Project[]; // Move the declaration of 'projects' above its usage
+  cols?: number;
+}
+
+const { projects, cols } = Astro.props;
+const totalProjects = projects || PROJECTS_DATA
+---
+
+<SectionContainer class="my-20 md:p-6" id="proyectos">
+  <div
+    class="w-full text-xl text-white flex flex-col gap-4 p-6"
+  >
+    <slot>
+      <h2 class="text-4xl md:text-5xl font-IBMCondensed text-accent font-medium text-balance">{TITLE}</h2>
+      <p class="pt-4 text-xl md:text-2xl font-light text-pretty">{FIRST_PARAGRAPH}</p>
+      <p class="pt-4 text-gray-300 font-extralight text-pretty">{SECOND_PARAGRAPH}</p>
+      <p class="pt-4 text-gray-300 font-extralight text-pretty">{THIRD_CONTENT}</p>
+    </slot>
+  </div>
+  <SwipeGallery projects={totalProjects} />
+</SectionContainer>
+
+<style>
+
+  img {
+    transition: transform 0.3s;
+  }
+
+  .link:hover img {
+    transform: scale(1.20);
+  }
+</style>

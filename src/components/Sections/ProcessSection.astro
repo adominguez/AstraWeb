@@ -1,0 +1,129 @@
+---
+import SectionContainer from "./SectionContainer.astro";
+import language from '@data/i18n/es.json';
+import { getColor } from '@lib/colors';
+
+const { TITLE, FIRST_CONTENT, SECOND_CONTENT, STEPS, ID } = language.PAGES.HOME.SECTIONS.PROCESS;
+const steps = STEPS;
+const currentStep = 1;
+
+---
+
+<SectionContainer class="my-20 md:p-6" id={ID}>
+  <h2 class="text-4xl md:text-5xl mb-4 text-accent font-IBMCondensed font-medium text-balance">{TITLE}</h2>
+  <p class="pt-4 text-xl md:text-2xl font-light text-pretty">{FIRST_CONTENT}</p>
+  <p class="pt-4 pb-12 text-gray-300 font-extralight text-pretty" set:html={SECOND_CONTENT} />
+  <div class="w-full h-6 rounded-full relative overflow-hidden p-[2px] border bg-secondary/50">
+    <div class:list={[
+      "progress-slider",
+      getColor(steps[currentStep - 1].bgColor),
+      "h-full rounded-full max-w-full top-0 left-0 transition-all"
+    ]} style={{
+      width: `${(100 / steps.length)}%`
+    }} />
+  </div>
+  <div class="flex flex-wrap">
+    {steps.map(step => (
+      <div class="flex-1 p-4 min-w-12 flex flex-col items-center">
+        <button data-step={step.id} class:list={[
+          "step-button",
+          "text-2xl text-center p-2 rounded-full w-10 h-10 flex flex-col justify-center items-center",
+          getColor(step.bgColor),
+        ]}>{step.emoji}</button>
+
+        <h3 class="hidden md:block text-sm text-center font-IBMCondensed">{step.label}</h3>
+      </div>
+    ))}
+  </div>
+  <div class:list={[
+    getColor(steps[currentStep - 1].bgColor),
+    "content-wrapper p-4 flex-col gap-4 rounded-lg transition-colors duration-500"
+  ]}>
+    {
+      steps.map(step => (
+        <div class:list={[
+          "step-content",
+          getColor(step.color),
+          step.id === 1 ? "flex" : "hidden",
+          "flex-col gap-4 md:flex-row justify-center items-center"
+          ]} data-step={step.id} data-color={getColor(step.bgColor)}>
+            <div class="flex flex-col gap-4">
+              <h3 class="text-3xl font-bold text-black/50 font-IBMCondensed">{step.title}</h3>
+              <p class:list={"text-lg"}>{step.objective}</p>
+              <p class={"text-lg"}>{step.actions}</p>
+            </div>
+            {
+              step.image && (
+                <img src={step.image} loading="lazy" alt={step.title} class="flex-1 max-w-60" />
+              )
+            }
+        </div>
+      ))
+    }
+    <footer class="flex justify-between items-center gap-4 pt-4">
+      <button id="prev" class="bg-black/50 py-2 px-4 text-sm hover:scale-110 hover:bg-black/70 rounded-full border transition-all disabled:opacity-50 disabled:pointer-events-none" disabled>Paso anterior</button> 
+      <button id="next" class="bg-black/50 py-2 px-4 text-sm hover:scale-110 hover:bg-black/70 rounded-full border transition-all disabled:opacity-50 disabled:pointer-events-none">Siguiente paso</button>
+    </footer>
+  </div>
+</SectionContainer>
+
+<script type="module">
+  const progressSlider = document.querySelector('.progress-slider');
+  const stepsButtons = document.querySelectorAll('.step-button');
+  const stepContents = document.querySelectorAll('.step-content');
+  const nextButton = document.getElementById('next');
+  const prevButton = document.getElementById('prev');
+  const contentWrapper = document.querySelector('.content-wrapper');
+  const steps = 7;
+  let currentStep = 1;
+
+  function updateStep() {
+    const contentColor = stepContents[currentStep - 1].dataset.color;
+    // Use regular expression to remove all classes with 'bg-*-*' and add the new color class
+    contentWrapper.className = contentWrapper.className.replace(/\b(bg-\w+\-?\w+\b)/g, '');
+    contentWrapper.classList.add(contentColor);
+    progressSlider.className = progressSlider.className.replace(/\b(bg-\w+\-?\w+\b)/g, '');
+    progressSlider.classList.add(contentColor);
+    stepsButtons.forEach(btn => btn.classList.remove('bg-primary'));
+    stepsButtons.forEach(btn => btn.classList.add('bg-secondary'));
+    stepsButtons[currentStep - 1].classList.remove('bg-secondary');
+    stepsButtons[currentStep - 1].classList.add('bg-primary');
+    stepContents.forEach(content => content.classList.remove('flex'));
+    stepContents.forEach(content => content.classList.add('hidden'));
+    stepContents[currentStep - 1].classList.remove('hidden');
+    stepContents[currentStep - 1].classList.add('flex');
+    stepContents[currentStep - 1].classList.add('animate-fade');
+    prevButton.removeAttribute('disabled');
+    nextButton.removeAttribute('disabled');
+    if (currentStep === 1) {
+      prevButton.setAttribute('disabled', true);
+    }
+    if (currentStep === steps) {
+      nextButton.setAttribute('disabled', true);
+    }
+  }
+
+  nextButton.addEventListener('click', () => {
+    if (currentStep < steps) {
+      currentStep++;
+      progressSlider.style.width = `${(100 / steps) * currentStep}%`;
+      updateStep();
+    }
+  });
+
+  prevButton.addEventListener('click', () => {
+    if (currentStep > 1) {
+      currentStep--;
+      progressSlider.style.width = `${(100 / steps) * currentStep}%`;
+      updateStep();
+    }
+  });
+
+  stepsButtons.forEach(button => {
+    button.addEventListener('click', (event) => {
+      currentStep = parseInt(event.target.dataset.step);
+      progressSlider.style.width = `${(100 / steps) * currentStep}%`;
+      updateStep();
+    });
+  });
+</script>

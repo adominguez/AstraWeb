@@ -1,0 +1,120 @@
+---
+import CtaButton from "@components/ui/CtaButton.astro";
+
+const { isIdeal, notIdeal, cta } = Astro.props;
+---
+
+<div class="flex flex-col gap-8">
+  <div class="flex gap-4 justify-center items-center">
+    <button id="ideal-button" class="px-4 py-1 text-sm md:text-base rounded-full border bg-white/10 hover:bg-white/30 border-accent hover:scale-105 transition-all">{isIdeal.TITLE}</button>
+    <button id="not-ideal-button" class="px-4 py-1 text-sm md:text-base rounded-full border bg-white/10 hover:bg-white/30 border-red-800 text-red-600 hover:scale-105 transition-all">{notIdeal.TITLE}</button>
+  </div>
+  <div class="is-ideal flex-col gap-4 hidden">
+    {
+      isIdeal.ITEMS.map((item: string) => (
+        <article class="flex gap-4 p-4 opacity-0 transition-opacity text-sm md:text-base border-accent border text-white rounded-lg">
+          {item}
+        </article>
+      ))
+    }
+    <CtaButton class="min-w-[300px] w-min self-center mt-10 flex justify-center gap-4 items-baseline">
+      <span>{cta}</span>
+      <span class="dot-flashing"></span>
+    </CtaButton>
+  </div>
+  <div class="is-not-ideal flex-col gap-4 hidden">
+    {
+      notIdeal.ITEMS.map((item: string) => (
+        <article class="flex gap-4 p-4 opacity-0 transition-opacity text-sm md:text-base border-red-800 border text-red-600 rounded-lg">
+          {item}
+        </article>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+.dot-flashing {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  animation: dot-flashing 1s infinite linear alternate;
+  animation-delay: 0.5s;
+  @apply bg-accent text-accent
+}
+.dot-flashing::before, .dot-flashing::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+.dot-flashing::before {
+  left: -10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: #9880ff;
+  color: #9880ff;
+  animation: dot-flashing 1s infinite alternate;
+  animation-delay: 0s;
+}
+.dot-flashing::after {
+  left: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: #9880ff;
+  color: #9880ff;
+  animation: dot-flashing 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes dot-flashing {
+  0% {
+    background-color: #9880ff;
+  }
+  50%, 100% {
+    background-color: rgba(152, 128, 255, 0.2);
+  }
+}
+
+</style>
+
+<script type="module">
+  document.addEventListener('astro:page-load', () => {
+    const idealButton = document.getElementById('ideal-button');
+    const notIdealButton = document.getElementById('not-ideal-button');
+    const isIdeal = document.querySelector('.is-ideal');
+    const isNotIdeal = document.querySelector('.is-not-ideal');
+    const isIdealArticle = document.querySelectorAll('.is-ideal article');
+    const isNotIdealArticle = document.querySelectorAll('.is-not-ideal article');
+    const delay = 300;
+
+    idealButton.addEventListener('click', () => {
+      isNotIdeal.classList.remove('flex');
+      isNotIdeal.classList.add('hidden');
+      isIdeal.classList.remove('hidden');
+      isIdeal.classList.add('flex');
+      isNotIdealArticle.forEach(article => article.classList.remove('animate-fade-up'));
+      isIdealArticle.forEach((article, index) => {
+        setTimeout(() => {
+          article.classList.add('animate-fade-up');
+        }, index * delay);
+      });
+    });
+
+    notIdealButton.addEventListener('click', () => {
+      isIdeal.classList.remove('flex');
+      isIdeal.classList.add('hidden');
+      isNotIdeal.classList.remove('hidden');
+      isNotIdeal.classList.add('flex');
+      isIdealArticle.forEach(article => article.classList.remove('animate-fade-up'));
+      isNotIdealArticle.forEach((article, index) => {
+        setTimeout(() => {
+          article.classList.add('animate-fade-up');
+        }, index * delay);
+      });
+    });
+  })
+</script>

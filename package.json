@@ -10,8 +10,19 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.16.6",
+    "@appnest/masonry-layout": "^2.2.3",
     "@astrojs/check": "^0.9.4",
+    "@astrojs/preact": "^3.5.3",
+    "@astrojs/tailwind": "^5.1.2",
+    "@fontsource/ibm-plex-sans": "^5.1.0",
+    "@fontsource/ibm-plex-sans-condensed": "^5.1.0",
+    "astro": "^4.16.6",
+    "astro-cloudinary": "^1.1.2",
+    "photoswipe": "^5.4.4",
+    "preact": "^10.24.3",
+    "swiper": "^11.1.14",
+    "tailwindcss": "^3.4.14",
+    "tailwindcss-animated": "^1.1.2",
     "typescript": "^5.6.3"
   }
 }

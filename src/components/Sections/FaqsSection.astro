@@ -1,0 +1,21 @@
+---
+import SectionContainer from "@components/Sections/SectionContainer.astro";
+import Faqs from "@components/ui/Faqs.astro";
+import language from '@data/i18n/es.json';
+
+const { HOME } = language.PAGES
+const { TITLE, FIRST_CONTENT, SECOND_CONTENT, ID } = HOME.SECTIONS.FAQS
+---
+
+<SectionContainer class="mb-20 md:p-6" id={ID}>
+  <div
+    class="w-full text-xl text-white flex flex-col gap-4 p-6"
+  >
+    <slot>
+      <h2 class="text-4xl md:text-5xl text-secondary font-medium font-IBMCondensed text-balance">{TITLE}</h2>
+      <p class="pt-4 text-xl md:text-2xl font-light text-pretty">{FIRST_CONTENT}</p>
+      <p class="pt-4 text-gray-300 font-extralight text-pretty">{SECOND_CONTENT}</p>
+    </slot>
+  </div>
+  <Faqs />
+</SectionContainer>

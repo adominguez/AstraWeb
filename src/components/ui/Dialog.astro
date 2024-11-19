@@ -1,0 +1,105 @@
+---
+interface Props {
+  triggerButtonClass?: string;
+  triggerButtonCloseClass?: string;
+  labelledby?: string;
+  describedby?: string;
+  class?: string;
+}
+
+const {
+  triggerButtonClass = "cta",
+  triggerButtonCloseClass = "close",
+  labelledby = "",
+  describedby = "",
+  class: className = "",
+} = Astro.props;
+---
+
+<dialog aria-labelledby={labelledby} aria-describedby={describedby} class:list={[
+  'rounded-lg bg-slate-900 text-white md:min-w-[800px] backdrop:bg-black/70 backdrop:backdrop-blur-md animate-fade-down animate-duration-500',
+  className,
+]}>
+  <slot />
+</dialog>
+
+<script
+  type="module"
+  define:vars={{ triggerButtonClass, triggerButtonCloseClass }}
+>
+  const dialog = document.querySelector("dialog");
+  const elements = dialog.querySelectorAll(
+    'a, button, input, textarea, select, details, [tabindex]:not([tabindex="-1"])',
+  );
+  const firstElement = elements[0];
+  const lastElement = elements[elements.length - 1];
+
+  const trapFocus = (e) => {
+    if (e.key === "Tab") {
+      const tabForwards = !e.shiftKey && document.activeElement === lastElement;
+      const tabBackwards =
+        e.shiftKey && document.activeElement === firstElement;
+      if (tabForwards) {
+        // only TAB is pressed, not SHIFT simultaneously
+        // Prevent default behavior of keydown on TAB (i.e. focus next element)
+        e.preventDefault();
+        firstElement.focus();
+      } else if (tabBackwards) {
+        // TAB and SHIFT are pressed simultaneously
+        e.preventDefault();
+        lastElement.focus();
+      }
+    }
+  };
+
+  const openDialog = () => {
+    dialog.showModal();
+    dialog.addEventListener("keydown", trapFocus);
+    setTimeout(() => {
+      dialog.classList.remove("animate-fade-down");
+      dialog.classList.add("animate-reverse");
+    }, 600);
+  };
+
+  const closeDialog = (e) => {
+    e.preventDefault();
+    dialog.classList.add("animate-fade-down");
+    setTimeout(() => {
+      dialog.close();
+      dialog.classList.remove("animate-reverse");
+    }, 600);
+    dialog.removeEventListener("keydown", trapFocus);
+  };
+
+  if (typeof dialog.showModal !== "function") {
+    let polyfill = document.createElement("script");
+    polyfill.type = "text/javascript";
+    polyfill.src = "/dist/dialog-polyfill.js";
+    document.body.append(polyfill);
+
+    const polyfillStyles = document.createElement("link");
+    polyfillStyles.rel = "stylesheet";
+    polyfillStyles.href = "dialog-polyfill.css";
+    document.head.append(polyfillStyles);
+
+    // Register polyfill on dialog element once the script has loaded
+    dialogPolyfill.registerDialog(dialog);
+  }
+
+  document.addEventListener("open-cta-modal", () => {
+    openDialog();
+  });
+
+  document.addEventListener("click", (e) => {
+    const closestButton = e.target.closest("button");
+    if (closestButton && closestButton.classList.contains(triggerButtonClass)) {
+      openDialog();
+    }
+    if (
+      closestButton &&
+      closestButton.classList.contains(triggerButtonCloseClass)
+    ) {
+      closeDialog(e);
+    }
+  });
+</script>

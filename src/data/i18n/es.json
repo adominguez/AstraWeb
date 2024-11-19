@@ -1,0 +1,439 @@
+{
+  "PAGES": {
+    "HOME": {
+      "TITLE": "Desarrollo Web Profesional para Marcas que Quieren Destacar",
+      "DESCRIPTION": "En AstraWeb creamos páginas web únicas y optimizadas para captar clientes, combinando diseño a medida, rendimiento y SEO para que tu sitio web destaque y cumpla tus objetivos.",
+      "SECTIONS": {
+        "HERO": {
+          "TITLE": "Desarrollo Web Profesional y Personalizado",
+          "SUBTITLE": "Haz que tu <span class='text-gradient text-balance'>sitio web brille</span>",
+          "PARAGRAPH": "En AstraWeb, somos expertos en desarrollo y diseño web profesional, único y personalizado para atraer clientes. Creamos páginas web originales con un diseño memorable, asegurando que tu marca brille y deje una huella duradera en cada visitante.",
+          "CTA": "Quiero una web que brille"
+        },
+        "FEATURES": {
+          "ID": "características",
+          "TITLE": "¿Qué hace únicas nuestras páginas web?",
+          "FIRST_CONTENT": "En AstraWeb, entendemos que, para destacar en el mercado, necesitas un sitio web diferente, diseñado para hacer que tu negocio sobresalga de la competencia.",
+          "SECOND_CONTENT": "Aplicamos una serie de principios clave para desarrollar páginas web originales, únicas y efectivas, que capturen la esencia de tu marca y atraigan a tus clientes ideales.",
+          "THIRD_CONTENT": "Sólo haciendo una web única y original conseguirás que tu web destaque y deje una huella duradera en cada visitante fortaleciendo así la presencia online de tu negocio.",
+          "BENTO": [{
+            "TITLE": "Investigación y análisis",
+            "DESCRIPTION": "Antes de empezar cualquier proyecto, analizamos tu mercado y tu competencia. Este estudio nos permite identificar oportunidades y crear una página web que supere a tu competencia, maximizando tus puntos fuertes.",
+            "IMAGE": "features/search-market.svg"
+          },{
+            "TITLE": "Diseño personalizado",
+            "DESCRIPTION": "En Astra Web sabemos que para que puedas diferenciarte de tu competencia es necesario que el diseño de tu web sea único, acorde a la imagen de tu negocio y que sea capaz de cubrir las necesidades de tu negocio y las de tus clientes.",
+            "IMAGE": "features/custom-design.svg"
+          },{
+            "TITLE": "Diseño moderno y atractivo",
+            "DESCRIPTION": "¿Has visto esas páginas que parecen de hace 10 años? seguro que te gustan tan poco como a nosotros, pues si a ti no te gustan, a tus clientes tampoco. Por eso creemos que un diseño moderno hará que tus clientes quieran permanecer en tu web."
+          },{
+            "TITLE": "Diseño responsive",
+            "DESCRIPTION": "En Astra Web sabemos que la mayoría de las visitas a una web se hacen desde un dispositivo móvil, por eso es imprescindible que tu web esté adaptada a todos los dispositivos, para que tus clientes puedan acceder a tu web desde cualquier lugar y en cualquier momento.",
+            "IMAGE": "features/responsive.svg"
+          },{
+            "TITLE": "Optimización SEO",
+            "DESCRIPTION": "Si quieres que tu web aparezca en los primeros resultados de Google, es imprescindible que tu web esté optimizada para los motores de búsqueda. En Astra Web optimizamos tu web para que puedas aparecer en los primeros resultados de Google.",
+            "IMAGE": "features/seo-optimization.svg"
+          },{
+            "TITLE": "Carga rápida de la web",
+            "DESCRIPTION": "Hoy en día es indispensable la velocidad de carga de una web, tanto para Google como para los usuarios, por eso es indispensable que tu web cargue rápido. En Astra Web optimizamos imágenes y recursos para que podamos asegurar la velocidad de tu sitio web.",
+            "IMAGE": "features/fast-loading.svg"
+          },{
+            "TITLE": "Copywriting y redacción de textos",
+            "DESCRIPTION": "Para que una página web funcione, es imprescindible que los textos tengan una estructura y que sean capaces de ir diriginedo al usuario hacia la acción que queremos que realice. En Astra Web contamos con redactores especializados en copywriting que harán que tus textos sean efectivos."
+          },{
+            "TITLE": "Excelente experiencia a los usuarios",
+            "FIRST_PARAGRAPH": "Y por supuesto, no podemos olvidarnos de uno de los aspectos más importantes de una web. Puedes tener el mejor diseño, la carga más rápida y la mejor optimización SEO, sin embargo, si no tienes una buena experiencia para el usuario, tu web no funcionará.",
+            "SECOND_PARAGRAPH": "Esto es algo a lo que muchas páginas webs no le prestan ninguna atención, y el usuario acaba perdido sin saber muy bien ni donde buscar ni donde ir. es imprescindible que tu web sea fácil de usar y que tus usuarios encuentren lo que buscan de forma rápida y sencilla.",
+            "THIRD_PARAGRAPH": "En Astra Web lo sabemos, por eso siempre tratamos de hacer que la experiencia de usuario sea lo más sencilla y agradable posible.",
+            "IMAGE": "features/user-experience.svg"
+          }]
+        },
+        "PROJECTS": {
+          "ID": "proyectos",
+          "TITLE": "Nuestros proyectos",
+          "FIRST_PARAGRAPH": "Te acabamos de contar cuales son las características de nuestras páginas web y desarrollos, sin embargo, seguro que estás deseando ver algunos de nuestros trabajos.",
+          "SECOND_PARAGRAPH": "En Astra Web hemos trabajado con empresas de diferentes sectores y tamaños, y hemos creado páginas web y aplicaciones que han ayudado a nuestros clientes a destacar en su sector.",
+          "THIRD_CONTENT": "A continuación verás algunos de los trabajos más importantes que hemos hecho hasta el momento, ¿quién sabe? Quizás tu proyecto también podría estar aquí."
+        },
+        "CALL_TO_ACTION": {
+          "PRETITLE": "¿Quieres una web que sea diferencial?",
+          "TITLE": "Ha llegado el momento de hacer que tu web destaque del resto de la competencia",
+          "CTA": "Quiero una web que destaque",
+          "FIRST_IMAGE": "call-to-action/stand-out-amico.svg",
+          "SECOND_IMAGE": "call-to-action/website-image.svg",
+          "FIRST_IMAGE_ALT": "Destaca entre tu competencia",
+          "SECOND_IMAGE_ALT": "Haz que tu web brille"
+        },
+        "PROCESS": {
+          "ID": "proceso",
+          "TITLE": "¿Quieres saber el proceso que haremos para crear tu web",
+          "FIRST_CONTENT": "Para que un proyecto de desarrollo web sea exitoso es necesario que tenga un enfoque estructurado y personalizado. Nuestro proceso de creación de páginas web está diseñado para asegurar que cada cliente reciba un sitio web único y optimizado, adaptado a sus objetivos comerciales y necesidades específicas.",
+          "SECOND_CONTENT": "Desde la <strong>investigación inicial y el análisis de competencia</strong> hasta el diseño visual y la optimización SEO, seguimos una serie de pasos estratégicos para crear páginas web profesionales que destacan en el mercado. Nuestro equipo de expertos en desarrollo web se encarga de cada detalle, asegurando que tu sitio sea visualmente atractivo, fácil de usar y altamente funcional, para captar y retener a tus clientes.",
+          "STEPS": [
+            {
+              "id": 1,
+              "label": "Primer contacto",
+              "title": "Primer Contacto: Formulario de Solicitud",
+              "objective": "El objetivo de que rellenes este formulario es que nos proporciones los datos necesarios para que nos podamos hacer una idea de cuales son tus necesidades y que tipo de página necesitas.",
+              "actions": "Si quieres empezar ya, puedes utilizar el siguiente formulario y empezaremos el proceso",
+              "emoji": "📝",
+              "image": "process/form.svg",
+              "color": "GRAY_TEXT_900",
+              "bgColor": "YELLOW_BG_400"
+            },
+            {
+              "id": 2,
+              "label": "Primera reunión",
+              "title": "Reunión Inicial: Análisis de Requisitos",
+              "objective": "Una vez hayamos analizado las necesidades de tu proyecto con el formulario que nos enviaste en primer paso, Establecemos una comunicación directa contigo para definir los objetivos, expectativas, preferencias y requisitos del proyecto.",
+              "emoji": "🤝",
+              "image": "process/meeting.svg",
+              "color": "WHITE_TEXT_COLOR",
+              "bgColor": "BLUE_BG_500"
+            },
+            {
+              "id": 3,
+              "label": "Investigación y Estrategia",
+              "title": "Investigación de Mercado y Estrategia de Contenidos",
+              "objective": "Es hora de ponerse manos a la obra. Y la mejor forma de comenzar es realizar un análisis del mercado, establecer un público objetivo, ver la competencia del cliente, y hacer una pequeña auditoría de SEO, para ir determinando hacia que punto nos vamos a ir enfocando.",
+              "emoji": "🔍",
+              "image": "process/strategy.svg",
+              "color": "WHITE_TEXT_COLOR",
+              "bgColor": "GREEN_BG_500"
+            },
+            {
+              "id": 4,
+              "label": "Diseño Personalizado",
+              "title": "Diseño Personalizado y Prototipado",
+              "objective": "En este paso empezaremos a diseñar la estructura de tu web, teniendo en cuenta la imagen de tu marca y tus preferencias. Te mostraremos un prototipo para que puedas ver como va a quedar tu web.",
+              "emoji": "🎨",
+              "image": "process/design.svg",
+              "color": "WHITE_TEXT_COLOR",
+              "bgColor": "PINK_BG_500"
+            },
+            {
+              "id": 5,
+              "label": "Desarrollo y Programación",
+              "title": "Desarrollo y Programación de la Página Web",
+              "objective": "Una vez que tengamos el diseño aprobado, comenzamos a desarrollar la página web, utilizando tecnologías avanzadas para garantizar un rendimiento óptimo y una experiencia de usuario excepcional.",
+              "emoji": "💻",
+              "image": "process/development.svg",
+              "color": "WHITE_TEXT_COLOR",
+              "bgColor": "PURPLE_BG_600"
+            },
+            {
+              "id": 6,
+              "label": "Optimización y Pruebas",
+              "title": "Optimización SEO y Pruebas de Rendimiento",
+              "objective": "Este es el último paso antes del lanzamiento, en el que nos aseguramos de que tu web cumple con los estándares de calidad y rendimiento. Cada página es optimizada para SEO.",
+              "emoji": "🧪",
+              "image": "process/testing.svg",
+              "color": "WHITE_TEXT_COLOR",
+              "bgColor": "ORANGE_BG_500"
+            },
+            {
+              "id": 7,
+              "label": "Lanzamiento y Mantenimiento",
+              "title": "Lanzamiento y Soporte Técnico Continuo",
+              "objective": "Después de la aprobación final, lanzamos el sitio web y monitorizamos su rendimiento. Ofrecemos un servicio de mantenimiento que incluye actualizaciones, resolución de problemas y soporte continuo para asegurar que el sitio esté siempre optimizado y funcional.",
+              "emoji": "🚀",
+              "image": "process/launch.svg",
+              "color": "WHITE_TEXT_COLOR",
+              "bgColor": "TEAL_BG_500"
+            }
+          ]
+        },
+        "FAQS": {
+          "ID": "preguntas-frecuentes",
+          "TITLE": "Preguntas Frecuentes a la hora de hacer un sitio web profesional",
+          "FIRST_CONTENT": "Somos conscientes de que cuando un cliente quiere hacer un sitio o una aplicación web profesional pueden empezar a surgirle múltiples dudas, por eso trataremos de responder algunas de las dudas más frecuentes que puede que se te estén pasando por la cabeza.",
+          "SECOND_CONTENT": "Respondemos a las preguntas más frecuentes sobre nuestros servicios y procesos para que puedas tener toda la información que necesitas antes de empezar el proyecto de tu web.",
+          "ITEMS": [
+            {
+                "question": "¿Podré editar el contenido de mi página web fácilmente?",
+                "answer": "Sí, en AstraWeb diseñamos páginas web que te permiten actualizar el contenido, añadir secciones o cambiar imágenes de manera sencilla. Al finalizar el proyecto, te proporcionamos acceso completo y una guía para que puedas realizar modificaciones por tu cuenta, asegurando que no dependas de terceros para mantener tu sitio actualizado."
+            },
+            {
+                "question": "¿Qué tecnología utilizan para desarrollar las páginas web?",
+                "answer": "Usamos tecnologías modernas como HTML, CSS, JavaScript y frameworks especializados cuando es necesario. Dependiendo del proyecto, también integramos sistemas de gestión de contenidos para facilitar la administración. Nuestro enfoque es crear páginas web rápidas, optimizadas y fáciles de gestionar."
+            },
+            {
+                "question": "¿Puedo solicitar cambios en el diseño de la página?",
+                "answer": "¡Por supuesto! Nuestro proceso incluye revisiones para asegurarnos de que el diseño refleje tu visión y tus necesidades. Nos tomamos el tiempo necesario para que el resultado final supere tus expectativas, ajustando los detalles hasta que estés completamente satisfecho con el diseño."
+            },
+            {
+                "question": "¿Qué métodos de pago aceptan?",
+                "answer": "Ofrecemos varias opciones de pago, como transferencia bancaria, tarjeta de crédito y domiciliación bancaria. Nos aseguramos de que todos los procesos sean transparentes y legales, generando una factura detallada de nuestros servicios."
+            },
+            {
+                "question": "¿En cuánto tiempo estará lista mi página web?",
+                "answer": "El tiempo de desarrollo depende de la complejidad del proyecto, pero en general, una página corporativa puede estar lista en 4 a 6 semanas, y tiendas online en unas 6 a 8 semanas. Este plazo puede variar según la disponibilidad y rapidez para proporcionar la información y el feedback necesario durante el proceso."
+            },
+            {
+                "question": "¿AstraWeb se encarga del contenido y las imágenes?",
+                "answer": "Sí, si lo necesitas, ofrecemos servicios de copywriting y disponemos de acceso a bancos de imágenes de alta calidad. Nos aseguramos de que cada palabra y cada imagen en tu página estén optimizadas para comunicar eficazmente tu mensaje y mejorar el posicionamiento en buscadores."
+            },
+            {
+                "question": "¿Pueden integrar mis redes sociales en el sitio web?",
+                "answer": "Sí, podemos integrar tus redes sociales directamente en la página web para que tus publicaciones se actualicen automáticamente. Además, añadimos iconos de acceso a tus perfiles de redes sociales para una experiencia de usuario completa."
+            },
+            {
+                "question": "¿Seré el propietario de mi página web?",
+                "answer": "Sí, serás el propietario total de tu página web, dominio e imágenes utilizadas. En AstraWeb nos aseguramos de que tengas acceso completo y puedas gestionarlo todo en cualquier momento."
+            },
+            {
+                "question": "¿Ofrecen servicios de mantenimiento para mi página web?",
+                "answer": "Sí, ofrecemos servicios de mantenimiento mensual para asegurar que tu sitio web esté actualizado y seguro. Esto incluye actualizaciones de seguridad, resolución de problemas y mejoras continuas para mantener el rendimiento óptimo del sitio."
+            },
+            {
+                "question": "¿Qué pasa si no sé qué tipo de página web es la mejor para mi negocio?",
+                "answer": "Nuestro equipo está aquí para ayudarte. Evaluamos tus necesidades y te asesoramos en la elección del diseño, las funcionalidades y el tipo de página que mejor se adapte a tus objetivos comerciales."
+            }
+          ] 
+        },
+        "WHY_CHOOSE": {
+          "ID": "por-que-elegirnos",
+          "TITLE": "¿Por qué deberías de elegir a AstraWeb?",
+          "FIRST_PARAGRAPH": "Creamos páginas web que no solo son visualmente atractivas, sino que también destacan por su originalidad y funcionalidad. Cada diseño es personalizado, asegurando que tu negocio tenga una presencia online que refleje tu identidad y conecte con tus clientes. Nos enfocamos en hacer que tu web sea memorable, optimizada y preparada para sobresalir frente a la competencia.",
+          "SECOND_PARAGRAPH": "Con un enfoque en el rendimiento, el SEO y la experiencia del usuario, en AstraWeb utilizamos tecnologías avanzadas para desarrollar sitios web rápidos, responsivos y efectivos. Nos aseguramos de que cada detalle esté cuidado, desde el diseño hasta la optimización, para que tu página web no solo cumpla tus expectativas, sino que las supere, ayudándote a atraer más clientes y a potenciar tu negocio.",
+          "REASONS": [
+            {
+              "number": 1,
+              "title": "Diseño Personalizado y Memorable",
+              "description": "Creamos cada página a medida para reflejar la identidad y valores de tu marca.",
+              "emoji": "🎨",
+              "color": "#ffc71a",
+              "transform": "translate(-50%, -100%)"
+            },
+            {
+              "number": 2,
+              "title": "Optimización SEO Integral",
+              "description": "Aseguramos que tu sitio esté bien posicionado en Google desde el primer momento.",
+              "emoji": "🔍",
+              "color": "#ff9f1a",
+              "transform": "translate(0, -50%)"
+            },
+            {
+              "number": 3,
+              "title": "Desarrollo Rápido y Profesional",
+              "description": "Cumplimos con los plazos y optimizamos cada proyecto para un rendimiento superior.",
+              "emoji": "⚡",
+              "color": "#60a1db",
+              "transform": "translate(0%, -50%)"
+            },
+            {
+              "number": 4,
+              "title": "Soporte Técnico y Mantenimiento",
+              "description": "Ofrecemos asistencia continua para mantener tu sitio web en óptimas condiciones.",
+              "emoji": "🛠️",
+              "color": "#892dab",
+              "transform": "translate(-100%, -50%)"
+            },
+            {
+              "number": 5,
+              "title": "Enfoque en Conversión",
+              "description": "Diseñamos páginas para atraer y retener clientes, maximizando la efectividad.",
+              "emoji": "📈",
+              "color": "#7f4afe",
+              "transform": "translate(-100%, -50%)"
+            }
+          ]
+        },
+        "IS_FOR_YOU": {
+          "ID": "es-para-ti",
+          "TITLE": "¿Todavía tienes dudas y no sabes si AstraWeb es para ti?",
+          "PARAGRAPH": "Nuestros servicios de desarrollo web son ideales para empresas y marcas que buscan una presencia online única y efectiva. Si te identificas con alguna de las siguientes afirmaciones, AstraWeb es la elección perfecta para ti.",
+          "CTA": "Hablemos de tu proyecto",
+          "IS_IDEAL": {
+            "TITLE": "Esto es para ti si...",
+            "ITEMS": [
+              "Buscas un diseño web personalizado que destaque la identidad de tu marca.",
+              "Quieres una página web optimizada para SEO que atraiga tráfico orgánico.",
+              "Necesitas una página rápida y responsive que funcione en todos los dispositivos.",
+              "Te importa contar con soporte y mantenimiento continuo para mantener tu sitio al día.",
+              "Estás dispuesto a invertir en una solución de alta calidad que genere resultados."
+            ]
+          },
+          "NOT_IDEAL": {
+            "TITLE": "Esto no es para ti si...",
+            "ITEMS": [
+              "Prefieres una página web básica sin personalización.",
+              "No consideras necesario optimizar tu sitio para SEO o dispositivos móviles.",
+              "Buscas soluciones temporales de bajo coste en lugar de una inversión a largo plazo.",
+              "No necesitas un equipo de soporte técnico ni mantenimiento después del lanzamiento.",
+              "No estás interesado en el diseño o en la experiencia del usuario."
+            ]
+          }
+        }
+      }
+    },
+    "PROJECTS": [
+      {
+        "id": "monitoring",
+        "seoTitle": "Solución de Monitorización de Servicios y Aplicaciones",
+        "seoDescription": "Un sistema de monitorización avanzado que proporciona métricas, alarmas y análisis visuales en tiempo real para la supervisión de servicios críticos.",
+        "title": "Solución de Monitorización: Control Total de Servicios y Aplicaciones",
+        "description": "<p>Este proyecto tiene como objetivo ofrecer una supervisión integral de servicios y aplicaciones críticas, proporcionando al equipo de operaciones las herramientas necesarias para tomar decisiones informadas en tiempo real.</p><p class='mt-8'>El sistema ofrece funcionalidades avanzadas como alarmas automáticas, gráficas de métricas, y un panel de visualización claro y personalizable que permite una comprensión rápida y efectiva del rendimiento de los servicios.</p>",
+        "descriptionAlt": "Solución de Monitorización de Servicios y Aplicaciones",
+        "featuresTitle": "Características Principales de la Solución de Monitorización",
+        "features": [
+          "<strong class='block mb-2'>Desarrollado con Module Federation y React</strong> La arquitectura modular permite que cada componente funcione de manera autónoma, mejorando la escalabilidad y manteniendo un rendimiento óptimo.",
+          "<strong class='block mb-2'>Almacenamiento con Neo4j</strong> La base de datos en Neo4j proporciona una representación gráfica de las relaciones entre los servicios, lo que facilita el análisis de dependencias y la detección de problemas en tiempo real.",
+          "<strong class='block mb-2'>Back-End en Node.js</strong> La robustez de Node.js permite una comunicación fluida entre el sistema de monitorización y los servicios, asegurando una transferencia de datos rápida y segura.",
+          "<strong class='block mb-2'>Sistema de Alarmas Automáticas</strong> Configuramos alarmas que se activan ante cualquier fallo o cambio crítico en los servicios, permitiendo una intervención inmediata y minimizando el impacto en las operaciones.",
+          "<strong class='block mb-2'>Métricas y Gráficas en Tiempo Real</strong> Proporciona información visual en tiempo real sobre el rendimiento de los servicios, lo cual facilita la toma de decisiones basada en datos actualizados.",
+          "<strong class='block mb-2'>Panel Personalizable</strong> Los usuarios pueden adaptar el panel según sus necesidades, accediendo fácilmente a la información más relevante para sus funciones específicas."
+        ],
+        "logo": "/logos/psam.svg",
+        "slug": "monitoring",
+        "imagesTitle": "Explora la Solución de Monitorización en Imágenes",
+        "bgColor": "MONITORING_BG",
+        "titleColor": "TEAL_TEXT_COLOR_500",
+        "client": "Empresa Líder en Servicios Financieros",
+        "tags": [
+          "React",
+          "Neo4j",
+          "Node.js",
+          "JavaScript",
+          "Module Federation",
+          "Front-End",
+          "Back-End"
+        ],
+        "ctaTitle": "Por Qué Elegir AstraWeb",
+        "ctaText": "<p class='mb-4'>En AstraWeb, desarrollamos soluciones que brindan control total y precisión. Con tecnologías modernas y un enfoque personalizado, ofrecemos sistemas de monitorización que aseguran que cada servicio funcione al máximo.</p><p>Permítenos ayudarte a construir una plataforma robusta y confiable para la gestión de tus aplicaciones críticas.</p>"
+      },
+      {
+        "id": "alemania4inmobiliaria",
+        "seoTitle": "Alemania4 Inmobiliaria: Landing Page Profesional",
+        "seoDescription": "Landing page para Alemania4 Inmobiliaria, un diseño profesional optimizado para conversiones. Conoce cómo AstraWeb puede impulsar tu negocio inmobiliario.",
+        "title": "Alemania4 Inmobiliaria: Una landing page profesional y optimizada",
+        "description": "<p>En Alemania4 Inmobiliaria, nuestra misión fue crear una landing page que se alineara con la identidad de la empresa y captara la atención de los potenciales clientes desde el primer momento.</p><p class='mt-8'>Diseñamos cada elemento para que fuera visualmente atractivo, fácil de navegar y optimizado para captar leads y facilitar la conversión.</p>",
+        "descriptionAlt": "Landing page profesional y optimizada para una inmobiliaria",
+        "featuresTitle": "Características de la Landing Page de Alemania4 Inmobiliaria",
+        "features": [
+          "<strong class='block mb-2'>Diseño con HTML, CSS y JavaScript</strong> Para mantener la compatibilidad con el CMS del cliente, desarrollamos la landing page exclusivamente con HTML, CSS y JavaScript, logrando un diseño atractivo y funcional sin frameworks adicionales.",
+          "<strong class='block mb-2'>Optimización de Imágenes</strong> Para mejorar la velocidad de carga y la experiencia del usuario, optimizamos el tamaño de las imágenes, asegurando un rendimiento adecuado sin afectar la calidad visual.",
+          "<strong class='block mb-2'>Enfoque en una Estructura Clara</strong> Cada sección de la landing fue diseñada para guiar al usuario de manera intuitiva, resaltando la información clave para maximizar el interés de potenciales clientes.",
+          "<strong class='block mb-2'>Adaptación a Dispositivos Móviles</strong> La landing page está configurada para verse correctamente en dispositivos móviles, garantizando una experiencia fluida y accesible en diferentes tamaños de pantalla.",
+          "<strong class='block mb-2'>Copywriting del Cliente</strong> El contenido de la landing page se ajustó conforme a las indicaciones y redacción del cliente, asegurando que la comunicación reflejara fielmente su mensaje y estilo."
+        ],
+        "logo": "/logos/alemania4inmobiliaria.svg",
+        "slug": "alemania4-inmobiliaria",
+        "imagesTitle": "Explora el Diseño de Alemania4 Inmobiliaria en Imágenes",
+        "bgColor": "INMOBILIARIA_BG",
+        "titleColor": "AMBER_TEXT_COLOR_100",
+        "client": "Alemania 4 Inmobiliaria",
+        "tags": [
+          "Javascript",
+          "html",
+          "css"
+        ],
+        "ctaTitle": "Por Qué Elegir AstraWeb",
+        "ctaText": "<p class='mb-4'>En AstraWeb transformamos ideas en páginas web efectivas. Nuestro enfoque en la optimización y el diseño estratégico asegura que cada proyecto que creamos destaque y convierta.</p><p>Permítenos crear una presencia online que impacte y atraiga clientes a tu negocio inmobiliario.</p>"
+      },
+      {
+        "id": "portico",
+        "seoTitle": "Portico Sport: Diseño Web Moderno y Funcional",
+        "seoDescription": "Portico Sport es un proyecto de diseño web moderno y funcional, optimizado para SEO. Conoce más sobre este proyecto y cómo podemos ayudarte a ti.",
+        "title": "Portico Sport: Una web moderna y funcional",
+        "description": "<p>En Portico Sport, nuestra misión fue crear un sitio web que no solo se adaptara perfectamente a la identidad moderna y dinámica de la marca, sino que también ofreciera una experiencia de usuario fluida y accesible.</p><p class=\"mt-8\">Cada detalle fue cuidadosamente optimizado para maximizar la visibilidad online y facilitar la gestión de contenidos por parte del cliente, utilizando las herramientas y tecnologías más avanzadas.</p>",
+        "descriptionAlt": "Una web moderna y funcional",
+        "featuresTitle": "Características que Hacen Única la Web de Portico Sport",
+        "features": [
+          "<strong class=\"block mb-2\">Desarrollado con Astro y Tailwind CSS</strong> Optimizamos el rendimiento utilizando Astro para lograr tiempos de carga rápidos y una experiencia de usuario suave. El diseño con Tailwind CSS aporta un estilo moderno y minimalista que refleja la imagen profesional y deportiva de la marca.",
+          "<strong class=\"block mb-2\">Integración con WordPress como CMS</strong> Portico Sport se beneficia de la flexibilidad de WordPress, permitiendo al equipo gestionar su contenido de manera fácil e intuitiva sin sacrificar el rendimiento o el diseño.",
+          "<strong class=\"block mb-2\">Optimización SEO Avanzada</strong> Cada página y sección ha sido configurada para mejorar la visibilidad en buscadores, atrayendo tráfico cualificado y asegurando una presencia sólida en los resultados de búsqueda.",
+          "<strong class=\"block mb-2\">Multilenguaje</strong> El sitio se ha desarrollado para ser accesible en múltiples idiomas, expandiendo su alcance global y permitiendo a Portico Sport conectar con su audiencia en diferentes regiones.",
+          "<strong class=\"block mb-2\">Responsive y Accesible</strong> Diseñado para verse impecable en cualquier dispositivo, desde móviles hasta escritorios, asegurando una experiencia de usuario consistente y atractiva en todas las plataformas.",
+          "<strong class=\"block mb-2\">Copywriting Integral</strong> Para que el mensaje de Portico Sport fuera tan impactante como su diseño, nos encargamos del copywriting de toda la web. Cada palabra fue elegida estratégicamente para comunicar los valores y servicios de la marca de manera persuasiva y atractiva.",
+          "<strong class=\"block mb-2\">Responsive y Accesible</strong> Diseñado para verse impecable en cualquier dispositivo, desde móviles hasta escritorios, asegurando una experiencia de usuario consistente y atractiva en todas las plataformas."
+        ],
+        "logo": "/logos/portico.svg",
+        "slug": "portico-sport",
+        "imagesTitle": "Explora el Diseño de Portico Sport en Imágenes",
+        "bgColor": "PORTICO_BG",
+        "titleColor": "SKY_TEXT_COLOR_500",
+        "client": "Portico Sport",
+        "tags": [
+          "Javascript",
+          "html",
+          "css",
+          "Astro",
+          "tailwind",
+          "Frontend",
+          "Backend"
+        ],
+        "ctaTitle": "Por Qué Elegir AstraWeb",
+        "ctaText": "<p class=\"mb-4\">En AstraWeb transformamos ideas en sitios web que destacan. Nuestro enfoque en tecnologías modernas y nuestro compromiso con la calidad nos permite crear sitios web únicos que no solo cumplen las expectativas, sino que las superan.</p><p>Cada proyecto es una oportunidad para aplicar nuestro conocimiento y creatividad, asegurando que tu negocio también tendrá una presencia online que impresiona y convierte.</p>"
+      },
+      {
+        "id": "anillo",
+        "seoTitle": "Conecta Anillo: Red Social para Deportistas",
+        "seoDescription": "Conecta Anillo es una red social diseñada para conectar y apoyar a deportistas. Descubre cómo AstraWeb puede impulsar tu proyecto digital.",
+        "title": "Conecta Anillo: La Red Social para Deportistas",
+        "description": "<p>Conecta Anillo es una red social innovadora que facilita la conexión entre deportistas, ofreciendo una plataforma donde pueden compartir logros, experiencias y mantenerse informados sobre las últimas novedades en el ámbito deportivo.</p><p class='mt-8'>El diseño de la plataforma es atractivo y fácil de usar, promoviendo una comunidad activa y comprometida con el deporte.</p>",
+        "descriptionAlt": "Red Social para Deportistas",
+        "featuresTitle": "Características Principales de Conecta Anillo",
+        "features": [
+          "<strong class='block mb-2'>Interfaz Intuitiva y Atractiva</strong> La red social fue creada con un diseño que facilita la navegación y permite a los usuarios interactuar y conectar con otros deportistas de manera sencilla.",
+          "<strong class='block mb-2'>Optimización SEO Básica</strong> Se implementaron prácticas de optimización en imágenes y estructura de contenido para mejorar su visibilidad en motores de búsqueda.",
+          "<strong class='block mb-2'>Responsive y Accesible</strong> La plataforma está optimizada para adaptarse a diferentes dispositivos y tamaños de pantalla, ofreciendo una experiencia consistente en móviles, tablets y escritorios.",
+          "<strong class='block mb-2'>Contenido Centralizado</strong> La red permite una visualización clara de todas las publicaciones y actualizaciones, facilitando el acceso a la información relevante.",
+          "<strong class='block mb-2'>Actualización Dinámica de Contenido</strong> Conecta Anillo permite que los usuarios publiquen y actualicen contenido de forma constante, manteniendo la comunidad activa y comprometida."
+        ],
+        "logo": "/logos/anillo.png",
+        "slug": "anillo",
+        "imagesTitle": "Explora el Diseño de El Anillo",
+        "bgColor": "AMBER_BG_200",
+        "titleColor": "AMBER_TEXT_COLOR_400",
+        "client": "Conecta Anillo",
+        "tags": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "SEO",
+          "Responsive",
+          "Social Network"
+        ],
+        "ctaTitle": "Por Qué Elegir AstraWeb",
+        "ctaText": "<p class='mb-4'>En AstraWeb, desarrollamos plataformas digitales que conectan comunidades. Nuestro enfoque en el diseño intuitivo y la accesibilidad garantiza una experiencia atractiva y funcional para los usuarios.</p><p>Permítenos ayudarte a construir una red social única que impulse la interacción y el compromiso de tu audiencia deportiva.</p>"
+      },
+      {
+        "id": "ether",
+        "seoTitle": "Consola de Operaciones para Servicios en la Nube",
+        "seoDescription": "Una consola avanzada que permite gestionar servicios en la nube, desplegar aplicaciones y optimizar la operatividad de entornos críticos.",
+        "title": "Consola de Operaciones: Gestión Integral de Servicios en la Nube",
+        "description": "<p>Este proyecto tiene como objetivo proporcionar una consola centralizada para la gestión de servicios en la nube, permitiendo al equipo de operaciones realizar tareas críticas como el despliegue de aplicaciones, la configuración de nuevos servicios y la operatividad de entornos en tiempo real.</p><p class='mt-8'>La consola ofrece una interfaz completa y personalizable para gestionar todos los aspectos del ciclo de vida de los servicios, optimizando los recursos y facilitando la administración de la infraestructura en la nube.</p>",
+        "descriptionAlt": "Consola de Operaciones para Servicios en la Nube",
+        "featuresTitle": "Características Principales de la Consola de Operaciones",
+        "features": [
+          "<strong class='block mb-2'>Desarrollada con React y Redux Sagas</strong> La aplicación utiliza React para el front-end y Redux Sagas para gestionar el estado de la aplicación, permitiendo un flujo de datos eficiente y una experiencia de usuario fluida.",
+          "<strong class='block mb-2'>Integración con Node.js en el Back-End</strong> La robustez de Node.js permite manejar de manera eficiente la comunicación entre la consola y los servicios en la nube, asegurando una gestión fluida y segura.",
+          "<strong class='block mb-2'>Despliegue de Aplicaciones en Tiempo Real</strong> La consola permite a los operadores desplegar aplicaciones y servicios de manera rápida y segura, asegurando la continuidad de las operaciones y minimizando tiempos de inactividad.",
+          "<strong class='block mb-2'>Gestión de Ciclo de Vida de Servicios</strong> Los usuarios pueden dar de alta, actualizar y eliminar servicios directamente desde la consola, facilitando una administración centralizada y eficiente.",
+          "<strong class='block mb-2'>Panel Personalizable y Adaptable</strong> La consola cuenta con un panel flexible y personalizable, lo cual permite que cada usuario adapte la visualización según sus necesidades específicas.",
+          "<strong class='block mb-2'>Configuración de Servicios en la Nube</strong> La plataforma proporciona todas las herramientas necesarias para gestionar y configurar servicios en la nube, permitiendo al equipo optimizar y operar aplicaciones de manera eficaz."
+        ],
+        "logo": "/logos/ether.png",
+        "slug": "cloud-console",
+        "imagesTitle": "Explora la Consola de Operaciones en Imágenes",
+        "bgColor": "SKY_BG_300",
+        "titleColor": "TEAL_TEXT_COLOR_500",
+        "client": "Empresa Líder en Servicios Financieros",
+        "tags": [
+          "React",
+          "Node.js",
+          "JavaScript",
+          "Redux Sagas",
+          "Cloud",
+          "Deployment",
+          "Operations"
+        ],
+        "ctaTitle": "Por Qué Elegir AstraWeb",
+        "ctaText": "<p class='mb-4'>En AstraWeb, creamos soluciones que centralizan y simplifican la gestión de infraestructuras críticas. Nuestro enfoque en tecnologías de vanguardia asegura una plataforma que optimiza las operaciones en la nube.</p><p>Permítenos ayudarte a construir una consola robusta y personalizable para la administración eficiente de tus servicios en la nube.</p>"
+      }
+    ]
+  }
+}

@@ -1,0 +1,143 @@
+---
+import language from '@data/i18n/es.json';
+
+const { REASONS } = language.PAGES.HOME.SECTIONS.WHY_CHOOSE;
+
+const points = REASONS;
+
+let selected = points[0];
+const circleDiameter = 320; // Diámetro del círculo
+const circleRadius = circleDiameter / 2; // Radio del círculo
+const centerX = circleDiameter / 2; // Centro X del círculo
+const centerY = circleDiameter / 2; // Centro Y del círculo
+const lineLength = 50; // Longitud de las líneas
+---
+
+  <div
+    class="flex items-center justify-center h-[400px] lg:h-[600px] relative mt-16"
+  >
+    <svg id="choose-logo" viewBox="0 0 192 215" xmlns="http://www.w3.org/2000/svg"  width={140} height={160} class="absolute hidden lg:block">
+      <path d="M 142.912 116.396 L 128.675 116.396 L 96.585 50.066 L 64.199 116.396 L 49.816 116.396 L 87.759 1.288 L 105.261 1.288 L 142.912 116.396 Z" fill="#fff" />
+      <path d="M 16.915 126.732 C 10.229 123.346 4.886 119.087 4.886 113.955 C 4.886 110.167 8.728 103.848 12.421 100.993 C 16.113 98.139 21.443 95.78 28.393 93.918 C 34.643 92.246 42.105 90.901 50.794 89.877 L 47.75 99.012 C 43.844 99.546 40.638 100.184 38.131 100.919 C 28.879 103.63 24.257 107.006 24.257 111.05 C 24.257 115.027 28.341 118.203 36.502 120.579 C 39.606 121.469 43.494 122.225 48.166 122.85 L 48.348 122.502 L 143.23 122.502 C 145.969 122.056 148.304 121.551 150.233 120.987 C 159.519 118.276 164.158 114.933 164.158 110.955 C 164.158 106.974 159.493 103.63 150.173 100.919 C 148.12 100.321 145.612 99.79 142.651 99.325 L 139.595 90.091 C 140.681 90.222 141.739 90.357 142.771 90.5 C 155.093 92.2 164.61 94.745 171.329 98.128 C 178.058 101.514 183.417 108.791 183.417 113.955 C 183.417 120.755 175.508 126.096 163.697 129.978 C 159.807 131.251 155.248 132.499 150.02 133.641 L 191.487 213.711 L 188.282 213.711 C 188.282 213.711 132.78 146.615 96.453 146.553 C 59.967 146.491 4.018 213.711 4.018 213.711 L 0.513 213.711 L 41.421 135.71 C 31.025 133.67 22.858 129.739 16.915 126.732 Z" fill="#fff" />
+    </svg>
+    <div class="flex flex-col gap-2 absolute text-center w-60 lg:hidden p-4">
+      <span class="title text-xl text-balance font-IBMCondensed leading-tight" style={{
+        color: points[0].color,
+      }}>
+        {selected.title}
+      </span>
+      <span class="process-description text-center block lg:hidden py-4 text-pretty text-sm font-thin">
+        {selected.description}
+      </span>
+    </div>
+    <div
+      class="reference-circle absolute w-[320px] h-[320px] border-4 rounded-full"
+    >
+    </div>
+    <div class="relative w-[320px] h-[320px] rounded-full">
+      {
+        points.map(({ number, color, title, transform, description, emoji }, i) => {
+          const angle = (i / points.length - 0.25) * (2 * Math.PI); // Ajuste del ángulo inicial
+          const xPos = centerX + circleRadius * Math.cos(angle);
+          const yPos = centerY + circleRadius * Math.sin(angle);
+          // Calcula el ángulo de rotación para que la línea sea perpendicular al círculo
+          const rotationAngle = angle + Math.PI / 2;
+
+          // Calcula las coordenadas del punto final de la línea (extendiendo la línea hacia afuera)
+          const endX = centerX + (circleRadius + lineLength) * Math.cos(angle);
+          const endY = centerY + (circleRadius + lineLength) * Math.sin(angle);
+
+          return (
+            <>
+              <div
+                style={`background-color: ${color}; left: ${xPos}px; top: ${yPos}px;`}
+                class="point border-4 hidden lg:block w-12 h-12 rounded-full absolute -translate-x-1/2 -translate-y-1/2 pointer z-10"
+              >
+                <span class="flex w-full h-full justify-center items-center font-bold text-4xl">
+                  {emoji}
+                </span>
+              </div>
+              <button
+                data-color={color}
+                data-point={number}
+                style={`background-color: ${color}; left: ${xPos}px; top: ${yPos}px;`}
+                class="button-point border-4 lg:hidden w-12 h-12 rounded-full absolute -translate-x-1/2 -translate-y-1/2 pointer z-10"
+              >
+                <span class="flex w-full h-full justify-center items-center font-bold text-4xl lg:hidden">
+                  {emoji}
+                </span>
+              </button>
+              <div
+                class="arm box absolute w-[300px] h-auto rounded-lg px-3 py-2 z-10 flex flex-col gap-2"
+                style={{
+                  borderColor: color,
+                  left: `${endX}px`,
+                  top: `${endY}px`,
+                  transform,
+                }}
+              >
+                <span class="flex justify-center gap-2 items-center text-center font-bold">
+                  <span class={`title-${number} font-bold font-IBMCondensed leading-tight`} style={{
+                    color,
+                  }}>{title}</span>
+                </span>
+                <p
+                  class={`description text-center text-sm text-gray-300 text-pretty description-${number}`}
+                >
+                  {description}
+                </p>
+              </div>
+            </>
+          );
+        })
+      }
+    </div>
+  </div>
+<style>
+  .box:hover .description {
+    display: block;
+  }
+
+  @media (max-width: 1023px) {
+    .arm {
+      display: none;
+    }
+
+    .button-point::after,
+    .point::after {
+      width: 1.8rem;
+      height: 1.8rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+
+    @keyframes pulse {
+      0% {
+        transform: translate(-50%, -50%) scale(1);
+      }
+      50% {
+        transform: translate(-50%, -50%) scale(2);
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+  }
+</style>
+<script type="module">
+  document.querySelectorAll(".button-point").forEach((button) => {
+    button.addEventListener("click", (e) => {
+      const target = e.target.closest(".button-point");
+      const number = target.getAttribute("data-point");
+      const color = target.getAttribute("data-color");
+      const title = document.querySelector(`.title-${number}`).textContent;
+      const description = document.querySelector(
+        `.description-${number}`,
+      ).textContent;
+      document.querySelector(".title").textContent = title;
+      document.querySelector(".title").style = `color: ${color}`;
+      document.querySelector(".process-description").textContent = description;
+    });
+  });
+</script>
