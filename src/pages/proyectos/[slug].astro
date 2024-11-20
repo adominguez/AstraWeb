@@ -1,20 +1,46 @@
 ---
 import Layout from '@layouts/Layout.astro';
-import { PROJECTS_DATA, type Project } from '@data/projects';
+import { PROJECTS_DATA, type Project, type DataEntryMap, type Asset } from '@data/projects';
 import SectionContainer from '@components/Sections/SectionContainer.astro';
 import BackIcon from '@components/Icons/BackIcon.astro';
 import ProjectsGallery from '@components/GalleryImages/ProjectsGallery.astro';
 import { getCollection } from 'astro:content';
 import { CldImage } from 'astro-cloudinary';
-import BentoGrid from '@components/Bento/BentoGrid.astro';
-import BentoItem from '@components/Bento/BentoItem.astro';
 import ProjectsSection from '@components/Sections/ProjectsSection.astro';
 import { getColor } from '@lib/colors';
+export const prerender = false
 
-export function getStaticPaths() {
-  return PROJECTS_DATA.map(({slug}) => ({
-    params: { slug },
-  }));
+const DEFAULT_COVER = {
+  id: 'AstraWeb/projects/portico/assets/cover',
+  data: {
+    public_id: 'AstraWeb/projects/portico/assets/cover',
+    asset_id: '19efda0c340490302fee4e149f47c18e',
+    folder: 'AstraWeb/projects/portico/assets',
+    width: 2876,
+    height: 1276,
+    secure_url: 'https://res.cloudinary.com/dnxab4qma/image/upload/v1730041636/AstraWeb/projects/portico/assets/cover.webp',
+		context: {
+			custom: {
+				caption: 'Default project cover'
+			}
+		}
+  },
+  digest: 'd2fb6a3854b5b7fb',
+  collection: 'porticoAssets'
+}
+
+const DEFAULT_DESCRIPTION_IMAGE = {
+  id: 'AstraWeb/projects/portico/assets/description',
+  data: {
+    public_id: 'AstraWeb/projects/portico/assets/description',
+    asset_id: '98e305261eef246cb8f0e4f81f777695',
+    folder: 'AstraWeb/projects/portico/assets',
+    width: 441,
+    height: 424,
+    secure_url: 'https://res.cloudinary.com/dnxab4qma/image/upload/v1730041894/AstraWeb/projects/portico/assets/description.webp'
+  },
+  digest: '244e16261ad5d50f',
+  collection: 'porticoAssets'
 }
 
 const { slug } = Astro.params
@@ -37,10 +63,14 @@ const {
 	ctaText
 } = PROJECTS_DATA.find((project: Project) => project.slug === slug) as Project;
 
-const images = await getCollection(id);
-const assets = await getCollection(`${id}Assets`);
-const cover = assets.find((asset: Project) => asset.id.includes('cover'));
-const descriptionImage = assets.find((asset: Project) => asset.id.includes('description'));
+if (id === undefined) {
+  throw new Error("ID is required");    // or: return Astro.redirect('/');
+}
+
+const images = await getCollection(`${id}Gallery` as keyof DataEntryMap) as unknown as Asset[];
+const assets = await getCollection(`${id}Assets` as keyof DataEntryMap) as unknown as Asset[];
+const cover = assets.find((asset) => asset.id.includes('cover')) || DEFAULT_COVER;
+const descriptionImage = assets.find((asset) => asset.id.includes('description')) || DEFAULT_DESCRIPTION_IMAGE;
 ---
 
 <Layout simpleLogo title={seoTitle} description={seoDescription}>
@@ -77,14 +107,13 @@ const descriptionImage = assets.find((asset: Project) => asset.id.includes('desc
 					</div>
 					<div set:html={description} class="text-xl text-pretty" />
 				</div>
-				<CldImage
+				<!-- <CldImage
 					loading="lazy"
 					class="object-cover w-full h-auto flex-1 promotion-img"
 					src={descriptionImage.data.public_id}
 					width={descriptionImage.data.width}
-					height={descriptionImage.data.height}
 					alt={descriptionImage.data.context?.custom.caption || ''}
-				/>
+				/> -->
 			</div>			
 		</SectionContainer>
 		<SectionContainer class="px-4 py-12">
@@ -134,7 +163,7 @@ const descriptionImage = assets.find((asset: Project) => asset.id.includes('desc
 					]}>{ctaTitle}</h2>
 					<div set:html={ctaText} class="text-xl text-pretty font-thin" />
 				</div>
-				<img loading="lazy" src={descriptionImage} alt={descriptionAlt} class="object-cover w-full h-auto flex-1 promotion-img" />
+				<!-- <img loading="lazy" src={descriptionImage} alt={descriptionAlt} class="object-cover w-full h-auto flex-1 promotion-img" /> -->
 			</div>			
 		</SectionContainer>
 		<ProjectsSection projects={PROJECTS_DATA.filter(item => item.slug !== slug)}>
@@ -143,6 +172,7 @@ const descriptionImage = assets.find((asset: Project) => asset.id.includes('desc
 				getColor(titleColor)
 			]}>¿Quieres ver más proyectos?</h2>
 		</ProjectsSection>
+		{slug}
 	</main>
 </Layout>
 

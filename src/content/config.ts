@@ -2,7 +2,7 @@ import { defineCollection } from "astro:content";
 import { cldAssetsLoader } from "astro-cloudinary/loaders";
 
 export const collections = {
-  monitoring: defineCollection({
+  monitoringGallery: defineCollection({
     loader: cldAssetsLoader({
       folder: 'AstraWeb/projects/monitoring/gallery',
       fields: ['width', 'height', 'context', 'public_id', 'secure_url']
@@ -14,7 +14,7 @@ export const collections = {
       fields: ['width', 'height', 'context', 'public_id', 'secure_url']
     })
   }),
-  portico: defineCollection({
+  porticoGallery: defineCollection({
     loader: cldAssetsLoader({
       folder: 'AstraWeb/projects/portico/gallery',
       fields: ['width', 'height', 'context', 'public_id', 'secure_url']
@@ -26,7 +26,7 @@ export const collections = {
       fields: ['width', 'height', 'context', 'public_id', 'secure_url']
     })
   }),
-  alemania4inmobiliaria: defineCollection({
+  alemania4inmobiliariaGallery: defineCollection({
     loader: cldAssetsLoader({
       folder: 'AstraWeb/projects/alemania4inmobiliaria/gallery',
       fields: ['width', 'height', 'context', 'public_id', 'secure_url']
@@ -38,7 +38,7 @@ export const collections = {
       fields: ['width', 'height', 'context', 'public_id', 'secure_url']
     })
   }),
-  anillo: defineCollection({
+  anilloGallery: defineCollection({
     loader: cldAssetsLoader({
       folder: 'AstraWeb/projects/anillo/gallery',
       fields: ['width', 'height', 'context', 'public_id', 'secure_url']
@@ -50,7 +50,7 @@ export const collections = {
       fields: ['width', 'height', 'context', 'public_id', 'secure_url']
     })
   }),
-  ether: defineCollection({
+  etherGallery: defineCollection({
     loader: cldAssetsLoader({
       folder: 'AstraWeb/projects/ether/gallery',
       fields: ['width', 'height', 'context', 'public_id', 'secure_url']

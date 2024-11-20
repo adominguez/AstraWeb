@@ -1,21 +1,10 @@
 ---
 import "photoswipe/style.css";
+import { type Asset } from "@data/projects";
 import { CldImage } from 'astro-cloudinary';
 
 interface Props {
-  images: {
-    data: {
-      secure_url: string;
-      width: number;
-      height: number;
-      public_id: string;
-      context?: {
-        custom: {
-          caption: string;
-        };
-      };
-    };
-  }[];
+  images: Asset[];
 }
 
 const { images = [] } = Astro.props;

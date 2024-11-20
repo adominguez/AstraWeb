@@ -125,7 +125,7 @@ export default function CtaForm() {
                 placeholder="Tu nombre completo"
                 required
                 value={name}
-                onChange={(e) => setName(e.target.value)}
+                onChange={(e) => setName((e.target as HTMLInputElement).value)}
                 class="px-4 py-2 rounded-full bg-transparent border border-slate-500 focus:border-white transition-colors outline-none"
               />
             </label>
@@ -137,7 +137,7 @@ export default function CtaForm() {
                 placeholder="tucorreo@example.com"
                 required
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => setEmail((e.target as HTMLInputElement).value)}
                 class="px-4 py-2 rounded-full bg-transparent border border-slate-500 focus:border-white transition-colors outline-none"
               />
             </label>
@@ -148,12 +148,12 @@ export default function CtaForm() {
                 placeholder="Tu número de teléfono (opcional)"
                 name="email"
                 value={phone}
-                onChange={(e) => setPhone(e.target.value)}
+                onChange={(e) => setPhone((e.target as HTMLInputElement).value)}
                 class="px-4 py-2 rounded-full bg-transparent border border-slate-500 focus:border-white transition-colors outline-none"
               />
             </label>
             <footer class="flex justify-end">
-              <button class="next" onClick={() => setStep(STEPS[1])}>Siguiente</button>
+              <button class="next" onClick={() => setStep(STEPS[1].title)}>Siguiente</button>
             </footer>
           </div>
         )
@@ -195,7 +195,7 @@ export default function CtaForm() {
             <label class="flex flex-col gap-2 text-slate-400">
               Características adicionales:
               <div class="flex flex-wrap gap-2 mt-2 items-center">
-                {
+                {/* {
                   services.map(({ name, label }) => (
                     <div class="flex items-center gap-2">
                       <label
@@ -234,11 +234,11 @@ export default function CtaForm() {
                       </label>
                     </div>
                   ))
-                }
+                } */}
               </div>
             </label>
             <footer class="flex justify-between">
-              <button class="prev" onClick={() => setStep(STEPS[0])}>Volver</button>
+              <button class="prev" onClick={() => setStep(STEPS[0].title)}>Volver</button>
               <button class="next">Enviar</button>
             </footer>
           </div>
