@@ -3,8 +3,6 @@ import BgRounded from '@components/backgrounds/BgRounded.astro';
 import BgStars from '@components/backgrounds/BgStars.astro';
 import Header from '@components/Header.astro';
 import LogoAstroHeader from '@components/Logos/LogoAstroHeader.astro';
-import CtaForm from '@components/Forms/Cta/CtaForm';
-import Dialog from '@components/ui/Dialog.astro';
 import { ViewTransitions } from 'astro:transitions';
 import '@fontsource/ibm-plex-sans';
 import '@fontsource/ibm-plex-sans/100.css';
@@ -44,15 +42,6 @@ const { title, description, simpleLogo = false } = Astro.props;
 		<LogoAstroHeader simpleLogo={simpleLogo} className="max-h-40 w-min md:max-h-60 transition-all fixed top-3 -z-20 blur-3xl" />
 		<LogoAstroHeader simpleLogo={simpleLogo} className="max-h-40 w-min md:max-h-60 transition-all fixed top-3 z-30 opacity-50" />
 		<Header />
-		<Dialog class="max-w-4xl">
-			<div class="p-4 pt-0 rounded-lg shadow-lg">
-				<header class="bg-slate-900 flex justify-between py-2 px-4 border-b border-solid gap-4 mb-8 sticky top-0 dialog-header">
-					<h2 class="text-2xl font-bold text-accent font-IBMCondensed">Nos gustaría conocer mejor tu proyecto</h2>
-					<button class="bg-white/20 hover:bg-white/40 hover:border-white focus:bg-white/40 focus:border-white transition-colors border-transparent border text-white rounded-full w-8 h-8 close text-lg">✕</button>
-				</header>
-				<CtaForm />
-			</div>
-		</Dialog>
 		<slot />
 	</body>
 </html>
@@ -99,6 +88,10 @@ const { title, description, simpleLogo = false } = Astro.props;
 		-webkit-text-fill-color: transparent;
 		background-size: 400%;
 		background-position: 0%;
+	}
+
+	textarea {
+		field-sizing: content;
 	}
 
 	@media (prefers-reduced-motion: no-preference) {

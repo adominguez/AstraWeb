@@ -61,11 +61,7 @@ const {
   tags = [],
 	ctaTitle,
 	ctaText
-} = PROJECTS_DATA.find((project: Project) => project.slug === slug) as Project;
-
-if (id === undefined) {
-  throw new Error("ID is required");    // or: return Astro.redirect('/');
-}
+} = PROJECTS_DATA.find((project: Project) => project.slug === slug) ?? {} as Project;
 
 const images = await getCollection(`${id}Gallery` as keyof DataEntryMap) as unknown as Asset[];
 const assets = await getCollection(`${id}Assets` as keyof DataEntryMap) as unknown as Asset[];

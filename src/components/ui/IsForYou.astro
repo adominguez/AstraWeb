@@ -91,7 +91,7 @@ const { isIdeal, notIdeal, cta } = Astro.props;
     const isNotIdealArticle = document.querySelectorAll('.is-not-ideal article');
     const delay = 300;
 
-    idealButton.addEventListener('click', () => {
+    idealButton && idealButton.addEventListener('click', () => {
       isNotIdeal.classList.remove('flex');
       isNotIdeal.classList.add('hidden');
       isIdeal.classList.remove('hidden');
@@ -104,7 +104,7 @@ const { isIdeal, notIdeal, cta } = Astro.props;
       });
     });
 
-    notIdealButton.addEventListener('click', () => {
+    notIdealButton && notIdealButton.addEventListener('click', () => {
       isIdeal.classList.remove('flex');
       isIdeal.classList.add('hidden');
       isNotIdeal.classList.remove('hidden');

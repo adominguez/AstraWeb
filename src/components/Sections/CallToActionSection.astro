@@ -2,6 +2,7 @@
 import SectionContainer from "@components/Sections/SectionContainer.astro";
 import CtaButton from "@components/ui/CtaButton.astro";
 import language from '@data/i18n/es.json';
+import Blendy from "@components/Blendy.astro";
 
 const { TITLE, PRETITLE, CTA, FIRST_IMAGE, FIRST_IMAGE_ALT, SECOND_IMAGE, SECOND_IMAGE_ALT } = language.PAGES.HOME.SECTIONS.CALL_TO_ACTION
 ---
@@ -12,9 +13,7 @@ const { TITLE, PRETITLE, CTA, FIRST_IMAGE, FIRST_IMAGE_ALT, SECOND_IMAGE, SECOND
       <span class="text-3xl md:text-4xl text-center font-IBMCondensed mb-4 font-bold text-secondary">{PRETITLE}</span>
       <h2 class="text-center text-accent font-thin">{TITLE}</h2>
     </div>
-    <CtaButton>
-      <span>{CTA}</span>
-    </CtaButton>
+    <Blendy id="cta" text={CTA} />
   </div>
   <div class="flex-1 flex flex-col justify-center items-center min-h-80 relative">
     <img loading="lazy" src={FIRST_IMAGE} alt={FIRST_IMAGE_ALT} class="cta-image-right object-cover absolute rounded-lg" />
