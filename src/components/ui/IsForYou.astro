@@ -1,5 +1,5 @@
 ---
-import CtaButton from "@components/ui/CtaButton.astro";
+import Blendy from "@components/Blendy.astro";
 
 const { isIdeal, notIdeal, cta } = Astro.props;
 ---
@@ -17,10 +17,10 @@ const { isIdeal, notIdeal, cta } = Astro.props;
         </article>
       ))
     }
-    <CtaButton class="min-w-[300px] w-min self-center mt-10 flex justify-center gap-4 items-baseline">
+    <Blendy id="talking" buttonClass="min-w-[300px] w-min self-center mt-10 flex justify-center gap-4 items-baseline">
       <span>{cta}</span>
       <span class="dot-flashing"></span>
-    </CtaButton>
+    </Blendy>
   </div>
   <div class="is-not-ideal flex-col gap-4 hidden">
     {

@@ -10,9 +10,9 @@ interface Step4Props {
 
 const Step4 = ({ formData, prevStep, submitForm } : Step4Props) => {
   return (
-    <div class="flex flex-col max-h-96">
+    <div class="flex flex-col max-h-[400px]">
       <h2 class="text-2xl text-secondary">Paso 4: Confirmación</h2>
-      <div class="wrapper-text p-4 overflow-auto flex-1">
+      <div class="relative wrapper-text px-4 overflow-auto flex-1">
         <h3 class="text-xl mt-2 mb-2 text-primary">Información personal</h3>
         <p><strong>Nombre Completo:</strong> {formData.fullName}</p>
         <p><strong>Correo Electrónico:</strong> {formData.email}</p>

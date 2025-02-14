@@ -1,11 +1,16 @@
 ---
 import MultistepForm from "@components/ui/multistepform/multistepForm";
-const { id, text } = Astro.props;
+const { id, text, buttonClass } = Astro.props;
 ---
 
 <!-- Source element -->
-<button class="cta-button rounded-[2rem] hover:bg-slate-700 border-4 border-secondary hover:border-primary text-center px-4 py-2 transition-colors" data-blendy-from="modal">
-  <span data-blendy-from="title">{text}</span>
+<button class:list={[
+  "cta-button rounded-[2rem] hover:bg-slate-700 border-4 border-secondary hover:border-primary text-center px-4 py-2 transition-colors",
+  buttonClass
+  ]} data-blendy-from="modal">
+  <slot>
+    <span data-blendy-from="title">{text}</span>
+  </slot>
 </button>
 
 <!-- Target element -->

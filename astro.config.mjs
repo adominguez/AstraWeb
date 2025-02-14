@@ -9,8 +9,9 @@ export default defineConfig({
   experimental: {
     contentLayer: true
   },
+  site: 'https://astraweb.dev',
   integrations: [tailwind(), preact()],
-  output: 'hybrid',
+  output: 'server',
   adapter: vercel({
     edgeMiddleware: true,
   }),

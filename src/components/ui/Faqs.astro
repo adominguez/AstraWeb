@@ -18,7 +18,7 @@ const items = Astro.props.items || ITEMS
     items.map(({ question, answer }) => (
       <div class="border-b border-white">
         <button class="relative bg-transparent cursor-pointer hover:text-secondary focus:text-secondary block text-left w-full py-4 px-0 text-white text-xl" id="accordion-button-1" aria-expanded="false">
-          <h3 class="text-xl font-IBMCondensed">{question}</h3>
+          <h3 class="text-xl font-IBMCondensed pr-8 text-balance">{question}</h3>
           <span class="icon" aria-hidden="true"></span>
         </button>
         <div class="accordion-content">
@@ -76,7 +76,8 @@ const items = Astro.props.items || ITEMS
     }
     + .accordion-content {
       opacity: 1;
-      max-height: 9em;
+      max-height: 10em;
+      overflow: auto;
       transition: all 200ms linear;
       will-change: opacity, max-height;
     }

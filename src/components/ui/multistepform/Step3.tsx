@@ -37,7 +37,7 @@ const Step3 = ({ formData, setFormData, nextStep, prevStep }: Step3Props) => {
   };
 
   return (
-    <div class="flex flex-col max-h-96">
+    <div class="flex flex-col max-h-[400px]">
       <h2 class="text-2xl mb-4 text-secondary">Paso 3: Presupuesto</h2>
       <div class="overflow-auto pr-3 flex-1">
         <CustomSelect

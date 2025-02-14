@@ -39,7 +39,7 @@ const Step1 = ({ formData, setFormData, nextStep }: Step1Props) => {
   };
 
   return (
-    <div class="flex flex-col max-h-96">
+    <div class="flex flex-col max-h-[400px]">
       <h2 class="text-2xl mb-4 text-secondary">Paso 1: Información Personal</h2>
       <div class="overflow-auto pr-3 flex-1">
         <CustomInput
