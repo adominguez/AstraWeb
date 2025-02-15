@@ -2,18 +2,18 @@
   "PAGES": {
     "HOME": {
       "TITLE": "Desarrollo Web Profesional para Marcas que Quieren Destacar",
-      "DESCRIPTION": "En AstraWeb creamos páginas web únicas y optimizadas para captar clientes, combinando diseño a medida, rendimiento y SEO para que tu sitio web destaque y cumpla tus objetivos.",
+      "DESCRIPTION": "En AstraHub creamos páginas web únicas y optimizadas para captar clientes, combinando diseño a medida, rendimiento y SEO para que tu sitio web destaque y cumpla tus objetivos.",
       "SECTIONS": {
         "HERO": {
           "TITLE": "Desarrollo Web Profesional y Personalizado",
           "SUBTITLE": "Haz que tu <span class='text-gradient text-balance'>sitio web brille</span>",
-          "PARAGRAPH": "En AstraWeb, somos expertos en desarrollo y diseño web profesional, único y personalizado para atraer clientes. Creamos páginas web originales con un diseño memorable, asegurando que tu marca brille y deje una huella duradera en cada visitante.",
+          "PARAGRAPH": "Somos expertos en desarrollo y diseño web profesional, único y personalizado para atraer clientes. Creamos páginas web originales con un diseño memorable, asegurando que tu marca brille y deje una huella duradera en cada visitante.",
           "CTA": "Quiero una web que brille"
         },
         "FEATURES": {
           "ID": "características",
           "TITLE": "¿Qué hace únicas nuestras páginas web?",
-          "FIRST_CONTENT": "En AstraWeb, entendemos que, para destacar en el mercado, necesitas un sitio web diferente, diseñado para hacer que tu negocio sobresalga de la competencia.",
+          "FIRST_CONTENT": "En AstraHub, entendemos que, para destacar en el mercado, necesitas un sitio web diferente, diseñado para hacer que tu negocio sobresalga de la competencia.",
           "SECOND_CONTENT": "Aplicamos una serie de principios clave para desarrollar páginas web originales, únicas y efectivas, que capturen la esencia de tu marca y atraigan a tus clientes ideales.",
           "THIRD_CONTENT": "Sólo haciendo una web única y original conseguirás que tu web destaque y deje una huella duradera en cada visitante fortaleciendo así la presencia online de tu negocio.",
           "BENTO": [{
@@ -153,7 +153,7 @@
           "ITEMS": [
             {
                 "question": "¿Podré editar el contenido de mi página web fácilmente?",
-                "answer": "Sí, en AstraWeb diseñamos páginas web que te permiten actualizar el contenido, añadir secciones o cambiar imágenes de manera sencilla. Al finalizar el proyecto, te proporcionamos acceso completo y una guía para que puedas realizar modificaciones por tu cuenta, asegurando que no dependas de terceros para mantener tu sitio actualizado."
+                "answer": "Sí, en AstraHub diseñamos páginas web que te permiten actualizar el contenido, añadir secciones o cambiar imágenes de manera sencilla. Al finalizar el proyecto, te proporcionamos acceso completo y una guía para que puedas realizar modificaciones por tu cuenta, asegurando que no dependas de terceros para mantener tu sitio actualizado."
             },
             {
                 "question": "¿Qué tecnología utilizan para desarrollar las páginas web?",
@@ -172,7 +172,7 @@
                 "answer": "El tiempo de desarrollo depende de la complejidad del proyecto, pero en general, una página corporativa puede estar lista en 4 a 6 semanas, y tiendas online en unas 6 a 8 semanas. Este plazo puede variar según la disponibilidad y rapidez para proporcionar la información y el feedback necesario durante el proceso."
             },
             {
-                "question": "¿AstraWeb se encarga del contenido y las imágenes?",
+                "question": "¿AstraHub se encarga del contenido y las imágenes?",
                 "answer": "Sí, si lo necesitas, ofrecemos servicios de copywriting y disponemos de acceso a bancos de imágenes de alta calidad. Nos aseguramos de que cada palabra y cada imagen en tu página estén optimizadas para comunicar eficazmente tu mensaje y mejorar el posicionamiento en buscadores."
             },
             {
@@ -181,7 +181,7 @@
             },
             {
                 "question": "¿Seré el propietario de mi página web?",
-                "answer": "Sí, serás el propietario total de tu página web, dominio e imágenes utilizadas. En AstraWeb nos aseguramos de que tengas acceso completo y puedas gestionarlo todo en cualquier momento."
+                "answer": "Sí, serás el propietario total de tu página web, dominio e imágenes utilizadas. En AstraHub nos aseguramos de que tengas acceso completo y puedas gestionarlo todo en cualquier momento."
             },
             {
                 "question": "¿Ofrecen servicios de mantenimiento para mi página web?",
@@ -195,9 +195,9 @@
         },
         "WHY_CHOOSE": {
           "ID": "por-que-elegirnos",
-          "TITLE": "¿Por qué deberías de elegir a AstraWeb?",
+          "TITLE": "¿Por qué deberías de elegir a AstraHub?",
           "FIRST_PARAGRAPH": "Creamos páginas web que no solo son visualmente atractivas, sino que también destacan por su originalidad y funcionalidad. Cada diseño es personalizado, asegurando que tu negocio tenga una presencia online que refleje tu identidad y conecte con tus clientes. Nos enfocamos en hacer que tu web sea memorable, optimizada y preparada para sobresalir frente a la competencia.",
-          "SECOND_PARAGRAPH": "Con un enfoque en el rendimiento, el SEO y la experiencia del usuario, en AstraWeb utilizamos tecnologías avanzadas para desarrollar sitios web rápidos, responsivos y efectivos. Nos aseguramos de que cada detalle esté cuidado, desde el diseño hasta la optimización, para que tu página web no solo cumpla tus expectativas, sino que las supere, ayudándote a atraer más clientes y a potenciar tu negocio.",
+          "SECOND_PARAGRAPH": "Con un enfoque en el rendimiento, el SEO y la experiencia del usuario, en AstraHub utilizamos tecnologías avanzadas para desarrollar sitios web rápidos, responsivos y efectivos. Nos aseguramos de que cada detalle esté cuidado, desde el diseño hasta la optimización, para que tu página web no solo cumpla tus expectativas, sino que las supere, ayudándote a atraer más clientes y a potenciar tu negocio.",
           "REASONS": [
             {
               "number": 1,
@@ -243,8 +243,8 @@
         },
         "IS_FOR_YOU": {
           "ID": "es-para-ti",
-          "TITLE": "¿Todavía tienes dudas y no sabes si AstraWeb es para ti?",
-          "PARAGRAPH": "Nuestros servicios de desarrollo web son ideales para empresas y marcas que buscan una presencia online única y efectiva. Si te identificas con alguna de las siguientes afirmaciones, AstraWeb es la elección perfecta para ti.",
+          "TITLE": "¿Todavía tienes dudas y no sabes si AstraHub es para ti?",
+          "PARAGRAPH": "Nuestros servicios de desarrollo web son ideales para empresas y marcas que buscan una presencia online única y efectiva. Si te identificas con alguna de las siguientes afirmaciones, AstraHub es la elección perfecta para ti.",
           "CTA": "Hablemos de tu proyecto",
           "IS_IDEAL": {
             "TITLE": "Esto es para ti si...",
@@ -301,13 +301,13 @@
           "Front-End",
           "Back-End"
         ],
-        "ctaTitle": "Por Qué Elegir AstraWeb",
-        "ctaText": "<p class='mb-4'>En AstraWeb, desarrollamos soluciones que brindan control total y precisión. Con tecnologías modernas y un enfoque personalizado, ofrecemos sistemas de monitorización que aseguran que cada servicio funcione al máximo.</p><p>Permítenos ayudarte a construir una plataforma robusta y confiable para la gestión de tus aplicaciones críticas.</p>"
+        "ctaTitle": "Por Qué Elegir AstraHub",
+        "ctaText": "<p class='mb-4'>En AstraHub, desarrollamos soluciones que brindan control total y precisión. Con tecnologías modernas y un enfoque personalizado, ofrecemos sistemas de monitorización que aseguran que cada servicio funcione al máximo.</p><p>Permítenos ayudarte a construir una plataforma robusta y confiable para la gestión de tus aplicaciones críticas.</p>"
       },
       {
         "id": "alemania4inmobiliaria",
         "seoTitle": "Alemania4 Inmobiliaria: Landing Page Profesional",
-        "seoDescription": "Landing page para Alemania4 Inmobiliaria, un diseño profesional optimizado para conversiones. Conoce cómo AstraWeb puede impulsar tu negocio inmobiliario.",
+        "seoDescription": "Landing page para Alemania4 Inmobiliaria, un diseño profesional optimizado para conversiones. Conoce cómo AstraHub puede impulsar tu negocio inmobiliario.",
         "title": "Alemania4 Inmobiliaria: Una landing page profesional y optimizada",
         "description": "<p>En Alemania4 Inmobiliaria, nuestra misión fue crear una landing page que se alineara con la identidad de la empresa y captara la atención de los potenciales clientes desde el primer momento.</p><p class='mt-8'>Diseñamos cada elemento para que fuera visualmente atractivo, fácil de navegar y optimizado para captar leads y facilitar la conversión.</p>",
         "descriptionAlt": "Landing page profesional y optimizada para una inmobiliaria",
@@ -330,8 +330,8 @@
           "html",
           "css"
         ],
-        "ctaTitle": "Por Qué Elegir AstraWeb",
-        "ctaText": "<p class='mb-4'>En AstraWeb transformamos ideas en páginas web efectivas. Nuestro enfoque en la optimización y el diseño estratégico asegura que cada proyecto que creamos destaque y convierta.</p><p>Permítenos crear una presencia online que impacte y atraiga clientes a tu negocio inmobiliario.</p>"
+        "ctaTitle": "Por Qué Elegir AstraHub",
+        "ctaText": "<p class='mb-4'>En AstraHub transformamos ideas en páginas web efectivas. Nuestro enfoque en la optimización y el diseño estratégico asegura que cada proyecto que creamos destaque y convierta.</p><p>Permítenos crear una presencia online que impacte y atraiga clientes a tu negocio inmobiliario.</p>"
       },
       {
         "id": "portico",
@@ -365,13 +365,13 @@
           "Frontend",
           "Backend"
         ],
-        "ctaTitle": "Por Qué Elegir AstraWeb",
-        "ctaText": "<p class=\"mb-4\">En AstraWeb transformamos ideas en sitios web que destacan. Nuestro enfoque en tecnologías modernas y nuestro compromiso con la calidad nos permite crear sitios web únicos que no solo cumplen las expectativas, sino que las superan.</p><p>Cada proyecto es una oportunidad para aplicar nuestro conocimiento y creatividad, asegurando que tu negocio también tendrá una presencia online que impresiona y convierte.</p>"
+        "ctaTitle": "Por Qué Elegir AstraHub",
+        "ctaText": "<p class=\"mb-4\">En AstraHub transformamos ideas en sitios web que destacan. Nuestro enfoque en tecnologías modernas y nuestro compromiso con la calidad nos permite crear sitios web únicos que no solo cumplen las expectativas, sino que las superan.</p><p>Cada proyecto es una oportunidad para aplicar nuestro conocimiento y creatividad, asegurando que tu negocio también tendrá una presencia online que impresiona y convierte.</p>"
       },
       {
         "id": "anillo",
         "seoTitle": "Conecta Anillo: Red Social para Deportistas",
-        "seoDescription": "Conecta Anillo es una red social diseñada para conectar y apoyar a deportistas. Descubre cómo AstraWeb puede impulsar tu proyecto digital.",
+        "seoDescription": "Conecta Anillo es una red social diseñada para conectar y apoyar a deportistas. Descubre cómo AstraHub puede impulsar tu proyecto digital.",
         "title": "Conecta Anillo: La Red Social para Deportistas",
         "description": "<p>Conecta Anillo es una red social innovadora que facilita la conexión entre deportistas, ofreciendo una plataforma donde pueden compartir logros, experiencias y mantenerse informados sobre las últimas novedades en el ámbito deportivo.</p><p class='mt-8'>El diseño de la plataforma es atractivo y fácil de usar, promoviendo una comunidad activa y comprometida con el deporte.</p>",
         "descriptionAlt": "Red Social para Deportistas",
@@ -397,8 +397,8 @@
           "Responsive",
           "Social Network"
         ],
-        "ctaTitle": "Por Qué Elegir AstraWeb",
-        "ctaText": "<p class='mb-4'>En AstraWeb, desarrollamos plataformas digitales que conectan comunidades. Nuestro enfoque en el diseño intuitivo y la accesibilidad garantiza una experiencia atractiva y funcional para los usuarios.</p><p>Permítenos ayudarte a construir una red social única que impulse la interacción y el compromiso de tu audiencia deportiva.</p>"
+        "ctaTitle": "Por Qué Elegir AstraHub",
+        "ctaText": "<p class='mb-4'>En AstraHub, desarrollamos plataformas digitales que conectan comunidades. Nuestro enfoque en el diseño intuitivo y la accesibilidad garantiza una experiencia atractiva y funcional para los usuarios.</p><p>Permítenos ayudarte a construir una red social única que impulse la interacción y el compromiso de tu audiencia deportiva.</p>"
       },
       {
         "id": "ether",
@@ -431,8 +431,8 @@
           "Deployment",
           "Operations"
         ],
-        "ctaTitle": "Por Qué Elegir AstraWeb",
-        "ctaText": "<p class='mb-4'>En AstraWeb, creamos soluciones que centralizan y simplifican la gestión de infraestructuras críticas. Nuestro enfoque en tecnologías de vanguardia asegura una plataforma que optimiza las operaciones en la nube.</p><p>Permítenos ayudarte a construir una consola robusta y personalizable para la administración eficiente de tus servicios en la nube.</p>"
+        "ctaTitle": "Por Qué Elegir AstraHub",
+        "ctaText": "<p class='mb-4'>En AstraHub, creamos soluciones que centralizan y simplifican la gestión de infraestructuras críticas. Nuestro enfoque en tecnologías de vanguardia asegura una plataforma que optimiza las operaciones en la nube.</p><p>Permítenos ayudarte a construir una consola robusta y personalizable para la administración eficiente de tus servicios en la nube.</p>"
       }
     ]
   }

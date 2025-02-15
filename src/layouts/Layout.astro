@@ -13,27 +13,22 @@ import '@fontsource/ibm-plex-sans-condensed/100.css';
 import '@fontsource/ibm-plex-sans-condensed/300.css';
 import '@fontsource/ibm-plex-sans-condensed/400.css';
 import '@fontsource/ibm-plex-sans-condensed/700.css';
+import BaseHead from '@components/seo/BaseHead.astro';
 
 interface Props {
 	title: string;
 	description: string;
 	simpleLogo?: boolean;
+	image?: string;
 }
 
-const { title, description, simpleLogo = false } = Astro.props;
+const { title, description, simpleLogo = false, image } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="es">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<meta name="author" content="Alberto Domínguez Martín" />
-		<meta name="description" content={description} />
-		<title>{title}</title>
+		<BaseHead title={title} description={description} image={image} />
 		<ViewTransitions />
 	</head>
 	<body>
