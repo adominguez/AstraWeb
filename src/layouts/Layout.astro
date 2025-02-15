@@ -55,28 +55,10 @@ const { title, description, simpleLogo = false, image = 'open-graph/OpenGraph-ho
 		);
 	}
 
-	.dialog-header::after {
-		content: "";
-    height: 30px;
-    top: 49px;
-    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-		@apply bg-slate-900 w-full absolute left-0;
-	}
 	html {
 		font-family: 'IBM Plex Sans', sans-serif;
 		scroll-behavior: smooth;
 		@apply bg-background;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
 	}
 
 	.text-gradient {
