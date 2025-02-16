@@ -2,6 +2,7 @@
 import 'swiper/css/bundle';
 import { PROJECTS_DATA, type Project } from '@data/projects';
 import { getColor } from '@lib/colors';
+import Image from "astro/components/Image.astro";
 
 interface Props {
   projects?: Project[]; // Move the declaration of 'projects' above its usage
@@ -16,7 +17,7 @@ const totalProjects = projects || PROJECTS_DATA;
         {
           totalProjects.map((project) => (
             <div class="swiper-slide aspect-square">
-              <img loading="lazy" transition:name={`big-image-${project.slug}`} class:list={[
+              <Image alt={project.logo} width={300} height={300} loading="lazy" transition:name={`big-image-${project.slug}`} class:list={[
                 getColor(project.bgColor),
                 "p-4"]} src={project.logo} />
               <div class="overlay">

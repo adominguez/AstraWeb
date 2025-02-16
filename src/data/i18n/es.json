@@ -19,26 +19,26 @@
           "BENTO": [{
             "TITLE": "Investigación y análisis",
             "DESCRIPTION": "Antes de empezar cualquier proyecto, analizamos tu mercado y tu competencia. Este estudio nos permite identificar oportunidades y crear una página web que supere a tu competencia, maximizando tus puntos fuertes.",
-            "IMAGE": "features/search-market.svg"
+            "IMAGE": "/features/search-market.svg"
           },{
             "TITLE": "Diseño personalizado",
             "DESCRIPTION": "En Astra Web sabemos que para que puedas diferenciarte de tu competencia es necesario que el diseño de tu web sea único, acorde a la imagen de tu negocio y que sea capaz de cubrir las necesidades de tu negocio y las de tus clientes.",
-            "IMAGE": "features/custom-design.svg"
+            "IMAGE": "/features/custom-design.svg"
           },{
             "TITLE": "Diseño moderno y atractivo",
             "DESCRIPTION": "¿Has visto esas páginas que parecen de hace 10 años? seguro que te gustan tan poco como a nosotros, pues si a ti no te gustan, a tus clientes tampoco. Por eso creemos que un diseño moderno hará que tus clientes quieran permanecer en tu web."
           },{
             "TITLE": "Diseño responsive",
             "DESCRIPTION": "En Astra Web sabemos que la mayoría de las visitas a una web se hacen desde un dispositivo móvil, por eso es imprescindible que tu web esté adaptada a todos los dispositivos, para que tus clientes puedan acceder a tu web desde cualquier lugar y en cualquier momento.",
-            "IMAGE": "features/responsive.svg"
+            "IMAGE": "/features/responsive.svg"
           },{
             "TITLE": "Optimización SEO",
             "DESCRIPTION": "Si quieres que tu web aparezca en los primeros resultados de Google, es imprescindible que tu web esté optimizada para los motores de búsqueda. En Astra Web optimizamos tu web para que puedas aparecer en los primeros resultados de Google.",
-            "IMAGE": "features/seo-optimization.svg"
+            "IMAGE": "/features/seo-optimization.svg"
           },{
             "TITLE": "Carga rápida de la web",
             "DESCRIPTION": "Hoy en día es indispensable la velocidad de carga de una web, tanto para Google como para los usuarios, por eso es indispensable que tu web cargue rápido. En Astra Web optimizamos imágenes y recursos para que podamos asegurar la velocidad de tu sitio web.",
-            "IMAGE": "features/fast-loading.svg"
+            "IMAGE": "/features/fast-loading.svg"
           },{
             "TITLE": "Copywriting y redacción de textos",
             "DESCRIPTION": "Para que una página web funcione, es imprescindible que los textos tengan una estructura y que sean capaces de ir diriginedo al usuario hacia la acción que queremos que realice. En Astra Web contamos con redactores especializados en copywriting que harán que tus textos sean efectivos."
@@ -47,7 +47,7 @@
             "FIRST_PARAGRAPH": "Y por supuesto, no podemos olvidarnos de uno de los aspectos más importantes de una web. Puedes tener el mejor diseño, la carga más rápida y la mejor optimización SEO, sin embargo, si no tienes una buena experiencia para el usuario, tu web no funcionará.",
             "SECOND_PARAGRAPH": "Esto es algo a lo que muchas páginas webs no le prestan ninguna atención, y el usuario acaba perdido sin saber muy bien ni donde buscar ni donde ir. es imprescindible que tu web sea fácil de usar y que tus usuarios encuentren lo que buscan de forma rápida y sencilla.",
             "THIRD_PARAGRAPH": "En Astra Web lo sabemos, por eso siempre tratamos de hacer que la experiencia de usuario sea lo más sencilla y agradable posible.",
-            "IMAGE": "features/user-experience.svg"
+            "IMAGE": "/features/user-experience.svg"
           }]
         },
         "PROJECTS": {
@@ -61,8 +61,8 @@
           "PRETITLE": "¿Quieres una web que sea diferencial?",
           "TITLE": "Ha llegado el momento de hacer que tu web destaque del resto de la competencia",
           "CTA": "Quiero una web que destaque",
-          "FIRST_IMAGE": "call-to-action/stand-out-amico.svg",
-          "SECOND_IMAGE": "call-to-action/website-image.svg",
+          "FIRST_IMAGE": "/call-to-action/stand-out-amico.svg",
+          "SECOND_IMAGE": "/call-to-action/website-image.svg",
           "FIRST_IMAGE_ALT": "Destaca entre tu competencia",
           "SECOND_IMAGE_ALT": "Haz que tu web brille"
         },
@@ -79,7 +79,7 @@
               "objective": "El objetivo de que rellenes este formulario es que nos proporciones los datos necesarios para que nos podamos hacer una idea de cuales son tus necesidades y que tipo de página necesitas.",
               "actions": "Si quieres empezar ya, puedes utilizar el siguiente formulario y empezaremos el proceso",
               "emoji": "📝",
-              "image": "process/form.svg",
+              "image": "/process/form.svg",
               "color": "GRAY_TEXT_900",
               "bgColor": "YELLOW_BG_400"
             },
@@ -89,7 +89,7 @@
               "title": "Reunión Inicial: Análisis de Requisitos",
               "objective": "Una vez hayamos analizado las necesidades de tu proyecto con el formulario que nos enviaste en primer paso, Establecemos una comunicación directa contigo para definir los objetivos, expectativas, preferencias y requisitos del proyecto.",
               "emoji": "🤝",
-              "image": "process/meeting.svg",
+              "image": "/process/meeting.svg",
               "color": "WHITE_TEXT_COLOR",
               "bgColor": "BLUE_BG_500"
             },
@@ -99,7 +99,7 @@
               "title": "Investigación de Mercado y Estrategia de Contenidos",
               "objective": "Es hora de ponerse manos a la obra. Y la mejor forma de comenzar es realizar un análisis del mercado, establecer un público objetivo, ver la competencia del cliente, y hacer una pequeña auditoría de SEO, para ir determinando hacia que punto nos vamos a ir enfocando.",
               "emoji": "🔍",
-              "image": "process/strategy.svg",
+              "image": "/process/strategy.svg",
               "color": "WHITE_TEXT_COLOR",
               "bgColor": "GREEN_BG_500"
             },
@@ -109,7 +109,7 @@
               "title": "Diseño Personalizado y Prototipado",
               "objective": "En este paso empezaremos a diseñar la estructura de tu web, teniendo en cuenta la imagen de tu marca y tus preferencias. Te mostraremos un prototipo para que puedas ver como va a quedar tu web.",
               "emoji": "🎨",
-              "image": "process/design.svg",
+              "image": "/process/design.svg",
               "color": "WHITE_TEXT_COLOR",
               "bgColor": "PINK_BG_500"
             },
@@ -119,7 +119,7 @@
               "title": "Desarrollo y Programación de la Página Web",
               "objective": "Una vez que tengamos el diseño aprobado, comenzamos a desarrollar la página web, utilizando tecnologías avanzadas para garantizar un rendimiento óptimo y una experiencia de usuario excepcional.",
               "emoji": "💻",
-              "image": "process/development.svg",
+              "image": "/process/development.svg",
               "color": "WHITE_TEXT_COLOR",
               "bgColor": "PURPLE_BG_600"
             },
@@ -129,7 +129,7 @@
               "title": "Optimización SEO y Pruebas de Rendimiento",
               "objective": "Este es el último paso antes del lanzamiento, en el que nos aseguramos de que tu web cumple con los estándares de calidad y rendimiento. Cada página es optimizada para SEO.",
               "emoji": "🧪",
-              "image": "process/testing.svg",
+              "image": "/process/testing.svg",
               "color": "WHITE_TEXT_COLOR",
               "bgColor": "ORANGE_BG_500"
             },
@@ -139,7 +139,7 @@
               "title": "Lanzamiento y Soporte Técnico Continuo",
               "objective": "Después de la aprobación final, lanzamos el sitio web y monitorizamos su rendimiento. Ofrecemos un servicio de mantenimiento que incluye actualizaciones, resolución de problemas y soporte continuo para asegurar que el sitio esté siempre optimizado y funcional.",
               "emoji": "🚀",
-              "image": "process/launch.svg",
+              "image": "/process/launch.svg",
               "color": "WHITE_TEXT_COLOR",
               "bgColor": "TEAL_BG_500"
             }

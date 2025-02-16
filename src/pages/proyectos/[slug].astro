@@ -8,6 +8,7 @@ import { getCollection } from 'astro:content';
 import { CldImage } from 'astro-cloudinary';
 import ProjectsSection from '@components/Sections/ProjectsSection.astro';
 import { getColor } from '@lib/colors';
+import Image from "astro/components/Image.astro";
 export const prerender = false
 
 const DEFAULT_COVER = {
@@ -88,7 +89,7 @@ const descriptionImage = assets.find((asset) => asset.id.includes('description')
 				'logo rounded-full w-36 h-36 p-4 flex justify-center items-center absolute blur-lg z-0',
 				getColor(bgColor)
 			]} />
-    	<img transition:name={`big-image-${slug}`} src={logo} alt="Proyecto de monitoring bbva" class="object-cover max-h-60 z-10" />
+			<Image width={200} height={200} transition:name={`big-image-${slug}`} alt={title} src={logo} alt="Proyecto de monitoring bbva" class="object-cover max-h-36 z-10" />
 		</div>
     <SectionContainer class="mt-[calc(50dvh-56px)] px-4 py-12 gap-8">
       <a href="../#proyectos" class="inline-flex w-min group"><BackIcon width={30} height={30} class="group-hover:scale-125 transition-transform" /></a>
@@ -159,7 +160,6 @@ const descriptionImage = assets.find((asset) => asset.id.includes('description')
 					]}>{ctaTitle}</h2>
 					<div set:html={ctaText} class="text-xl text-pretty font-thin" />
 				</div>
-				<!-- <img loading="lazy" src={descriptionImage} alt={descriptionAlt} class="object-cover w-full h-auto flex-1 promotion-img" /> -->
 			</div>			
 		</SectionContainer>
 		<ProjectsSection projects={PROJECTS_DATA.filter(item => item.slug !== slug)}>

@@ -2,6 +2,7 @@
 import SectionContainer from "@components/Sections/SectionContainer.astro";
 import IsForYou from "@components/ui/IsForYou.astro";
 import language from '@data/i18n/es.json';
+import Image from "astro/components/Image.astro";
 
 const { HOME } = language.PAGES
 const { TITLE, PARAGRAPH, IS_IDEAL, NOT_IDEAL, CTA, ID } = HOME.SECTIONS.IS_FOR_YOU
@@ -14,7 +15,7 @@ const { TITLE, PARAGRAPH, IS_IDEAL, NOT_IDEAL, CTA, ID } = HOME.SECTIONS.IS_FOR_
     <slot>
       <h2 class="text-4xl md:text-5xl text-accent font-medium font-IBMCondensed text-balance">{TITLE}</h2>
       <p class="pt-4 text-xl md:text-2xl font-light text-pretty">{PARAGRAPH}</p>
-      <img src="/call-to-action/is-for-me.svg" alt="Is for me" class=" w-80 self-center" loading="lazy" />
+      <Image width={320} height={320} src="/call-to-action/is-for-me.svg" alt="Is for me" class=" w-80 self-center" />
     </slot>
   </div>
   <IsForYou isIdeal={IS_IDEAL} notIdeal={NOT_IDEAL} cta={CTA} />

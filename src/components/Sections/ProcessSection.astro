@@ -2,6 +2,7 @@
 import SectionContainer from "./SectionContainer.astro";
 import language from '@data/i18n/es.json';
 import { getColor } from '@lib/colors';
+import Image from "astro/components/Image.astro";
 
 const { TITLE, FIRST_CONTENT, SECOND_CONTENT, STEPS, ID } = language.PAGES.HOME.SECTIONS.PROCESS;
 const steps = STEPS;
@@ -54,7 +55,7 @@ const currentStep = 1;
             </div>
             {
               step.image && (
-                <img src={step.image} loading="lazy" alt={step.title} class="flex-1 max-w-60" />
+                <Image width={300} height={300} src={step.image} alt={step.title} class="flex-1 max-w-60" />
               )
             }
         </div>
