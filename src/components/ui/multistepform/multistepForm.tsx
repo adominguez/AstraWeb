@@ -4,10 +4,11 @@ import Step1 from './Step1';
 import Step2 from './Step2';
 import Step3 from './Step3';
 import Step4 from './Step4';
+import type { FormData as FormDataType } from '@components/ui/multistepform/Types';
 
 const MultiStepForm = () => {
   const [step, setStep] = useState(1);
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormDataType>({
     fullName: '',
     email: '',
     phone: '',
@@ -40,8 +41,21 @@ const MultiStepForm = () => {
 
   const nextStep = () => setStep(step + 1);
   const prevStep = () => setStep(step - 1);
-  const submitForm = () => {
+  const submitForm = async () => {
     console.log('Form submitted:', formData);
+    // Crear un nuevo FormData con los datos de formData
+    const body = new FormData();
+    Object.keys(formData).forEach((key) => {
+      const value = formData[key as keyof typeof formData] || ''; // Provide a default value of an empty string if formData[key] is undefined
+      body.append(key, value);
+    });
+    // Enviar el formulario a la API
+    const response = await fetch("/api/form", {
+      method: "POST",
+      body,
+    });
+    const data = await response.json();
+    debugger
     // Aquí puedes manejar el envío del formulario
   };
 

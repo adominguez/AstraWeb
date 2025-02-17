@@ -20,6 +20,9 @@
       ],
       "@types": [
         "src/types.ts"
+      ],
+      "@email/*": [
+        "src/email/*"
       ]
     },
     "jsx": "react-jsx",
