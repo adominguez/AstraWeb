@@ -38,12 +38,19 @@ export const POST: APIRoute = async ({ request }) => {
     html: emailHtml,
   });
 
+  const { data: dataSelf } = await resend.emails.send({
+    from: 'AstraHub <info@astrahub.dev>',
+    to: ['dmartin.alberto@gmail.com', 'info@astrahub.dev'],
+    subject: `⭐ Nuevo formulario de contacto de ${fullName}`,
+    html: emailHtml,
+  });
+
   console.log(data, error);
 
   return new Response(
     JSON.stringify({
       message: 'Formulario enviado',
-      status: 200
+      status: data?.id && dataSelf?.id ? 200 : 400
     }),
   );
 };
