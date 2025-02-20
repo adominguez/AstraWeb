@@ -1,0 +1,97 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SectionContainer from '@components/Sections/SectionContainer.astro';
+import language from "@data/i18n/es.json";
+
+const { TITLE, DESCRIPTION, SECTIONS } = language.PAGES.LEGAL_NOTICE;
+---
+
+<Layout simpleLogo title={TITLE} description={DESCRIPTION}>
+  <main class="text-white flex flex-col items-center">
+    <SectionContainer class="px-4 py-4">
+      <h1>{TITLE}</h1>
+    </SectionContainer>
+
+    <SectionContainer class="px-4 py-4">
+      <h2>{SECTIONS.GENERAL_INFO.TITLE}</h2>
+      <p>{SECTIONS.GENERAL_INFO.CONTENT}</p>
+      <ul>
+        {SECTIONS.GENERAL_INFO.DATA.map((item) => (
+          <li><strong>{item.LABEL}</strong> {item.VALUE}</li>
+        ))}
+      </ul>
+    </SectionContainer>
+
+    <SectionContainer class="px-4 py-4">
+      <h2>{SECTIONS.INTELLECTUAL_PROPERTY.TITLE}</h2>
+      {SECTIONS.INTELLECTUAL_PROPERTY.CONTENT.map((paragraph) => (
+        <p>{paragraph}</p>
+      ))}
+    </SectionContainer>
+
+    <SectionContainer class="px-4 py-4">
+      <h2>{SECTIONS.TERMS_OF_USE.TITLE}</h2>
+      <p>{SECTIONS.TERMS_OF_USE.CONTENT}</p>
+    </SectionContainer>
+
+    <SectionContainer class="px-4 py-4">
+      <h2>{SECTIONS.LIABILITY.TITLE}</h2>
+      <p>{SECTIONS.LIABILITY.CONTENT}</p>
+    </SectionContainer>
+
+    <SectionContainer class="px-4 py-4">
+      <h2>{SECTIONS.DATA_PROTECTION.TITLE}</h2>
+      <p>{SECTIONS.DATA_PROTECTION.CONTENT}</p>
+    </SectionContainer>
+
+    <SectionContainer class="px-4 py-4">
+      <h2>{SECTIONS.IMAGE_CREDITS.TITLE}</h2>
+      {SECTIONS.IMAGE_CREDITS.CONTENT.map((paragraph) => (
+        <p>{paragraph}</p>
+      ))}
+      <ul>
+        {SECTIONS.IMAGE_CREDITS.CREDITS.map((item) => (
+          <li><a href={item.URL} rel="nofollow noreferrer" target="_blank">{item.TEXT}</a></li>
+        ))}
+      </ul>
+      <p>{SECTIONS.IMAGE_CREDITS.CONTACT}</p>
+    </SectionContainer>
+
+    <SectionContainer class="px-4 py-4 pb-16">
+      <h2>{SECTIONS.JURISDICTION.TITLE}</h2>
+      <p>{SECTIONS.JURISDICTION.CONTENT}</p>
+    </SectionContainer>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  h1 {
+    @apply text-3xl md:text-4xl text-primary font-medium text-balance font-IBMCondensed mb-4;
+  }
+  h2 {
+    @apply text-2xl md:text-3xl text-secondary font-medium text-balance font-IBMCondensed mb-2;
+  }
+
+  p, ul {
+    @apply text-white text-lg md:text-xl font-thin text-pretty;
+  }
+
+  ul {
+    @apply my-2
+  }
+
+  a {
+    @apply text-secondary underline transition-colors;
+  }
+
+  a:hover {
+    @apply text-primary;
+  }
+</style>

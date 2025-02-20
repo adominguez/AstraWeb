@@ -434,6 +434,125 @@
         "ctaTitle": "Por Qué Elegir AstraHub",
         "ctaText": "<p class='mb-4'>En AstraHub, creamos soluciones que centralizan y simplifican la gestión de infraestructuras críticas. Nuestro enfoque en tecnologías de vanguardia asegura una plataforma que optimiza las operaciones en la nube.</p><p>Permítenos ayudarte a construir una consola robusta y personalizable para la administración eficiente de tus servicios en la nube.</p>"
       }
-    ]
+    ],
+    "PRIVACY_POLICY": {
+      "TITLE": "Política de Privacidad",
+      "DESCRIPTION": "Información sobre el tratamiento de datos personales en nuestro sitio web.",
+      "SECTIONS": {
+        "RESPONSIBLE": {
+          "TITLE": "1. Responsable del Tratamiento de los Datos",
+          "CONTENT": "De acuerdo con el Reglamento General de Protección de Datos (RGPD), informamos que el responsable del tratamiento de los datos recopilados a través de este sitio web es:",
+          "DATA": [
+            { "LABEL": "Nombre:", "VALUE": "Alberto Domínguez Martín" },
+            { "LABEL": "Actividad:", "VALUE": "Profesional autónomo" },
+            { "LABEL": "Correo Electrónico de Contacto:", "VALUE": "info@astrahub.dev" }
+          ]
+        },
+        "PURPOSE": {
+          "TITLE": "2. Finalidad del Tratamiento de los Datos",
+          "CONTENT": "Los datos personales que se recopilan a través del formulario de contacto tienen la única finalidad de:",
+          "LIST": [
+            "Facilitar un presupuesto personalizado basado en la solicitud del usuario.",
+            "Responder a consultas sobre nuestros servicios."
+          ],
+          "NOTICE": "Los datos proporcionados no serán utilizados para envíos publicitarios ni compartidos con terceros sin el consentimiento previo del usuario."
+        },
+        "LEGAL_BASIS": {
+          "TITLE": "3. Base Legal para el Tratamiento",
+          "CONTENT": "El tratamiento de los datos personales se basa en:",
+          "LIST": [
+            "El consentimiento del usuario, al enviar el formulario de contacto.",
+            "La necesidad de llevar a cabo medidas precontractuales cuando se solicita un presupuesto."
+          ]
+        },
+        "STORAGE": {
+          "TITLE": "4. Almacenamiento y Seguridad de los Datos",
+          "CONTENT": "Los datos personales enviados a través del formulario de contacto no se almacenan en ninguna base de datos, sino que se envían directamente por correo electrónico a info@astrahub.dev.",
+          "DELETION_POLICY": "El titular del sitio web revisa regularmente los correos electrónicos y elimina aquellos que contienen datos personales cuando ya no son necesarios. Si un usuario no contrata el servicio, su información será eliminada en un plazo máximo de 6 meses."
+        },
+        "USER_RIGHTS": {
+          "TITLE": "5. Derechos del Usuario",
+          "CONTENT": "El usuario tiene derecho a:",
+          "LIST": [
+            "Acceder a sus datos personales y obtener información sobre su tratamiento.",
+            "Solicitar la rectificación de datos inexactos o incompletos.",
+            "Solicitar la eliminación de sus datos cuando ya no sean necesarios para la finalidad para la que fueron recogidos.",
+            "Solicitar la limitación del tratamiento de sus datos en determinadas circunstancias.",
+            "Oponerse al tratamiento de sus datos.",
+            "Solicitar la portabilidad de sus datos a otro responsable del tratamiento."
+          ],
+          "CONTACT": "Para ejercer cualquiera de estos derechos, el usuario puede enviar una solicitud a info@astrahub.dev, indicando su nombre completo y el derecho que desea ejercer."
+        },
+        "CLAIMS": {
+          "TITLE": "6. Contacto y Reclamaciones",
+          "CONTENT": "Si el usuario considera que el tratamiento de sus datos personales no se ajusta a la normativa, tiene derecho a presentar una reclamación ante la Agencia Española de Protección de Datos.",
+          "LINK": {
+            "TEXT": "www.aepd.es",
+            "URL": "https://www.aepd.es/"
+          }
+        },
+        "MODIFICATIONS": {
+          "TITLE": "7. Modificaciones en la Política de Privacidad",
+          "CONTENT": "El titular de este sitio web se reserva el derecho de modificar la presente Política de Privacidad para adaptarla a cambios legislativos o jurisprudenciales."
+        }
+      }
+    },
+    "LEGAL_NOTICE": {
+      "TITLE": "Aviso Legal",
+      "DESCRIPTION": "Información legal sobre el sitio web y sus condiciones de uso.",
+      "SECTIONS": {
+        "GENERAL_INFO": {
+          "TITLE": "1. Información General",
+          "CONTENT": "En cumplimiento con lo dispuesto en la Ley de Servicios de la Sociedad de la Información y del Comercio Electrónico (LSSI-CE), se informa que el presente sitio web es titularidad de:",
+          "DATA": [
+            { "LABEL": "Titular:", "VALUE": "Alberto Domínguez Martín" },
+            { "LABEL": "Actividad:", "VALUE": "Profesional autónomo" },
+            { "LABEL": "Correo Electrónico de Contacto:", "VALUE": "info@astrahub.dev" }
+          ]
+        },
+        "INTELLECTUAL_PROPERTY": {
+          "TITLE": "2. Propiedad Intelectual e Industrial",
+          "CONTENT": [
+            "Todos los contenidos de este sitio web, incluyendo textos, gráficos, logotipos y otros materiales, son propiedad de Alberto Domínguez Martín o han sido utilizados con la debida autorización.",
+            "Algunas imágenes utilizadas en este sitio web son propiedad de terceros y han sido obtenidas de fuentes con licencias de uso libre o bajo atribución. En caso de ser requerido, se proporcionan los créditos correspondientes a los autores y fuentes en la propia imagen o en la sección de créditos.",
+            "Si consideras que alguna imagen o contenido infringe derechos de autor, por favor contáctanos en info@astrahub.dev para su revisión y, si es necesario, su retirada."
+          ]
+        },
+        "TERMS_OF_USE": {
+          "TITLE": "3. Condiciones de Uso",
+          "CONTENT": "El acceso y uso de este sitio web implica la aceptación plena y sin reservas de las presentes condiciones de uso, así como de las leyes y reglamentos aplicables. El usuario se compromete a utilizar el sitio y sus contenidos de conformidad con la ley, la moral, las buenas costumbres y el orden público."
+        },
+        "LIABILITY": {
+          "TITLE": "4. Responsabilidad",
+          "CONTENT": "Alberto Domínguez Martín no se hace responsable de los errores u omisiones de los contenidos del sitio web, ni de los daños derivados del uso del mismo, así como de cualquier acción tomada sobre la base de la información contenida en el mismo. Se exime de cualquier responsabilidad derivada del acceso a otros sitios web enlazados desde esta página."
+        },
+        "DATA_PROTECTION": {
+          "TITLE": "5. Protección de Datos Personales",
+          "CONTENT": "El tratamiento de los datos personales que se pueda recabar a través de este sitio web se realizará conforme a lo dispuesto en la normativa vigente en materia de protección de datos. Para más información sobre el tratamiento de datos personales y los derechos de los usuarios, consulta nuestra <a href='/politica-de-privacidad'>Política de Privacidad</a>."
+        },
+        "IMAGE_CREDITS": {
+          "TITLE": "6. Créditos de Imágenes",
+          "CONTENT": [
+            "En este sitio web se utilizan imágenes e ilustraciones de diferentes fuentes. Algunas de ellas han sido creadas por Alberto Domínguez Martín, mientras que otras han sido obtenidas de bancos de imágenes con licencia de uso libre o con atribución obligatoria.",
+            "A continuación, se detallan las imágenes que requieren atribución:"
+          ],
+          "CREDITS": [
+            { "TEXT": "Web illustrations by Storyset", "URL": "https://storyset.com/web" },
+            { "TEXT": "Online illustrations by Storyset", "URL": "https://storyset.com/online" },
+            { "TEXT": "Data illustrations by Storyset", "URL": "https://storyset.com/data" },
+            { "TEXT": "User illustrations by Storyset", "URL": "https://storyset.com/user" },
+            { "TEXT": "Work illustrations by Storyset", "URL": "https://storyset.com/work" },
+            { "TEXT": "People illustrations by Storyset", "URL": "https://storyset.com/people" },
+            { "TEXT": "Marketing illustrations by Storyset", "URL": "https://storyset.com/marketing" },
+            { "TEXT": "Technology illustrations by Storyset", "URL": "https://storyset.com/technology" }
+          ],
+          "CONTACT": "Si eres el autor de alguna imagen y consideras que su uso no está adecuadamente acreditado o deseas solicitar su eliminación, por favor, contáctanos a través de info@astrahub.dev."
+        },
+        "JURISDICTION": {
+          "TITLE": "7. Legislación Aplicable y Jurisdicción",
+          "CONTENT": "La relación entre Alberto Domínguez Martín y el usuario se regirá por la normativa vigente en España. Para la resolución de todas las cuestiones litigiosas que pudieran derivarse del acceso o uso de este sitio web, el usuario se somete a la jurisdicción de los tribunales de Cáceres, salvo que la ley aplicable disponga otra cosa."
+        }
+      }
+    }
   }
 }

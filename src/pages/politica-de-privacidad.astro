@@ -1,0 +1,106 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SectionContainer from '@components/Sections/SectionContainer.astro';
+import language from "@data/i18n/es.json";
+
+const { TITLE, DESCRIPTION, SECTIONS } = language.PAGES.PRIVACY_POLICY;
+---
+
+<Layout simpleLogo title={TITLE} description={DESCRIPTION}>
+  <main class="text-white flex flex-col items-center">
+    <SectionContainer class="px-4 py-4">
+      <h1>{TITLE}</h1>
+    </SectionContainer>
+
+    <SectionContainer class="px-4 py-4">
+      <h2>{SECTIONS.RESPONSIBLE.TITLE}</h2>
+      <p>{SECTIONS.RESPONSIBLE.CONTENT}</p>
+      <ul>
+        {SECTIONS.RESPONSIBLE.DATA.map((item) => (
+          <li><strong>{item.LABEL}</strong> {item.VALUE}</li>
+        ))}
+      </ul>
+    </SectionContainer>
+
+    <SectionContainer class="px-4 py-4">
+      <h2>{SECTIONS.PURPOSE.TITLE}</h2>
+      <p>{SECTIONS.PURPOSE.CONTENT}</p>
+      <ul>
+        {SECTIONS.PURPOSE.LIST.map((item) => (
+          <li>{item}</li>
+        ))}
+      </ul>
+      <p>{SECTIONS.PURPOSE.NOTICE}</p>
+    </SectionContainer>
+
+    <SectionContainer class="px-4 py-4">
+      <h2>{SECTIONS.LEGAL_BASIS.TITLE}</h2>
+      <p>{SECTIONS.LEGAL_BASIS.CONTENT}</p>
+      <ul>
+        {SECTIONS.LEGAL_BASIS.LIST.map((item) => (
+          <li>{item}</li>
+        ))}
+      </ul>
+    </SectionContainer>
+
+    <SectionContainer class="px-4 py-4">
+      <h2>{SECTIONS.STORAGE.TITLE}</h2>
+      <p>{SECTIONS.STORAGE.CONTENT}</p>
+      <p>{SECTIONS.STORAGE.DELETION_POLICY}</p>
+    </SectionContainer>
+
+    <SectionContainer class="px-4 py-4">
+      <h2>{SECTIONS.USER_RIGHTS.TITLE}</h2>
+      <p>{SECTIONS.USER_RIGHTS.CONTENT}</p>
+      <ul>
+        {SECTIONS.USER_RIGHTS.LIST.map((item) => (
+          <li>{item}</li>
+        ))}
+      </ul>
+      <p>{SECTIONS.USER_RIGHTS.CONTACT}</p>
+    </SectionContainer>
+
+    <SectionContainer class="px-4 py-4">
+      <h2>{SECTIONS.CLAIMS.TITLE}</h2>
+      <p>{SECTIONS.CLAIMS.CONTENT}</p>
+      <p><a href={SECTIONS.CLAIMS.LINK.URL} target="_blank">{SECTIONS.CLAIMS.LINK.TEXT}</a></p>
+    </SectionContainer>
+
+    <SectionContainer class="px-4 py-4 pb-16">
+      <h2>{SECTIONS.MODIFICATIONS.TITLE}</h2>
+      <p>{SECTIONS.MODIFICATIONS.CONTENT}</p>
+    </SectionContainer>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  h1 {
+    @apply text-3xl md:text-4xl text-primary font-medium text-balance font-IBMCondensed mb-4;
+  }
+  h2 {
+    @apply text-2xl md:text-3xl text-secondary font-medium text-balance font-IBMCondensed mb-2;
+  }
+
+  p, ul {
+    @apply text-white text-lg md:text-xl font-thin text-pretty;
+  }
+
+  ul {
+    @apply my-2
+  }
+
+  a {
+    @apply text-secondary underline transition-colors;
+  }
+
+  a:hover {
+    @apply text-primary;
+  }
+</style>

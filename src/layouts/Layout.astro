@@ -2,6 +2,7 @@
 import BgRounded from '@components/backgrounds/BgRounded.astro';
 import BgStars from '@components/backgrounds/BgStars.astro';
 import Header from '@components/Header.astro';
+import Footer from '@components/Footer.astro';
 import LogoAstroHeader from '@components/Logos/LogoAstroHeader.astro';
 import { ViewTransitions } from 'astro:transitions';
 import '@fontsource/ibm-plex-sans';
@@ -40,6 +41,7 @@ const { title, description, simpleLogo = false, image = 'open-graph/OpenGraph-ho
 		<LogoAstroHeader simpleLogo={simpleLogo} className="max-h-40 w-min md:max-h-60 transition-all fixed top-3 z-30 opacity-50" />
 		<Header />
 		<slot />
+		<Footer />
 	</body>
 </html>
 <style is:global>
