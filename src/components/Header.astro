@@ -1,16 +1,27 @@
+---
+const NAVIGATION = {
+  FIRST_NAVIGATION: [
+    { name: 'Inicio', href: '/' },
+  ],
+  SECOND_NAVIGATION: [
+    { name: 'Proyectos', href: '/proyectos', },
+  ],
+} as const;
+---
+
 <header class="header flex flex-col items-center h-14">
-  <!-- <div class="max-w-5xl hidden md:flex justify-between w-full relative p-4">
-    <nav class="flex justify-center gap-6 flex-1">
-      <a href="/" class="text-white">Home</a>
-      <a href="/about" class="text-white">About</a>
-      <a href="/contact" class="text-white">Contact</a>
-    </nav>
-    <nav class="flex justify-center gap-6 flex-1">
-      <a href="/blog" class="text-white">Blog</a>
-      <a href="/projects" class="text-white">Projects</a>
-      <a href="/contact" class="text-white">Contact</a>
-    </nav>
-  </div> -->
+  <div class="max-w-5xl hidden md:flex justify-between font-IBM w-full relative p-4">
+    {
+      Object.keys(NAVIGATION).map((key) => (<nav class="flex justify-center gap-6 flex-1">
+        {
+            NAVIGATION[key as keyof typeof NAVIGATION].map(({ name, href }) => (
+            <a href={href} class="text-white hover:text-primary transtion-colors">{name}</a>)
+          )
+        }
+      </nav>
+      ))
+    }
+  </div>
 </header>
 
 <style>
