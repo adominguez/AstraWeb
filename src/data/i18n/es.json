@@ -269,6 +269,95 @@
         }
       }
     },
+    "SERVICES": {
+      "CORPORATIVE_WEB_DESIGN": {
+        "META_TITLE": "Diseño Web Corporativo: Impulsa la imagen de tu empresa",
+        "META_DESCRIPTION": "Impulsa tu negocio con un diseño web corporativo a medida que reflejarán la esencia de tu empresa y conecten con tu audiencia.",
+        "HERO_SECTION": {
+          "TITLE": "Diseño Web Corporativo: Impulsa la imagen de tu empresa",
+          "SUBTITLE": "Haz que tu web refleje la <span class='text-yellow-gradient text-balance'>esencia de tu empresa</span>",
+          "TEXT": "Consigue una imagen de marca diferencial con un diseño web corporativo que represente su esencia y conecte con tu audiencia.",
+          "IMAGE": {
+            "src": "/services/corporative-web-design.svg",
+            "alt": "Diseño Web Corporativo"
+          },
+          "CTA": "Quiero una web corporativa"
+        },
+        "FIRST_SECTION": {
+          "TITLE": "Conecta y atrae a tus clientes con un diseño web corporativo",
+          "CONTENT": "<p class='pt-4 text-xl md:text-2xl font-light text-pretty'>Contar con una web profesional y que refleje la identidad de tu negocio es esencial para destacar del resto de páginas web de tu competencia. En AstraHub creemos que el diseño web corporativo es mucho más que una presencia online; creemos que la página web de un negocio debe de transmitir la identidad de tu marca, generar confianza para poder conectar y atraer a clientes que quieran comprar tus productos o servicios.</p>"
+        },
+        "CORPORATIVE_PILARS": {
+          "TITLE": "Pilares de un diseño web corporativo efectivo",
+          "ITEMS": {
+            "FIRST_ITEM": {
+              "CONTENT": "En AstraHub entendemos que la imagen de tu empresa se construye a través de cada uno de los detalles que comunican quién eres. Nuestro enfoque en el diseño web corporativo se basa en tres pilares fundamentales:"
+            },
+            "SECOND_ITEM": {
+              "TITLE": "Personalización Total",
+              "CONTENT": "Cada página web que creamos es única y personalizada para reflejar la identidad de tu empresa. Nos alejamos de plantillas genéricas y ponemos el máximo empeño en que el diseño sea coherente con tu marca y transmita los valores y la esencia de tu negocio.",
+              "IMAGE": "/features/custom-design.svg"
+            },
+            "THIRD_CONTENT": {
+              "TITLE": "Experiencia de Usuario Excepcional",
+              "CONTENT": "La experiencia del usuario es un aspecto clave en el diseño web corporativo. Nos aseguramos de que tu página sea fácil de usar, intuitiva y accesible, para que tus visitantes encuentren la información que buscan de forma rápida y sencilla.",
+              "IMAGE": "/features/user-experience.svg"
+            },
+            "FOURTH_CONTENT": {
+              "TITLE": "Copywriting y redacción de textos",
+              "CONTENT": "El contenido de tu página web es tan importante como el diseño. Por lo tanto, es muy importante también poner el foco en crear textos persuasivos y efectivos que comuniquen tu mensaje de forma clara y atractiva.",
+              "IMAGE": "/features/copywriting.svg"
+            }
+          }
+        },
+        "WHY_CHOOSE_CORPORATIVE": {
+          "TITLE": "¿Por qué elegir un diseño web corporativo personalizado?",
+          "CONTENT": "Un diseño web corporativo personalizado es una inversión en la imagen de tu empresa. Esa inversión te puede traer múltiples beneficios que van más allá de una simple presencia online:",
+          "ITEMS": {
+            "FIRST_ITEM": {
+              "TITLE": "Imagen Profesional y diferenciada",
+              "CONTENT": "Una web personalizada es el reflejo directo de tu marca. Al no depender de plantillas predefinidas, cada detalle está pensado para diferenciarte en un mercado saturado y generar una percepción de alta calidad.",
+              "IMAGE": "/why-choose/differencial.svg"
+            },
+            "SECOND_ITEM": {
+              "TITLE": "Conexión con tu audiencia y confianza",
+              "CONTENT": "Una web diseñada con una estrategia clara y un contenido que habla directamente a las necesidades y preocupaciones de tus clientes potenciales crea un vínculo de confianza. Esto es fundamental para convertir visitas en oportunidades de negocio.",
+              "IMAGE": "/why-choose/connection.svg"
+            },
+            "THIRD_ITEM": {
+              "TITLE": "Flexibilidad y Crecimiento",
+              "CONTENT": "El entorno digital es dinámico. Con un diseño web corporativo a medida, tienes la posibilidad de adaptarte a cambios del mercado, integrar nuevas funcionalidades y ampliar la plataforma a medida que tu negocio crece.",
+              "IMAGE": "/why-choose/growing.svg"
+            },
+            "FOURTH_ITEM": {
+              "TITLE": "Optimización integral",
+              "CONTENT": "Desde la velocidad de carga hasta la estructura SEO, cada aspecto se optimiza para que tu web no solo sea atractiva, sino que también sea fácil de encontrar y utilizar por tus clientes, impulsando así tus resultados comerciales.",
+              "IMAGE": "/why-choose/optimization.svg"
+            }
+          }
+        },
+        "INNOVATION_CORPORATIVE": {
+          "TITLE": "AstraHub y la Innovación en Diseño Web Corporativo",
+          "FIRST_CONTENT": "En AstraHub nos apasiona crear soluciones digitales que realmente potencien la imagen y los resultados de nuestros clientes. Nuestro enfoque se basa en comprender a fondo la esencia de cada negocio para ofrecer una web que sea:",
+          "ITEMS": [
+            "<strong>Exclusiva:</strong> Cada proyecto es único y se adapta completamente a las necesidades y valores de tu marca.",
+            "<strong>Funcional y Estética:</strong> Combinamos un diseño atractivo con una navegación intuitiva, logrando que la experiencia del usuario sea memorable.",
+            "<strong>Orientada a Resultados:</strong> Integramos estrategias de conversión y marketing digital que maximizan la generación de leads y la captación de clientes."
+          ],
+          "SECOND_CONTENT": "Nuestro compromiso es acompañarte en cada etapa del proyecto, desde la concepción de la idea hasta el soporte post-lanzamiento, asegurando que la web corporativa no solo cumpla, sino que supere tus expectativas."
+        },
+        "SUCCESS_HISTORY_CORPORATIVE": {
+          "TITLE": "Historias de Éxito y casos prácticos",
+          "FIRST_CONTENT": "Una de las mejores formas de demostrar el valor del diseño web corporativo es a través de casos de éxito. En AstraHub hemos trabajado con diversas empresas que han transformado su presencia online gracias a una solución a medida. Entre los resultados que destacan se encuentran:",
+          "ITEMS": [
+            "<strong>Incremento del Tráfico Orgánico:</strong> Gracias a la optimización SEO y a una estrategia de contenidos enfocada, muchas de nuestras webs han logrado posicionarse en las primeras posiciones de buscadores para términos clave.",
+            "<strong>Mejora en la Conversión:</strong> Un diseño enfocado en la experiencia de usuario ha permitido que visitantes se conviertan en clientes, aumentando la tasa de conversión y generando un retorno de inversión significativo.",
+            "<strong>Fortalecimiento de la Marca:</strong> Las empresas han logrado transmitir una imagen de profesionalidad y confianza, lo que se traduce en mayor reconocimiento y fidelidad por parte de sus clientes."
+          ],
+          "SECOND_CONTENT": "Estas historias de éxito son prueba de que invertir en un diseño web corporativo personalizado no es un gasto, sino una inversión estratégica en el futuro digital de tu empresa."
+        }
+      }
+    },
     "PROJECTS": [
       {
         "id": "monitoring",

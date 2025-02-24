@@ -49,10 +49,18 @@ const { title, description, simpleLogo = false, image = 'open-graph/OpenGraph-ho
 		--accent: 136, 58, 234;
 		--accent-light: 224, 204, 250;
 		--accent-dark: 49, 10, 101;
+		--accent-yellow: 255, 193, 1;
+		--accent-yellow-light: 254, 219, 114;
 		--accent-gradient: linear-gradient(
 			45deg,
 			rgb(var(--accent)),
 			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+		--accent-yellow-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent-yellow)),
+			rgb(var(--accent-yellow-light)) 30%,
 			white 60%
 		);
 	}
@@ -65,6 +73,14 @@ const { title, description, simpleLogo = false, image = 'open-graph/OpenGraph-ho
 
 	.text-gradient {
 		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+
+	.text-yellow-gradient {
+		background-image: var(--accent-yellow-gradient);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-size: 400%;

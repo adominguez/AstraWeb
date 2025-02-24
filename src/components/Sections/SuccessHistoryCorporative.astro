@@ -1,0 +1,19 @@
+---
+import SectionContainer from "./SectionContainer.astro";
+import language from '@data/i18n/es.json';
+
+const { TITLE, FIRST_CONTENT, SECOND_CONTENT, ITEMS } = language.PAGES.SERVICES.CORPORATIVE_WEB_DESIGN.SUCCESS_HISTORY_CORPORATIVE;
+---
+
+<SectionContainer id="pilares-corporativos" class="pb-16">
+  <h2 class="text-3xl md:text-4xl font-IBMCondensed text-secondary font-medium text-balance">{TITLE}</h2>
+  <p class="pt-4 text-xl md:text-2xl font-light text-pretty">{FIRST_CONTENT}</p>
+  <ul class="px-4">
+    {
+      ITEMS.map((item: string) => (
+        <li set:html={item} class="pt-4 text-gray-300 font-extralight text-pretty" />
+      ))
+    }
+  </ul>
+  <p class="pt-4 text-xl md:text-2xl font-light text-pretty">{SECOND_CONTENT}</p>
+</SectionContainer>

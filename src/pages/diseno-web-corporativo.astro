@@ -1,0 +1,54 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SectionContainer from '@components/Sections/SectionContainer.astro';
+import language from "@data/i18n/es.json";
+import PageHeroSection from "@components/Sections/PageHeroSection.astro";
+import CorporativePilars from '@components/Sections/CorporativePilars.astro';
+import WhyChooseCorporative from '@components/Sections/WhyChooseCorporative.astro';
+import InnovationCorporative from '@components/Sections/InnovationCorporative.astro';
+import SuccessHistoryCorporative from '@components/Sections/SuccessHistoryCorporative.astro';
+
+const { META_TITLE, META_DESCRIPTION, HERO_SECTION, FIRST_SECTION } = language.PAGES.SERVICES.CORPORATIVE_WEB_DESIGN;
+---
+
+<Layout simpleLogo title={META_TITLE} description={META_DESCRIPTION}>
+  <main class="text-white flex flex-col items-center">
+    <PageHeroSection title={HERO_SECTION.TITLE} subtitle={HERO_SECTION.SUBTITLE} image={HERO_SECTION.IMAGE} text={HERO_SECTION.TEXT} cta={HERO_SECTION.CTA} />
+    <SectionContainer class="pb-16">
+      <div class="w-full text-xl text-white flex flex-col gap-4 p-6">
+        <h2 class="text-3xl md:text-4xl font-IBMCondensed text-secondary font-medium text-balance">{FIRST_SECTION.TITLE}</h2>
+        <div set:html={FIRST_SECTION.CONTENT} />
+      </div>
+    </SectionContainer>
+    <CorporativePilars />
+    <WhyChooseCorporative />
+    <InnovationCorporative />
+    <SuccessHistoryCorporative />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  p, ul {
+    @apply text-white text-lg md:text-xl font-thin text-pretty;
+  }
+
+  ul {
+    @apply my-2
+  }
+
+  a {
+    @apply text-secondary underline transition-colors;
+  }
+
+  a:hover {
+    @apply text-primary;
+  }
+</style>
