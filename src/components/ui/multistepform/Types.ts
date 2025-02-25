@@ -8,4 +8,5 @@ export interface FormData {
   projectGoal?: string;
   budget: string;
   projectDetails?: string;
+  privacyPolicy: boolean;
 }

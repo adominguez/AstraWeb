@@ -21,6 +21,7 @@ const MultiStepForm = () => {
     projectGoal: '',
     budget: '',
     projectDetails: '',
+    privacyPolicy: false,
   });
 
   useEffect(() => {
@@ -40,6 +41,10 @@ const MultiStepForm = () => {
 
   useEffect(() => {
     localStorage.setItem('currentStep', step.toString());
+    if (step === 5) {
+      localStorage.removeItem('formData');
+      localStorage.removeItem('currentStep');
+    }
   }, [step]);
 
   const nextStep = () => setStep(step + 1);
@@ -50,7 +55,8 @@ const MultiStepForm = () => {
     const body = new FormData();
     Object.keys(formData).forEach((key) => {
       const value = formData[key as keyof typeof formData] || ''; // Provide a default value of an empty string if formData[key] is undefined
-      body.append(key, value);
+      const valueString = typeof value === 'boolean' ? value.toString() : value; // Convert boolean value to string
+      body.append(key, valueString);
     });
     // Enviar el formulario a la API
     const response = await fetch("/api/form", {
@@ -70,6 +76,7 @@ const MultiStepForm = () => {
         projectGoal: '',
         budget: '',
         projectDetails: '',
+        privacyPolicy: false,
       });
     } else {
       setError('Ha habido un error al enviar el formulario, por favor inténtalo de nuevo');
@@ -85,7 +92,7 @@ const MultiStepForm = () => {
     case 3:
       return <Step3 formData={formData} setFormData={setFormData} nextStep={nextStep} prevStep={prevStep} />;
     case 4:
-      return <Step4 formData={formData} submitForm={submitForm} prevStep={prevStep} loading={loading} error={error} />;
+      return <Step4 formData={formData} setFormData={setFormData} submitForm={submitForm} prevStep={prevStep} loading={loading} error={error} />;
     case 5:
       return <Step5 formData={formData} submitForm={submitForm} prevStep={prevStep} />;
     default:

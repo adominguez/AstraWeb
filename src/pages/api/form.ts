@@ -18,6 +18,7 @@ export const POST: APIRoute = async ({ request }) => {
   const projectGoal = form.get('projectGoal')?.toString() ?? '';
   const budget = form.get('budget')?.toString() ?? '';
   const projectDetails = form.get('projectDetails')?.toString() ?? '';
+  const privacyPolicy = form.get('privacyPolicy')?.toString() ?? '';
 
   // // Validate the data - you'll probably want to do more than this
   // if (!name || !email || !message || !country || !phone || !subject) {
@@ -29,7 +30,7 @@ export const POST: APIRoute = async ({ request }) => {
   //   );
   // }
 
-  const emailHtml: string = renderToString(EmailTemplate({fullName, email, phone, project, web, projectType, projectGoal, budget, projectDetails}));
+  const emailHtml: string = renderToString(EmailTemplate({fullName, email, phone, project, web, projectType, projectGoal, budget, projectDetails, privacyPolicy}));
 
   const { data, error } = await resend.emails.send({
     from: 'AstraHub <info@astrahub.dev>',

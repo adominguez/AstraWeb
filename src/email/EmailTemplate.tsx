@@ -8,6 +8,7 @@ interface EmailTemplateProps {
   projectGoal: string;
   budget: string;
   projectDetails?: string;
+  privacyPolicy: string;
 }
 
 export default function EmailTemplate({
@@ -20,6 +21,7 @@ export default function EmailTemplate({
   projectGoal,
   budget,
   projectDetails,
+  privacyPolicy,
 }: EmailTemplateProps) {
   return (
     <html lang="es">
@@ -179,6 +181,20 @@ export default function EmailTemplate({
                         <td style={{ fontSize: "1rem" }}>{projectDetails}</td>
                       </tr>
                     )}
+                    {/* Política de privacidad */}
+                    <tr>
+                      <td
+                        colSpan={2}
+                        style={{
+                          color: "#84cae7",
+                          fontSize: "1.5rem",
+                          paddingTop: "20px",
+                          paddingBottom: "10px",
+                        }}
+                      >
+                        Política de privacidad: {privacyPolicy}
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
               </td>
