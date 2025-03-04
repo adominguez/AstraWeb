@@ -4,6 +4,7 @@ import tailwind from '@astrojs/tailwind';
 import preact from '@astrojs/preact';
 import vercel from '@astrojs/vercel/serverless';
 import sitemap from '@astrojs/sitemap';
+import lottie from "astro-integration-lottie";
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,7 +12,7 @@ export default defineConfig({
     contentLayer: true
   },
   site: 'https://astrahub.dev',
-  integrations: [tailwind(), sitemap({
+  integrations: [tailwind(), lottie(), sitemap({
     serialize(item) {
       const lastCharacter = item.url.slice(-1);
       if (lastCharacter === "/") {

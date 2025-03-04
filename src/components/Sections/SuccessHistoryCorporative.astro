@@ -1,19 +1,98 @@
 ---
+import BentoItem from "@components/Bento/BentoItem.astro";
+import BentoGrid from "@components/Bento/BentoGrid.astro";
 import SectionContainer from "./SectionContainer.astro";
 import language from '@data/i18n/es.json';
+import Image from "astro/components/Image.astro";
+import LottieAnimation from "astro-integration-lottie/Lottie.astro";
 
-const { TITLE, FIRST_CONTENT, SECOND_CONTENT, ITEMS } = language.PAGES.SERVICES.CORPORATIVE_WEB_DESIGN.SUCCESS_HISTORY_CORPORATIVE;
+const { TITLE, FIRST_CONTENT, SECOND_CONTENT, TASKS } = language.PAGES.SERVICES.CORPORATIVE_WEB_DESIGN.SUCCESS_HISTORY_CORPORATIVE;
 ---
 
 <SectionContainer id="pilares-corporativos" class="pb-16">
   <h2 class="text-3xl md:text-4xl font-IBMCondensed text-secondary font-medium text-balance">{TITLE}</h2>
-  <p class="pt-4 text-xl md:text-2xl font-light text-pretty">{FIRST_CONTENT}</p>
-  <ul class="px-4">
-    {
-      ITEMS.map((item: string) => (
-        <li set:html={item} class="pt-4 text-gray-300 font-extralight text-pretty" />
-      ))
-    }
-  </ul>
-  <p class="pt-4 text-xl md:text-2xl font-light text-pretty">{SECOND_CONTENT}</p>
+  <div class="flex flex-col md:flex-row gap-4 mb-8">
+    <div class="flex-[2]">
+      <p class="pt-12 text-xl md:text-2xl font-light text-pretty" set:html={FIRST_CONTENT}></p>
+      <p class="pt-4 text-gray-300 font-extralight text-pretty" set:html={SECOND_CONTENT}></p>
+    </div>
+    <div class="flex-1 flex justify-center items-center">
+      <Image width={237} height={400} src="/services/portico-mobile.webp" alt="Portico" class="max-h-96" />
+    </div>
+  </div>
+  <article class="flex flex-col gap-4 mb-12">
+    <h3 class="text-2xl text-green-500 font-semibold font-IBMCondensed">{TASKS.ANALYSIS.title}</h3>
+    <p class="text-xl md:text-2xl font-light text-pretty" set:html={TASKS.ANALYSIS.description}></p>
+    <p class="pt-4 text-gray-300 font-extralight text-pretty" set:html={TASKS.ANALYSIS.secondContent}></p>
+    <Image width={1000} height={800} alt="hjhj" src="/services/graphic.svg" />
+    <p class="pt-4 text-gray-300 font-extralight text-pretty" set:html={TASKS.ANALYSIS.results}></p>
+  </article>
+  <article class="flex flex-col gap-4 mb-12">
+    <h3 class="text-2xl text-pink-500 font-semibold font-IBMCondensed">{TASKS.DESIGN.title}</h3>
+    <p class="text-xl md:text-2xl font-light text-pretty" set:html={TASKS.DESIGN.description}></p>
+    <div class="flex flex-col md:flex-row gap-4">
+      <div class="flex-1">
+        <p class="pt-4 text-gray-300 font-extralight text-pretty" set:html={TASKS.DESIGN.results}></p>
+        <p class="pt-4 text-gray-300 font-extralight text-pretty" set:html={TASKS.DESIGN.interaction}></p>
+      </div>
+      <div class="flex-1 flex-col gap-4">
+        <image-compare label-text="Screen Reader Label Text">
+          <Image width={1000} height={800} slot="image-1" alt={TASKS.DESIGN.images.BEFORE.alt} src={TASKS.DESIGN.images.BEFORE.src}/>
+          <Image width={100} height={800} slot="image-2" alt={TASKS.DESIGN.images.AFTER.alt} src={TASKS.DESIGN.images.AFTER.src}/>
+        </image-compare>
+        <div class="flex justify-evenly text-gray-300 font-extralight">
+          <span class="flex-1 text-center">{TASKS.DESIGN.images.BEFORE.alt}</span>
+          <span class="flex-1 text-center">{TASKS.DESIGN.images.AFTER.alt}</span>
+        </div>
+      </div>
+    </div>
+  </article>
+  <article class="flex flex-col gap-4 mb-8">
+    <div class="flex flex-col md:flex-row gap-4">
+      <div class="flex-1">
+        <h3 class="text-2xl text-secondary font-semibold font-IBMCondensed">{TASKS.UX_DESIGN.title}</h3>
+        <p class="pt-4 text-gray-300 font-extralight text-pretty" set:html={TASKS.UX_DESIGN.description}></p>
+      </div>
+      <div class="flex-1 flex-col gap-4">
+        <video controls preload="none" poster={`${TASKS.UX_DESIGN.video}.webp`}  class="flex-1 self-center w-full rounded-xl border-[5px]">
+          <source src={`${TASKS.UX_DESIGN.video}.webm`} type="video/webm" />
+          <source src={`${TASKS.UX_DESIGN.video}.mp4`} type="video/mp4" />
+        </video>
+      </div>
+    </div>
+    <h3 class="text-2xl text-secondary font-semibold font-IBMCondensed">{TASKS.UX_DESIGN.title2}</h3>
+    <BentoGrid tag="ul" class="mt-8 flex flex-col gap-4 mb-8">
+      {
+        TASKS.UX_DESIGN.actions.map(({title, description, lottieJson}) => (
+          <BentoItem
+            tag="li"
+            class="bento-item sm:col-span-2 md:col-span-3 text-xl text-white flex flex-col md:flex-row gap-4 border rounded-xl p-4"
+          >
+            <LottieAnimation src={lottieJson} autoplay="visible" class="w-24" />
+            <div class="flex flex-col flex-1">
+              <h4 class="text-xl md:text-2xl text-secondary font-medium text-balance font-IBMCondensed">{title}</h4>
+              <p class="pt-4 text-gray-300 font-extralight text-pretty">{description}</p>
+            </div>
+          </BentoItem>
+        ))
+      }
+    </BentoGrid>
+    <h3 class="text-2xl text-secondary font-semibold font-IBMCondensed">{TASKS.UX_DESIGN.title3}</h3>
+    <BentoGrid tag="ul" class="mt-8 flex flex-col gap-4">
+      {
+        TASKS.UX_DESIGN.results.map(({title, description, lottieJson}) => (
+          <BentoItem tag="li" class="bg-violet-700/50 md:row-span-2 p-6 rounded-lg bento-item">
+            <LottieAnimation src={lottieJson} autoplay="visible" class="w-24" />
+            <div class="flex flex-col flex-1">
+              <h4 class="text-xl md:text-2xl text-secondary font-medium text-balance font-IBMCondensed">{title}</h4>
+              <p class="pt-4 text-gray-300 font-extralight text-pretty">{description}</p>
+            </div>
+          </BentoItem>
+        ))
+      }
+    </BentoGrid>
+  </article>
 </SectionContainer>
+
+
+<script src="https://unpkg.com/@cloudfour/image-compare/dist/index.min.js"></script>

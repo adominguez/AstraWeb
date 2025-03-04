@@ -347,14 +347,70 @@
           "SECOND_CONTENT": "Nuestro compromiso es acompañarte en cada etapa del proyecto, desde la concepción de la idea hasta el soporte post-lanzamiento, asegurando que la web corporativa no solo cumpla, sino que supere tus expectativas."
         },
         "SUCCESS_HISTORY_CORPORATIVE": {
-          "TITLE": "Historias de Éxito y casos prácticos",
-          "FIRST_CONTENT": "Una de las mejores formas de demostrar el valor del diseño web corporativo es a través de casos de éxito. En AstraHub hemos trabajado con diversas empresas que han transformado su presencia online gracias a una solución a medida. Entre los resultados que destacan se encuentran:",
-          "ITEMS": [
-            "<strong>Incremento del Tráfico Orgánico:</strong> Gracias a la optimización SEO y a una estrategia de contenidos enfocada, muchas de nuestras webs han logrado posicionarse en las primeras posiciones de buscadores para términos clave.",
-            "<strong>Mejora en la Conversión:</strong> Un diseño enfocado en la experiencia de usuario ha permitido que visitantes se conviertan en clientes, aumentando la tasa de conversión y generando un retorno de inversión significativo.",
-            "<strong>Fortalecimiento de la Marca:</strong> Las empresas han logrado transmitir una imagen de profesionalidad y confianza, lo que se traduce en mayor reconocimiento y fidelidad por parte de sus clientes."
-          ],
-          "SECOND_CONTENT": "Estas historias de éxito son prueba de que invertir en un diseño web corporativo personalizado no es un gasto, sino una inversión estratégica en el futuro digital de tu empresa."
+          "TITLE": "Caso de Éxito: Transformación Digital de Portico Sport",
+          "FIRST_CONTENT": "Portico Sport es una marca de construcción de pistas. Era una marca con una presencia online dispersa y una imagen desactualizada, lo que dificultaba su expansión internacional y por lo tanto el crecimiento de la empresa.",
+          "SECOND_CONTENT": "Con el objetivo de regenerar su imagen, mejorar la experiencia de usuario, optimizar el rendimiento de la web, y mejorar su posicionamiento en buscadores, en AstraHub nos propusimos crear una solución integral. Si <strong>te interesa crear una página web corporativa</strong>, sigue leyendo y descubre como también podemos mejorar tu web",
+          "TASKS": {
+            "ANALYSIS": {
+              "title": "Análisis de la Competencia",
+              "description": "Antes de iniciar el rediseño del sitio web corporativo para Portico Sport, nos sumergimos en un exhaustivo análisis de la competencia para entender el panorama digital en el que operaba Portico Sport. Este estudio nos permitió identificar oportunidades y áreas de mejora que se tradujeron en ventajas competitivas clave para la nueva web.",
+              "secondContent": "Exploramos las fortalezas y debilidades de los principales competidores, analizando aspectos críticos como la identidad visual, la estructura de la web, la optimización SEO y la integración de estrategias de marketing digital. Descubrimos que muchas empresas del sector no aprovechaban al máximo el potencial de un diseño web corporativo, presentando imágenes de marca desactualizadas y procesos de navegación poco intuitivos.",
+              "results": "La información recogida durante el análisis de la competencia fue fundamental para afinar detalles en el desarrollo web, logramos mejorar y aportar más valor que muchas páginas de la competencia, consiguiendo de esta forma que la nueva web se posicione como una referencia en su sector, marcando la diferencia en un entorno altamente competitivo y consolidando a Portico Sport como un referente de innovación y profesionalidad en su sector."
+            },
+            "DESIGN": {
+              "title": "Regeneración de la Imagen Corporativa",
+              "description": "Antes, Portico Sport tenía una imagen web que no reflejaba la esencia ni la modernidad de la marca. La paleta de colores, y el diseño en general resultaban desfasados y poco intuitivos, dificultando la conexión con los usuarios",
+              "results": "Con nuestro rediseño, transformamos cada elemento visual. La nueva imagen de marca se caracteriza por una estética moderna y profesional, con una paleta de colores renovada, tipografías actualizadas y un diseño limpio que mejora la usabilidad. Este cambio no solo refrescó la apariencia de la web, sino que también reforzó la identidad de Portico Sport, permitiéndole proyectar una imagen coherente y atractiva a nivel global.",
+              "interaction": "Desliza el control para ver la comparación antes y después y descubre cómo una estrategia de diseño integral puede transformar la percepción de tu marca.",
+              "images": {
+                "BEFORE": {
+                  "src": "/services/old-hero-portico.webp",
+                  "alt": "Portico Sport Antes"
+                },
+                "AFTER": {
+                  "src": "/services/new-hero-portico.webp",
+                  "alt": "Portico Sport Después"
+                }
+              }
+            },
+            "UX_DESIGN": {
+              "title": "Una Experiencia Intuitiva y Atractiva para Portico Sport",
+              "description": "Uno de los mayores desafíos que teníamos en Portico Sport era la falta de una experiencia de usuario optimizada. La navegación era poco intuitiva, el acceso a la información no estaba bien estructurado y los tiempos de carga dificultaban la retención de visitantes. Para lograr una web corporativa eficiente, en AstraHub aplicamos una metodología centrada en el usuario que permitió mejorar significativamente la usabilidad y conversión del sitio.",
+              "title2": "¿Qué hicimos para mejorar la UX?",
+              "title3": "Resultados Clave",
+              "video": "/services/video-compare-portico",
+              "actions": [{
+                "title": "Reorganización de Contenidos y Secciones",
+                "description": "Diseñamos una arquitectura de la información más clara y jerarquizada, destacando las categorías y productos de Portico Sport de forma que el usuario pudiera encontrarlos sin fricción.",
+                "lottieJson": "/services/content.json"
+              }, {
+                "title": "Diseño Responsivo y Multi-idioma",
+                "description": "Implementamos un diseño adaptable a todo tipo de dispositivos (móvil, tablet y escritorio), con la posibilidad de cambiar de idioma de forma fluida. Esto facilita la expansión internacional y brinda una experiencia uniforme para usuarios de diferentes países.",
+                "lottieJson": "/services/responsive.json"
+              }, {
+                "title": "Navegación Intuitiva y Elementos Visuales Claros",
+                "description": "Simplificamos los menús y utilizamos iconos e imágenes representativas para guiar al usuario. De esta manera, cada sección se volvió más fácil de identificar, reduciendo la tasa de abandono y mejorando la satisfacción de los visitantes.",
+                "lottieJson": "/services/Interaction.json"
+              }, {
+                "title": "Microinteracciones y Retroalimentación Inmediata",
+                "description": "Añadimos pequeños detalles interactivos (como animaciones en botones o notificaciones de confirmación) que hacen que la navegación sea más dinámica y agradable, generando una conexión positiva con la marca.",
+                "lottieJson": "/services/Navigation.json"
+              }],
+              "results": [{
+                "title": "Mayor Participación y Retención de Usuarios",
+                "description": "La nueva estructura y los elementos de diseño contribuyeron a una navegación más sencilla, reduciendo la frustración y aumentando el tiempo de permanencia en la web.",
+                "lottieJson": "/services/advantage.json"
+                }, {
+                  "title": "Incremento en la Conversión de Formularios",
+                  "description": "Con la experiencia de usuario optimizada, se observó un aumento significativo en los formularios de contacto y solicitudes de información, reflejando la confianza y comodidad que siente el visitante.",
+                  "lottieJson": "/services/register.json"
+                  }, {
+                  "title": "Refuerzo de la Identidad de Marca",
+                  "description": "Al alinear la experiencia de usuario con la nueva imagen corporativa, Portico Sport transmite una sensación de profesionalidad y modernidad que conecta con su público objetivo.",
+                  "lottieJson": "/services/headquarter.json"
+              }]
+            }
+          }
         }
       }
     },

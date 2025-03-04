@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300">
+  <defs></defs>
+  <style>
+    .axis {
+      stroke: #333;
+      stroke-width: 2;
+    }
+    .grid {
+      stroke: #ccc;
+      stroke-dasharray: 2,2;
+    }
+    .line {
+      fill: none;
+      stroke-width: 2;
+    }
+    .legend {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      fill: #fff;
+    }
+    .labels {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+    }
+  </style>
+  <path class="line" stroke="#d33" d="M50,216         L110,216        L170,214        L230,212        L290,212        L350,210        L410,208        L470,204        L530,196        L590,180        L650,140        L710,38"></path>
+  <path class="line" stroke="#f90" d="M50,214        L110,214        L170,212        L230,210        L290,210        L350,210        L410,210        L470,210        L530,208        L590,206        L650,204        L710,200"></path>
+  <path class="line" stroke="#0c0" d="M50,210        L110,210        L170,208        L230,206        L290,206        L350,206        L410,204        L470,204        L530,200        L590,196        L650,192        L710,188"></path>
+  <path class="line" stroke="#00f" d="M50,218        L110,218        L170,218        L230,218        L290,218        L350,218        L410,218        L470,218        L530,218        L590,218        L650,216        L710,216"></path>
+  <path class="line" stroke="#c0c" d="M50,216        L110,216        L170,216        L230,216        L290,216        L350,216        L410,216        L470,216        L530,216        L590,214        L650,212        L710,174"></path>
+  <g class="legend" transform="matrix(1, 0, 0, 1, 60, 20)">
+    <rect x="50" y="10" width="10" height="10" fill="#d33"></rect>
+    <text x="65" y="19" style="white-space: pre;">porticosport.com</text>
+    <rect x="180" y="10" width="10" height="10" fill="#f90"></rect>
+    <text x="195" y="19" style="white-space: pre;">Competidor 1</text>
+    <rect x="290" y="10" width="10" height="10" fill="#0c0"></rect>
+    <text x="305" y="19" style="white-space: pre;">Competidor 2</text>
+    <rect x="395" y="10" width="10" height="10" fill="#00f"></rect>
+    <text x="410" y="19" style="white-space: pre;">Competidor 3</text>
+    <rect x="500" y="10" width="10" height="10" fill="#c0c"></rect>
+    <text x="515" y="19" style="white-space: pre;">Competidor 4</text>
+  </g>
+  <text x="326" y="240" font-size="10" class="labels" fill="#fff" style="white-space: pre; font-size: 12px;">Índice de visibilidad</text>
+</svg>
