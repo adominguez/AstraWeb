@@ -4,13 +4,15 @@ import Card from '../components/Card.astro';
 import HeroSection from '@components/Sections/HeroSection.astro';
 import FeaturesSection from '@components/Sections/FeaturesSection.astro';
 import ProjectsSection from '@components/Sections/ProjectsSection.astro';
-import CallToActionSection from '@components/Sections/CallToActionSection.astro';
 import ProcessSection from '@components/Sections/ProcessSection.astro';
 import language from '@data/i18n/es.json';
 import FaqsSection from '@components/Sections/FaqsSection.astro';
 import WhyChooseSection from '@components/Sections/WhyChooseSection.astro';
 import IsForYouSection from '@components/Sections/IsForYouSection.astro';
-const { TITLE, DESCRIPTION } = language.PAGES.HOME
+import CorporativeCta from '@components/Sections/CorporativeCta.astro';
+
+const { TITLE, DESCRIPTION, SECTIONS } = language.PAGES.HOME
+const { PROCESS, CALL_TO_ACTION, FAQS } = SECTIONS;
 ---
 
 <Layout title={TITLE} description={DESCRIPTION}>
@@ -18,9 +20,9 @@ const { TITLE, DESCRIPTION } = language.PAGES.HOME
 		<HeroSection />
 		<FeaturesSection />
 		<ProjectsSection />
-		<CallToActionSection />
-		<ProcessSection />
-		<FaqsSection />
+		<CorporativeCta {...CALL_TO_ACTION} />
+		<ProcessSection {...PROCESS} />
+		<FaqsSection {...FAQS} />
 		<IsForYouSection />
 		<WhyChooseSection />
 	</main>

@@ -8,9 +8,11 @@ import WhyChooseCorporative from '@components/Sections/WhyChooseCorporative.astr
 import InnovationCorporative from '@components/Sections/InnovationCorporative.astro';
 import SuccessHistoryCorporative from '@components/Sections/SuccessHistoryCorporative.astro';
 import CorporativeCta from '@components/Sections/CorporativeCta.astro';
+import ProcessSection from '@components/Sections/ProcessSection.astro';
+import FaqsSection from '@components/Sections/FaqsSection.astro';
 import BasicCta from '@components/Sections/BasicCta.astro';
 
-const { META_TITLE, META_DESCRIPTION, HERO_SECTION, FIRST_SECTION, SECOND_CTA, FIRST_CTA } = language.PAGES.SERVICES.CORPORATIVE_WEB_DESIGN;
+const { META_TITLE, META_DESCRIPTION, HERO_SECTION, FIRST_SECTION, SECOND_CTA, FIRST_CTA, PROCESS, FAQS } = language.PAGES.SERVICES.CORPORATIVE_WEB_DESIGN;
 ---
 
 <Layout simpleLogo title={META_TITLE} description={META_DESCRIPTION}>
@@ -28,6 +30,8 @@ const { META_TITLE, META_DESCRIPTION, HERO_SECTION, FIRST_SECTION, SECOND_CTA, F
     <InnovationCorporative />
     <SuccessHistoryCorporative />
     <CorporativeCta {...SECOND_CTA} />
+    <ProcessSection {...PROCESS} />
+    <FaqsSection {...FAQS} />
   </main>
 </Layout>
 

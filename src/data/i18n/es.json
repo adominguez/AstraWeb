@@ -58,13 +58,10 @@
           "THIRD_CONTENT": "A continuación verás algunos de los trabajos más importantes que hemos hecho hasta el momento, ¿quién sabe? Quizás tu proyecto también podría estar aquí."
         },
         "CALL_TO_ACTION": {
-          "PRETITLE": "¿Quieres una web que sea diferencial?",
-          "TITLE": "Ha llegado el momento de hacer que tu web destaque del resto de la competencia",
-          "CTA": "Quiero una web que destaque",
-          "FIRST_IMAGE": "/call-to-action/stand-out-amico.svg",
-          "SECOND_IMAGE": "/call-to-action/website-image.svg",
-          "FIRST_IMAGE_ALT": "Destaca entre tu competencia",
-          "SECOND_IMAGE_ALT": "Haz que tu web brille"
+          "title": "¿Quieres una web que sea diferencial?",
+          "text": "Ha llegado el momento de hacer que tu web destaque del resto de la competencia.",
+          "ctaText": "Quiero una web que destaque",
+          "lottieJson": "/call-to-action/cta.json"
         },
         "PROCESS": {
           "ID": "proceso",
@@ -422,6 +419,133 @@
           "text": "Si deseas mejorar la imagen de tu empresa y conectar con tu audiencia a través de un diseño web corporativo personalizado, en AstraHub estamos listos para ayudarte. Crearemos una página a medida que refleje la esencia de tu marca y potencie tus resultados.",
           "ctaText": "¡Comencemos cuanto antes!",
           "lottieJson": "/services/corporative/cta.json"
+        },
+        "PROCESS": {
+          "ID": "proceso",
+          "TITLE": "Descubre cómo transformamos tu idea en una web de alto impacto",
+          "FIRST_CONTENT": "Para alcanzar el éxito en el desarrollo de una página web corporativa, es esencial contar con un enfoque meticuloso y adaptado a cada proyecto. Nuestro método está diseñado para crear soluciones digitales únicas, que se alinean con tus objetivos comerciales y se ajustan a tus necesidades específicas.",
+          "SECOND_CONTENT": "Desde la evaluación inicial y el análisis competitivo, hasta la creación del diseño visual y la optimización SEO, seguimos una ruta estratégica que garantiza resultados excepcionales. Nuestro equipo de especialistas se encarga de cada detalle, asegurando que tu sitio no solo sea visualmente impactante, sino también intuitivo y eficiente para captar y retener a tu audiencia.",
+          "STEPS": [
+            {
+              "id": 1,
+              "label": "Primer contacto",
+              "title": "Contacto Inicial: Formulario de Información",
+              "objective": "Comenzamos recabando la información esencial a través de un formulario, para entender tus necesidades y definir el tipo de sitio que deseas.",
+              "actions": "Si estás listo para dar el primer paso, completa nuestro formulario y comenzaremos a esbozar tu proyecto.",
+              "emoji": "📝",
+              "image": "/process/form.svg",
+              "color": "GRAY_TEXT_900",
+              "bgColor": "YELLOW_BG_400"
+            },
+            {
+              "id": 2,
+              "label": "Primera reunión",
+              "title": "Reunión Inicial: Definición de Objetivos",
+              "objective": "Tras analizar la información proporcionada, establecemos una comunicación directa para discutir objetivos, expectativas y requisitos específicos de tu proyecto.",
+              "emoji": "🤝",
+              "image": "/process/meeting.svg",
+              "color": "WHITE_TEXT_COLOR",
+              "bgColor": "BLUE_BG_500"
+            },
+            {
+              "id": 3,
+              "label": "Investigación y Estrategia",
+              "title": "Análisis de Mercado y Planificación Estratégica",
+              "objective": "Realizamos un estudio de mercado y evaluamos a tus competidores para definir una estrategia de contenidos y segmentar tu público objetivo, asegurando un enfoque preciso en cada detalle.",
+              "emoji": "🔍",
+              "image": "/process/strategy.svg",
+              "color": "WHITE_TEXT_COLOR",
+              "bgColor": "GREEN_BG_500"
+            },
+            {
+              "id": 4,
+              "label": "Diseño Personalizado",
+              "title": "Creación del Diseño y Prototipado",
+              "objective": "Desarrollamos una propuesta de diseño que refleje la identidad de tu marca, presentándote un prototipo interactivo para que visualices la futura apariencia de tu sitio.",
+              "emoji": "🎨",
+              "image": "/process/design.svg",
+              "color": "WHITE_TEXT_COLOR",
+              "bgColor": "PINK_BG_500"
+            },
+            {
+              "id": 5,
+              "label": "Desarrollo y Programación",
+              "title": "Implementación y Desarrollo Web",
+              "objective": "Con el diseño aprobado, nuestro equipo de desarrolladores implementa la web utilizando tecnologías de vanguardia, garantizando un rendimiento óptimo y una experiencia de usuario sobresaliente.",
+              "emoji": "💻",
+              "image": "/process/development.svg",
+              "color": "WHITE_TEXT_COLOR",
+              "bgColor": "PURPLE_BG_600"
+            },
+            {
+              "id": 6,
+              "label": "Optimización y Pruebas",
+              "title": "Optimización de Rendimiento y Validación",
+              "objective": "Antes del lanzamiento, optimizamos cada página para SEO y realizamos pruebas exhaustivas para asegurar que la web cumpla con los estándares de calidad y usabilidad.",
+              "emoji": "🧪",
+              "image": "/process/testing.svg",
+              "color": "WHITE_TEXT_COLOR",
+              "bgColor": "ORANGE_BG_500"
+            },
+            {
+              "id": 7,
+              "label": "Lanzamiento y Mantenimiento",
+              "title": "Despliegue y Soporte Continuo",
+              "objective": "Finalmente, lanzamos la web y monitoreamos su desempeño. Ofrecemos un servicio continuo de mantenimiento y soporte técnico para mantener tu sitio actualizado y siempre en óptimas condiciones.",
+              "emoji": "🚀",
+              "image": "/process/launch.svg",
+              "color": "WHITE_TEXT_COLOR",
+              "bgColor": "TEAL_BG_500"
+            }
+          ]
+        },
+        "FAQS": {
+          "ID": "preguntas-frecuentes",
+          "TITLE": "Resuelve tus dudas sobre la creación de una web corporativa profesional",
+          "FIRST_CONTENT": "Sabemos que al plantearte el desarrollo de un sitio web corporativo surgen numerosas preguntas. En esta sección abordamos las inquietudes más comunes de quienes buscan una solución digital a medida para su negocio.",
+          "SECOND_CONTENT": "Aquí encontrarás respuestas detalladas sobre nuestros procesos, tecnologías y metodologías, para que tengas toda la información necesaria y tomes la mejor decisión para impulsar tu presencia online.",
+          "ITEMS": [
+            {
+              "question": "¿Podré gestionar el contenido de mi web de forma autónoma?",
+              "answer": "Claro, en AstraHub desarrollamos sitios que te permiten actualizar el contenido fácilmente, con herramientas intuitivas y un manual de uso, para que puedas hacer cambios sin depender de terceros."
+            },
+            {
+              "question": "¿Qué tecnologías emplean para crear la web corporativa?",
+              "answer": "Utilizamos tecnologías de vanguardia como HTML, CSS, JavaScript y frameworks especializados, junto con sistemas de gestión de contenidos, garantizando que tu web sea rápida, segura y escalable."
+            },
+            {
+              "question": "¿Puedo solicitar ajustes o modificaciones en el diseño?",
+              "answer": "Sí, nuestro proceso de diseño es completamente colaborativo e iterativo. Incluimos varias fases de revisión para asegurarnos de que el resultado final refleje fielmente tu visión y necesidades."
+            },
+            {
+              "question": "¿Cuáles son las opciones de pago disponibles?",
+              "answer": "Ofrecemos métodos de pago flexibles, como transferencia bancaria, tarjeta de crédito y domiciliación bancaria, asegurando transacciones seguras y transparentes, con facturación detallada."
+            },
+            {
+              "question": "¿Cuál es el plazo estimado para desarrollar una web corporativa?",
+              "answer": "El tiempo de desarrollo varía según la complejidad del proyecto, pero en general una web corporativa se completa en un plazo de 4 a 6 semanas, sujeto a la disponibilidad de información y feedback."
+            },
+            {
+              "question": "¿AstraHub se encarga también de la creación de contenido e imágenes?",
+              "answer": "Sí, ofrecemos servicios de copywriting y contamos con acceso a bancos de imágenes de alta calidad, para asegurarnos de que cada elemento de tu web comunique eficazmente tu mensaje y mejore tu SEO."
+            },
+            {
+              "question": "¿Integran mis redes sociales en el sitio web?",
+              "answer": "Sí, podemos incorporar la integración de redes sociales, permitiendo que tus publicaciones se actualicen automáticamente y facilitando el acceso a tus perfiles desde la web."
+            },
+            {
+              "question": "¿Seré el propietario total de mi sitio web?",
+              "answer": "Sí, al finalizar el proyecto serás el dueño completo de tu web, incluyendo el dominio y todos los elementos visuales, con acceso total para gestionarla en cualquier momento."
+            },
+            {
+              "question": "¿Ofrecen servicios de mantenimiento y actualización?",
+              "answer": "Sí, contamos con planes de mantenimiento mensual que incluyen actualizaciones de seguridad, mejoras continuas y soporte técnico para asegurar que tu sitio se mantenga siempre en óptimas condiciones."
+            },
+            {
+              "question": "¿Qué asesoramiento brindan para elegir la mejor solución web para mi negocio?",
+              "answer": "Nuestro equipo de expertos te guiará en la selección del diseño, funcionalidades y tipo de sitio que mejor se adapten a tus objetivos, garantizando una solución digital que impulse el crecimiento de tu negocio."
+            }
+          ]
         }
       }
     },
