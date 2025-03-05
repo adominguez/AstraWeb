@@ -278,7 +278,7 @@
           "SUBTITLE": "Haz que tu web refleje la <span class='text-yellow-gradient text-balance'>esencia de tu empresa</span>",
           "TEXT": "Consigue una imagen de marca diferencial con un diseño web corporativo que represente su esencia y conecte con tu audiencia.",
           "IMAGE": {
-            "src": "/services/corporative-web-design.svg",
+            "src": "/services/corporative/corporative-web-design.svg",
             "alt": "Diseño Web Corporativo"
           },
           "CTA": "Quiero una web corporativa"
@@ -309,6 +309,11 @@
               "IMAGE": "/features/copywriting.svg"
             }
           }
+        },
+        "FIRST_CTA": {
+          "title": "¿Sientes que tu web no refleja la calidad de tu negocio?",
+          "text": "Si tu sitio actual no transmite la profesionalidad que tu marca merece, probablemente estés perdiendo oportunidades. Con un diseño web corporativo personalizado tendrás una imagen renovada, obteniendo mayor confianza de tus clientes, lo que provocará que tengas más y mejores conversiones. Crearemos de tu web un sitio donde tus usuarios se sientan cómodos y conecten con tu marca.",
+          "ctaText": "Quiero una web corporativa"
         },
         "WHY_CHOOSE_CORPORATIVE": {
           "TITLE": "¿Por qué elegir un diseño web corporativo personalizado?",
@@ -364,11 +369,11 @@
               "interaction": "Desliza el control para ver la comparación antes y después y descubre cómo una estrategia de diseño integral puede transformar la percepción de tu marca.",
               "images": {
                 "BEFORE": {
-                  "src": "/services/old-hero-portico.webp",
+                  "src": "/services/corporative/old-hero-portico.webp",
                   "alt": "Portico Sport Antes"
                 },
                 "AFTER": {
-                  "src": "/services/new-hero-portico.webp",
+                  "src": "/services/corporative/new-hero-portico.webp",
                   "alt": "Portico Sport Después"
                 }
               }
@@ -378,39 +383,45 @@
               "description": "Uno de los mayores desafíos que teníamos en Portico Sport era la falta de una experiencia de usuario optimizada. La navegación era poco intuitiva, el acceso a la información no estaba bien estructurado y los tiempos de carga dificultaban la retención de visitantes. Para lograr una web corporativa eficiente, en AstraHub aplicamos una metodología centrada en el usuario que permitió mejorar significativamente la usabilidad y conversión del sitio.",
               "title2": "¿Qué hicimos para mejorar la UX?",
               "title3": "Resultados Clave",
-              "video": "/services/video-compare-portico",
+              "video": "/services/corporative/video-compare-portico",
               "actions": [{
                 "title": "Reorganización de Contenidos y Secciones",
                 "description": "Diseñamos una arquitectura de la información más clara y jerarquizada, destacando las categorías y productos de Portico Sport de forma que el usuario pudiera encontrarlos sin fricción.",
-                "lottieJson": "/services/content.json"
+                "lottieJson": "/services/corporative/content.json"
               }, {
                 "title": "Diseño Responsivo y Multi-idioma",
                 "description": "Implementamos un diseño adaptable a todo tipo de dispositivos (móvil, tablet y escritorio), con la posibilidad de cambiar de idioma de forma fluida. Esto facilita la expansión internacional y brinda una experiencia uniforme para usuarios de diferentes países.",
-                "lottieJson": "/services/responsive.json"
+                "lottieJson": "/services/corporative/responsive.json"
               }, {
                 "title": "Navegación Intuitiva y Elementos Visuales Claros",
                 "description": "Simplificamos los menús y utilizamos iconos e imágenes representativas para guiar al usuario. De esta manera, cada sección se volvió más fácil de identificar, reduciendo la tasa de abandono y mejorando la satisfacción de los visitantes.",
-                "lottieJson": "/services/Interaction.json"
+                "lottieJson": "/services/corporative/Interaction.json"
               }, {
                 "title": "Microinteracciones y Retroalimentación Inmediata",
                 "description": "Añadimos pequeños detalles interactivos (como animaciones en botones o notificaciones de confirmación) que hacen que la navegación sea más dinámica y agradable, generando una conexión positiva con la marca.",
-                "lottieJson": "/services/Navigation.json"
+                "lottieJson": "/services/corporative/Navigation.json"
               }],
               "results": [{
                 "title": "Mayor Participación y Retención de Usuarios",
                 "description": "La nueva estructura y los elementos de diseño contribuyeron a una navegación más sencilla, reduciendo la frustración y aumentando el tiempo de permanencia en la web.",
-                "lottieJson": "/services/advantage.json"
+                "lottieJson": "/services/corporative/advantage.json"
                 }, {
                   "title": "Incremento en la Conversión de Formularios",
                   "description": "Con la experiencia de usuario optimizada, se observó un aumento significativo en los formularios de contacto y solicitudes de información, reflejando la confianza y comodidad que siente el visitante.",
-                  "lottieJson": "/services/register.json"
+                  "lottieJson": "/services/corporative/register.json"
                   }, {
                   "title": "Refuerzo de la Identidad de Marca",
                   "description": "Al alinear la experiencia de usuario con la nueva imagen corporativa, Portico Sport transmite una sensación de profesionalidad y modernidad que conecta con su público objetivo.",
-                  "lottieJson": "/services/headquarter.json"
+                  "lottieJson": "/services/corporative/headquarter.json"
               }]
             }
           }
+        },
+        "SECOND_CTA": {
+          "title": "¿Listo para Transformar Tu Presencia Online?",
+          "text": "Si deseas mejorar la imagen de tu empresa y conectar con tu audiencia a través de un diseño web corporativo personalizado, en AstraHub estamos listos para ayudarte. Crearemos una página a medida que refleje la esencia de tu marca y potencie tus resultados.",
+          "ctaText": "¡Comencemos cuanto antes!",
+          "lottieJson": "/services/corporative/cta.json"
         }
       }
     },
