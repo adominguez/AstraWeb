@@ -15,7 +15,7 @@ const { TITLE, CONTENT, CONTENT2, IMAGE, ITEMS } = Astro.props;
   <div class="flex flex-col md:flex-row gap-4 mb-8">
     <BentoGrid tag="ul" cols={2} class="mt-8">
       {
-        ITEMS.map(({ title, description }: {title:string, description:string}) => (
+        ITEMS.map(({ title, description }: {title: string, description: string}) => (
           <BentoItem tag="li">
             <h3 class=" font-IBMCondensed text-accent">{title}</h3>
             <p class="pt-4 text-gray-300 font-extralight text-pretty" set:html={description}></p>
