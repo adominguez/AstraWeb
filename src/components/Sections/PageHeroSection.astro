@@ -1,7 +1,5 @@
 ---
-import CtaButton from "@components/ui/CtaButton.astro";
 import SectionContainer from "./SectionContainer.astro";
-import language from '@data/i18n/es.json';
 import Blendy from "@components/Blendy.astro";
 import Image from "astro/components/Image.astro";
 
@@ -19,7 +17,7 @@ const { title, subtitle, image, text, cta } = Astro.props
     </div>
   </div>
   <div class="flex-1 flex justify-center items-center">
-    <Image src={image.src} alt={image.alt} width={500} height={500} class="max-w-80" />
+    <Image loading="eager" src={image.src} alt={image.alt} width={500} height={500} class="max-w-80" />
   </div>
 </SectionContainer>
 
@@ -28,13 +26,8 @@ const { title, subtitle, image, text, cta } = Astro.props
     animation: moveInTop .5s ease-out;
   }
 
-  .hero {
-    height: calc(100vh - 56px);
-  }
-
   h1 {
 		line-height: 1.2;
 		text-align: center;
 	}
-
 </style>
