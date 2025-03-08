@@ -124,6 +124,35 @@ const { title, description, simpleLogo = false, image = 'open-graph/OpenGraph-ho
       animation-range: entry 100px;
     }
 
+		.animate-fade-up {
+			animation: fade-up var(--tw-animate-duration, 1s) var(--tw-animate-easing, ease) var(--tw-animate-delay, 0s) var(--tw-animate-iteration, 1) var(--tw-animate-fill, both);
+		}
+
+		.animate-fade {
+			animation: fade var(--tw-animate-duration, 1s) var(--tw-animate-easing, ease) var(--tw-animate-delay, 0s) var(--tw-animate-iteration, 1) var(--tw-animate-fill, both);
+		}
+
+		@keyframes fade {
+			0% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+
+		@keyframes fade-up {
+			0% {
+				opacity: 0;
+				transform: translateY(2rem);
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
     @keyframes fade-in {
       to {
         scale: 1;
@@ -131,16 +160,21 @@ const { title, description, simpleLogo = false, image = 'open-graph/OpenGraph-ho
       }
     }
 
-		@keyframes animate_border {
-			to {
-				transform: translateX(-50%);
-			}
-		}
-
 		@keyframes moveInTop {
 			0% {
 				opacity: 0;
 				transform: translateY(5rem);
+			}
+			100% {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		@keyframes moveInBottom {
+			0% {
+				opacity: 0;
+				transform: translateY(-5rem);
 			}
 			100% {
 				opacity: 1;

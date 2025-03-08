@@ -18,8 +18,5 @@ export default {
 				IBMCondensed: ['IBM Plex Sans Condensed', ...defaultTheme.fontFamily.sans],
 			}
 		},
-	},
-	plugins: [
-    require('tailwindcss-animated')
-  ],
+	}
 }

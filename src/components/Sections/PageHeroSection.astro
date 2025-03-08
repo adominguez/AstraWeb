@@ -17,7 +17,7 @@ const { title, subtitle, image, text, cta } = Astro.props
     </div>
   </div>
   <div class="flex-1 flex justify-center items-center">
-    <Image loading="eager" src={image.src} alt={image.alt} width={500} height={500} class="max-w-80" />
+    <Image loading="eager" src={image.src} alt={image.alt} width={500} height={500} class="hero-image max-w-80" />
   </div>
 </SectionContainer>
 
@@ -30,4 +30,8 @@ const { title, subtitle, image, text, cta } = Astro.props
 		line-height: 1.2;
 		text-align: center;
 	}
+
+  .hero-image {
+    animation: moveInBottom .5s ease-out;
+  }
 </style>
