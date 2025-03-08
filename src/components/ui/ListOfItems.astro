@@ -1,0 +1,43 @@
+---
+interface Props {
+  items: string[],
+  itemClass?: string,
+  showlistImage?: boolean,
+  class?: string
+}
+
+const {items = [], itemClass = '', showlistImage = true, class : className = ''} = Astro.props
+---
+
+<ul class:list={[
+  "space-y-2",
+  className
+]}>
+  {
+    items.map((item: string) => (
+      <li class="flex items-center">
+        {
+          showlistImage && (
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="w-5 h-5 text-green-400 mr-2 flex-shrink-0 self-start mt-2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <path d="m9 11 3 3L22 4" />
+            </svg>
+          )
+        }
+        <span class:list={[
+          "text-gray-300 font-extralight text-pretty",
+          itemClass
+        ]} set:html={item} />
+      </li>
+    ))
+  }
+</ul>

@@ -18,7 +18,6 @@ interface Step {
 const { TITLE, FIRST_CONTENT, SECOND_CONTENT, STEPS, ID } = Astro.props;
 const steps = STEPS;
 const currentStep = 1;
-
 ---
 
 <SectionContainer class="mb-20 md:p-6" id={ID}>
@@ -79,7 +78,7 @@ const currentStep = 1;
   </div>
 </SectionContainer>
 
-<script type="module">
+<script type="module" define:vars={{steps}}>
   document.addEventListener('astro:page-load', () => {
     const progressSlider = document.querySelector('.progress-slider');
     const stepsButtons = document.querySelectorAll('.step-button');
@@ -87,7 +86,7 @@ const currentStep = 1;
     const nextButton = document.getElementById('next');
     const prevButton = document.getElementById('prev');
     const contentWrapper = document.querySelector('.content-wrapper');
-    const steps = 7;
+    const steps = stepsButtons.length;
     let currentStep = 1;
   
     function updateStep() {

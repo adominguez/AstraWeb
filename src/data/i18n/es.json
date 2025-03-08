@@ -547,6 +547,290 @@
             }
           ]
         }
+      },
+      "CUSTOM_WEB_DEVELOPMENT": {
+        "META_TITLE": "Desarrollo Web a Medida: Soluciones Personalizadas para tu Negocio",
+        "META_DESCRIPTION": "Creamos soluciones de desarrollo web a medida adaptadas a tus necesidades. Webs personalizadas, escalables y optimizadas para el éxito de tu negocio.",
+        "HERO_SECTION": {
+          "TITLE": "Desarrollo Web a Medida: Soluciones Personalizadas para tu Negocio",
+          "SUBTITLE": "Construimos soluciones digitales <span class='text-yellow-gradient text-balance'>100% adaptadas a ti</span>",
+          "TEXT": "Cada negocio es único, y tu web también debería serlo. Desarrollamos soluciones digitales totalmente personalizadas, adaptadas a tus necesidades y con tecnología de vanguardia.",
+          "IMAGE": {
+            "src": "/services/custom/custom-web-development.svg",
+            "alt": "Desarrollo Web a Medida"
+          },
+          "CTA": "Quiero una web a medida"
+        },
+        "FIRST_SECTION": {
+          "TITLE": "Transforma tu negocio con un desarrollo web a medida",
+          "CONTENT": "<p class='pt-4 text-xl md:text-2xl font-light text-pretty'><strong>El desarrollo web a medida es la creación de un sitio web diseñado y programado desde cero, completamente adaptado a las necesidades y objetivos específicos de tu negocio</strong>.</p>",
+          "CONTENT2": "<p class='pt-4 text-gray-300 font-extralight text-pretty'>A diferencia de las soluciones basadas en plantillas, donde el diseño y las funcionalidades están predeterminados, el desarrollo a medida te permite obtener una plataforma única, escalable y optimizada en cada detalle.</p><p class='pt-4 text-gray-300 font-extralight text-pretty'>Esta metodología se centra en crear cada línea de código y cada elemento visual para reflejar la identidad de tu marca y responder a requerimientos particulares, ya sea integrar sistemas personalizados, automatizar procesos o desarrollar funcionalidades exclusivas que no se encuentran en soluciones estándar.</p>"
+        },
+        "WHAT_DO_WE_OFFER": {
+          "TITLE": "¿Qué ofrecemos en nuestro desarrollo web a medida?",
+          "CONTENT": "Estamos especializados en el desarrollo web profesional y personalizado, para conseguir plataformas a medida que se adapten a las necesidades de tu negocio. Nuestro enfoque de desarrollo web a medida se basa en cinco pilares fundamentales:",
+          "ITEMS": {
+            "PERSONALIZATION":{
+              "TITLE": "Personalización Absoluta",
+              "CONTENT": "Cada proyecto es único y diseñado específicamente para tu negocio, adaptado a tus objetivos y funcionalidades de negocio requeridas.",
+              "IMAGE": "/services/custom/customization.svg"
+            },
+            "PERFORMANCE": {
+              "TITLE": "Rendimiento y velocidad",
+              "CONTENT": "Se optimiza el código y la estructura para garantizar tiempos de carga rápidos y una experiencia de usuario fluida.",
+              "IMAGE": "/features/fast-loading.svg"
+            },
+            "INTEGRATIONS": {
+              "TITLE": "Integraciones y Automatización",
+              "CONTENT": "Conectamos tu web con herramientas de terceros, APIs y sistemas de gestión para automatizar procesos y mejorar la eficiencia de tu negocio.",
+              "IMAGE": "/services/custom/integrations.svg"
+            },
+            "SCALABILITY": {
+              "TITLE": "Escalabilidad",
+              "CONTENT": "La plataforma estará preparada para crecer y adaptarse conforme evoluciona tu negocio, incorporando nuevas funcionalidades y mejoras con el tiempo.",
+              "IMAGE": "/services/custom/scalability.svg"
+            },
+            "SECURITY": {
+              "TITLE": "Seguridad y Protección",
+              "CONTENT": "Implementamos medidas de seguridad avanzadas para proteger tus datos y los de tus clientes, garantizando la confidencialidad y la integridad de la información.",
+              "IMAGE": "/services/custom/security.svg"
+            }
+          }
+        },
+        "ITS_FOR_YOU": {
+          "TITLE": "¿Para quién es el Desarrollo Web a Medida?",
+          "CONTENT": "El desarrollo web a medida es la solución ideal para aquellos negocios que buscan más que una simple página web. Si tu empresa necesita funcionalidades específicas, integración con sistemas propios o una plataforma escalable, entonces esta opción es para ti.",
+          "TITLE_2": "¿Necesito un desarrollo web a medida?",
+          "CONTENT_2": "Si te identificas con alguno de estos perfiles, es muy probable que una web a medida sea la mejor opción para ti",
+          "ITEMS": {
+            "STARTUPS": {
+              "TITLE": "Startups y emprendedores con ideas innovadoras",
+              "CONTENT": "¿Tienes una idea de negocio única y las soluciones estándar no se adaptan a lo que necesitas? Con el desarrollo web a medida podemos construir desde cero la plataforma que necesitas, asegurando escalabilidad y flexibilidad para crecer con tu negocio.",
+              "LOTTIE_JSON": "/services/custom/startup.json",
+              "OPTIONS": [
+                "Soluciones personalizadas desde el inicio.",
+                "Webs y plataformas preparadas para escalar.",
+                "Integraciones con APIs y servicios específicos."
+              ]
+            },
+            "INTERNAL_SOFTWARE": {
+              "TITLE": "Empresas que necesitan integración con software interno",
+              "CONTENT": "Si tu empresa ya trabaja con herramientas como ERP, CRM o sistemas de gestión interna, una web a medida te permite conectarlas de manera eficiente.",
+              "LOTTIE_JSON": "/services/custom/internal_software.json",
+              "OPTIONS": [
+                "Sincronización con bases de datos empresariales.",
+                "Automatización de procesos internos.",
+                "Conexión con APIs y plataformas de terceros."
+              ]
+            },
+            "ECOMMERCE": {
+              "TITLE": "E-commerce con funcionalidades avanzadas",
+              "CONTENT": "Para tiendas online que buscan una experiencia de compra personalizada, integraciones con sistemas de pago específicos o funcionalidades únicas, el desarrollo web a medida es la mejor opción.",
+              "LOTTIE_JSON": "/services/custom/ecommerce.json",
+              "OPTIONS": [
+                "Carritos de compra personalizados.",
+                "Integración con sistemas de facturación y logística.",
+                "Optimización para conversión y SEO técnico."
+              ]
+            },
+            "AUTOMATE": {
+              "TITLE": "Negocios que requieren automatización y digitalización",
+              "CONTENT": "Las empresas que buscan optimizar procesos manuales pueden beneficiarse enormemente del desarrollo web a medida. Automatizar tareas reduce costos y mejora la eficiencia operativa.",
+              "LOTTIE_JSON": "/services/custom/automate.json",
+              "OPTIONS": [
+                "Paneles de control personalizados.",
+                "Flujos de trabajo automatizados.",
+                "Integraciones con herramientas de productividad."
+              ]
+            }
+          }
+        },
+        "FIRST_CTA": {
+          "title": "¿Tu negocio necesita algo más que una web estándar?",
+          "text": "Si las soluciones genéricas no cubren tus necesidades, es momento de dar el salto a una web a medida. En AstraHub desarrollamos plataformas únicas, optimizadas y escalables que se adaptan completamente a tu negocio. Hablemos y diseñemos la solución perfecta para ti.",
+          "ctaText": "Quiero una web a medida"
+        },
+        "SUCCESS_HISTORY_CUSTOM": {
+          "TITLE": "Caso de Éxito: El Árbol de las Historias – Plataforma de cuentos interactivos creada a medida con IA",
+          "FIRST_CONTENT": "El Árbol de las Historias es una web en la que los usuarios disfrutan de cuentos interactivos con múltiples caminos y finales. Cada historia está estructurada en nodos generados mediante inteligencia artificial, ofreciendo a los usuarios diferentes rutas según las decisiones que toman durante la lectura.",
+          "SECOND_CONTENT": "En AstraHub desarrollamos esta web a medida, implementando un modelo de datos único y una arquitectura tecnológica totalmente personalizada para garantizar un rendimiento óptimo y una experiencia interactiva sobresaliente.",
+          "CHALLENGES": {
+            "title": "Retos y necesidades iniciales",
+            "content1": "El desafío principal de este proyecto era crear una plataforma con funcionalidades específicas imposibles de obtener con soluciones estándar.",
+            "content2": "Necesitábamos un sistema de navegación ramificada que permitiera a los usuarios tomar decisiones y ver cómo estas influían en el desarrollo de la historia. Además, era esencial integrar un modelo de datos personalizado para gestionar la complejidad de los cuentos, personajes y rutas narrativas.",
+            "items": [
+              "<strong>Navegación ramificada:</strong> Cada historia debía ofrecer múltiples opciones, con nodos previamente generados, que se conectan de forma eficiente.",
+              "<strong>Modelo de datos personalizado:</strong> Requería una base de datos capaz de gestionar estructuras complejas de cuentos, personajes, categorías y múltiples rutas narrativas.",
+              "<strong>Integración con IA:</strong> Implementar un sistema para crear automáticamente el contenido de los cuentos mediante IA, asegurando coherencia narrativa.",
+              "<strong>Sistema de clasificación por edades y categorías:</strong> Necesitaba segmentación clara para diferentes públicos.",
+              "<strong>Rendimiento y velocidad de carga:</strong> Debía soportar miles de visitantes sin perder velocidad ni fluidez en la interacción."
+            ]
+          },
+          "SOLUTIONS": {
+            "title": "Nuestra solución: Desarrollo web totalmente personalizado",
+            "description": "En AstraHub desarrollamos una solución digital a medida que permitió resolver cada desafío planteado desde la raíz",
+            "items": [{
+              "title": "Modelo de datos personalizado",
+              "description": "Creamos una estructura única basada en nodos, conectados mediante enlaces directos para ofrecer múltiples rutas dentro de cada historia, además de ayudar al SEO. Cada nodo contiene fragmentos específicos de texto e imágenes generados previamente con IA para garantizar una experiencia coherente y fluida.",
+              "lottieJson": "/services/custom/database.json"
+            }, {
+              "title": "Automatización y generación previa de contenido con IA",
+              "description": "Desarrollamos un sistema que permite crear historias automáticamente antes de su publicación utilizando IA, generando textos e imágenes alineadas con la temática y categoría seleccionada.",
+              "lottieJson": "/services/custom/brain.json"
+            }, {
+              "title": "Optimización de la navegación interactiva",
+              "description": "Implementamos una navegación rápida y directa entre nodos previamente definidos, garantizando que los usuarios puedan avanzar fácilmente entre diferentes caminos y finales.",
+              "lottieJson": "/services/custom/data-nodes.json"
+            }, {
+              "title": "Sistema de clasificación y búsqueda",
+              "description": "Creamos un sistema eficiente de clasificación por edades, categorías y temáticas. Además añadimos un buscador en la web para mejorar la experiencia de usuario y la navegación.",
+              "lottieJson": "/services/custom/search.json"
+            }, {
+              "title": "Publicación automática e integración con redes sociales",
+              "description": "Desarrollamos un sistema de publicación automática en redes sociales, permitiendo compartir historias y atraer nuevos usuarios a la web y a las redes.",
+              "lottieJson": "/services/custom/community.json"
+            }]
+          },
+          "TECHNOLOGIES": {
+            "title": "Tecnologías utilizadas",
+            "content": "Para el desarrollo de El Árbol de las Historias, utilizamos tecnologías avanzadas y herramientas especializadas que nos permitieron crear una plataforma única y altamente funcional.",
+            "items": [{
+              "alt": "Astro",
+              "src": "/logos/astro.svg"
+            }, {
+              "alt": "Tailwind CSS",
+              "src": "/logos/tailwindcss.svg"
+            }, {
+              "alt": "Preact",
+              "src": "/logos/preact.svg"
+            }, {
+              "alt": "Node.js",
+              "src": "/logos/nodejs.svg"
+            }, {
+              "alt": "Turso",
+              "src": "/logos/turso.svg"
+            }, {
+              "alt": "Open IA",
+              "src": "/logos/openai.svg"
+            }],
+            "list": [
+              "<strong>Frontend:</strong> Astro, React, TailwindCSS",
+              "<strong>Backend:</strong> Astro (SSR), Node.js, APIs REST personalizadas",
+              "<strong>Base de datos:</strong> Turso (SQLite Serverless optimizado)",
+              "<strong>Automatización:</strong> Scripts personalizados para generación automática de historias mediante APIs de IA",
+              "<strong>Integraciones adicionales:</strong> Automatización de publicación en redes sociales"
+            ]
+          },
+          "RESULTS": {
+            "title": "Resultados y beneficios obtenidos",
+            "content": "El desarrollo web a medida de El Árbol de las Historias permitió crear una plataforma única y altamente interactiva, que se ha convertido en un referente en su sector y ha atraído a miles de usuarios a lo largo del tiempo.",
+            "items": [{
+              "title": "Web única en su sector",
+              "description": "Esta web dispone de funcionalidades y automatizaciones, que si se hubiesen realizado mediante platillas o CMS tradiciones hubiesen sido imposibles de replicar en un tiempo razonable, y evidentemente con mucho más trabajo.",
+              "image": "/services/custom/interactive.svg"
+            }, {
+              "title": "Posibilidad de escalar muy fácilmente",
+              "description": "Gracias a la arquitectura y tecnologías utilizadas, la web es muy fácilmente escalable, pudiendo añadir nuevas funcionalidades, automatizaciones cambios y mejoras muy fácilmente.",
+              "image": "/services/custom/scale.svg"
+            }, {
+              "title": "Experiencia de usuario inmersiva y destacada",
+              "description": "Los usuarios pueden disfrutar de historias interactivas con múltiples caminos y finales, es ideal para los más peques, ya que pueden fomentar la exploración y la creatividad, sin embargo también tiene un apartado para los más mayores.",
+              "image": "/services/custom/unique.svg"
+            }, {
+              "title": "Velocidad y rendimiento optimizados",
+              "description": "La web es capaz de soportar un alto tráfico manteniendo tiempos de carga mínimos, lo que asegura unos buenos resultados de SEO además de proporcionar una experiencia excelente para cada usuario.",
+              "image": "/services/custom/optimization.svg"
+            }]
+          }
+        },
+        "SECOND_CTA": {
+          "title": "¿Por qué hacer un desarrollo web a medida con AstraHub?",
+          "text": "El Árbol de las Historias demuestra cómo un <strong>desarrollo web a medida</strong> puede materializar proyectos digitales únicos que van más allá de lo que permiten las soluciones estándar. Al optar por AstraHub, obtienes una solución escalable, totalmente adaptada a tus necesidades y orientada a resultados.",
+          "ctaText": "¡Quiero llevar mi proyecto a otro nivel!",
+          "lottieJson": "/services/custom/cta-custom.json"
+        },
+        "PROCESS": {
+          "ID": "proceso",
+          "TITLE": "Nuestro proceso de desarrollo web a medida",
+          "FIRST_CONTENT": "Cada proyecto es único, pero seguimos un proceso claro y estructurado para asegurar los mejores resultados. Desde la idea hasta la implementación, nos enfocamos en crear una solución a la medida de tu negocio.",
+          "SECOND_CONTENT": "Te guiamos en cada paso del camino, desde la planificación estratégica hasta el mantenimiento post-lanzamiento, asegurando que tu web no solo funcione, sino que evolucione con tu negocio.",
+          "STEPS": [
+            {
+              "id": 1,
+              "label": "Primer contacto",
+              "title": "Formulario de contacto",
+              "objective": "Necesitamos que rellenes nuestro formulario de contacto para obtener información esencial sobre tu proyecto y tus necesidades.",
+              "emoji": "📝",
+              "image": "/process/form.svg",
+              "color": "GRAY_TEXT_900",
+              "bgColor": "YELLOW_BG_400"
+            },
+            {
+              "id": 2,
+              "label": "Reunión inicial",
+              "title": "Reunión inicial: Análisis de necesidades",
+              "objective": "Tras recibir tu información, estudiamos tu proyecto, programamos una reunión y analizamos contigo todas tus necesidades, objetivos y expectativas.",
+              "actions": "Definimos claramente los requerimientos del proyecto, realizando preguntas estratégicas para entender a fondo cómo tu negocio puede beneficiarse de un desarrollo web personalizado.",
+              "emoji": "📝",
+              "image": "/process/meeting.svg",
+              "color": "WHITE_TEXT_COLOR",
+              "bgColor": "BLUE_BG_500"
+            },
+            {
+              "id": 3,
+              "label": "Diseño UX/UI",
+              "title": "Diseño de experiencia y prototipado",
+              "objective": "Una vez que comprendemos tus necesidades, creamos un pequeño prototipo para definir la estructura, navegación y funcionalidad de la web.",
+              "emoji": "🎨",
+              "image": "/process/design.svg",
+              "color": "WHITE_TEXT_COLOR",
+              "bgColor": "PINK_BG_500"
+            },
+            {
+              "id": 4,
+              "label": "Desarrollo y pruebas",
+              "title": "Implementación y optimización",
+              "objective": "En esta etapa es cuando comenzamos con el desarrollo de tu proyecto.",
+              "actions": "Haremos tu web utilizando tecnologías punteras, con código limpio, asegurando rendimiento, SEO y seguridad, además la prepararemos para que pueda ser fácilmente escalable.",
+              "emoji": "💻",
+              "image": "/process/development.svg",
+              "color": "WHITE_TEXT_COLOR",
+              "bgColor": "PURPLE_BG_600"
+            },
+            {
+              "id": 5,
+              "label": "Lanzamiento y soporte",
+              "title": "Despliegue y mantenimiento",
+              "objective": "Una vez terminamos el desarrollo, y estés satisfecho con el resultado, Publicamos tu web para que esté lista para todo el público.",
+              "emoji": "🚀",
+              "image": "/process/launch.svg",
+              "color": "WHITE_TEXT_COLOR",
+              "bgColor": "TEAL_BG_500"
+            }
+          ]
+        },
+        "FAQS": {
+          "ID": "preguntas-frecuentes",
+          "TITLE": "Preguntas Frecuentes sobre Desarrollo Web a Medida",
+          "ITEMS": [
+            {
+              "question": "¿Cuánto tiempo tarda un desarrollo web a medida?",
+              "answer": "Depende de la complejidad del proyecto, pero normalmente un desarrollo web a medida tarda entre 6 y 12 semanas."
+            },
+            {
+              "question": "¿Qué tecnologías utilizan?",
+              "answer": "Trabajamos con tecnologías modernas como Next.js, Astro, React y bases de datos optimizadas como Turso y Firebase."
+            },
+            {
+              "question": "¿Puedo modificar la web después de su lanzamiento?",
+              "answer": "Sí, desarrollamos soluciones escalables y adaptables para que puedas hacer cambios o agregar funcionalidades en el futuro."
+            },
+            {
+              "question": "¿Ofrecen soporte y mantenimiento?",
+              "answer": "Sí, ofrecemos planes de mantenimiento para asegurar que tu web se mantenga optimizada y segura."
+            }
+          ]
+        }
       }
     },
     "PROJECTS": [
@@ -824,7 +1108,10 @@
             { "TEXT": "Work illustrations by Storyset", "URL": "https://storyset.com/work" },
             { "TEXT": "People illustrations by Storyset", "URL": "https://storyset.com/people" },
             { "TEXT": "Marketing illustrations by Storyset", "URL": "https://storyset.com/marketing" },
-            { "TEXT": "Technology illustrations by Storyset", "URL": "https://storyset.com/technology" }
+            { "TEXT": "Technology illustrations by Storyset", "URL": "https://storyset.com/technology" },
+            { "TEXT": "Business illustrations by Storyset", "URL": "https://storyset.com/business" },
+            { "TEXT": "Security illustrations by Storyset", "URL": "https://storyset.com/security" },
+            { "TEXT": "Phone illustrations by Storyset", "URL": "https://storyset.com/phone" }
           ],
           "CONTACT": "Si eres el autor de alguna imagen y consideras que su uso no está adecuadamente acreditado o deseas solicitar su eliminación, por favor, contáctanos a través de info@astrahub.dev."
         },

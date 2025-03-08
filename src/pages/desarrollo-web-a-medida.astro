@@ -1,0 +1,45 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SectionContainer from '@components/Sections/SectionContainer.astro';
+import language from "@data/i18n/es.json";
+import PageHeroSection from "@components/Sections/PageHeroSection.astro";
+import SuccessHistoryCustom from '@components/Sections/SuccessHistoryCustom.astro';
+import CorporativeCta from '@components/Sections/CorporativeCta.astro';
+import ProcessSection from '@components/Sections/ProcessSection.astro';
+import FaqsSection from '@components/Sections/FaqsSection.astro';
+import WhatDoWeOffer from '@components/Sections/WhatDoWeOffer.astro';
+import BasicCta from '@components/Sections/BasicCta.astro';
+import IsForYouDevelopmentSection from '@components/Sections/IsForYouDevelopmentSection.astro';
+
+const { META_TITLE, META_DESCRIPTION, HERO_SECTION, FIRST_SECTION, SECOND_CTA, FIRST_CTA, PROCESS, FAQS, ITS_FOR_YOU } = language.PAGES.SERVICES.CUSTOM_WEB_DEVELOPMENT;
+---
+
+<Layout simpleLogo title={META_TITLE} description={META_DESCRIPTION}>
+  <main class="text-white flex flex-col items-center">
+    <PageHeroSection title={HERO_SECTION.TITLE} subtitle={HERO_SECTION.SUBTITLE} image={HERO_SECTION.IMAGE} text={HERO_SECTION.TEXT} cta={HERO_SECTION.CTA} />
+    <SectionContainer class="pb-16">
+      <div class="w-full text-xl text-white flex flex-col gap-4 p-6">
+        <h2 class="text-3xl md:text-4xl font-IBMCondensed text-secondary font-medium text-balance">{FIRST_SECTION.TITLE}</h2>
+        <div set:html={FIRST_SECTION.CONTENT} />
+        <div set:html={FIRST_SECTION.CONTENT2} />
+      </div>
+    </SectionContainer>
+    <WhatDoWeOffer />
+    <IsForYouDevelopmentSection {...ITS_FOR_YOU} />
+    <BasicCta {...FIRST_CTA} />
+    <SuccessHistoryCustom />
+    <CorporativeCta {...SECOND_CTA} />
+    <ProcessSection {...PROCESS} />
+    <FaqsSection {...FAQS} />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+</style>

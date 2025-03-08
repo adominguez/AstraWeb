@@ -1,0 +1,101 @@
+---
+import BentoItem from "@components/Bento/BentoItem.astro";
+import BentoGrid from "@components/Bento/BentoGrid.astro";
+import SectionContainer from "./SectionContainer.astro";
+import language from '@data/i18n/es.json';
+import Image from "astro/components/Image.astro";
+import LottieAnimation from "astro-integration-lottie/Lottie.astro";
+import ListOfItems from "@components/ui/ListOfItems.astro";
+
+const { TITLE, FIRST_CONTENT, SECOND_CONTENT, CHALLENGES, SOLUTIONS, TECHNOLOGIES, RESULTS } = language.PAGES.SERVICES.CUSTOM_WEB_DEVELOPMENT.SUCCESS_HISTORY_CUSTOM;
+---
+
+<SectionContainer id="pilares-corporativos" class="pb-16">
+  <h2 class="text-3xl md:text-4xl font-IBMCondensed text-secondary font-medium text-balance">{TITLE}</h2>
+  <div class="flex flex-col md:flex-row gap-4 mb-8">
+    <div class="flex-[2]">
+      <p class="pt-12 text-xl md:text-2xl font-light text-pretty" set:html={FIRST_CONTENT}></p>
+      <p class="pt-4 text-gray-300 font-extralight text-pretty" set:html={SECOND_CONTENT}></p>
+    </div>
+    <div class="flex-1 flex justify-center items-center">
+      <Image width={533} height={400} src="/services/custom/success-history-mobile.webp" alt="Portico" class="md:max-w-80 lg:max-w-[40rem] max-w-60" />
+    </div>
+  </div>
+  <div class="flex flex-col md:flex-row-reverse gap-8 mb-8">
+    <div class="flex-1">
+      <h3 class="text-2xl font-semibold font-IBMCondensed text-teal-500">{CHALLENGES.title}</h3>
+      <p class="pt-8 text-xl md:text-2xl font-light text-pretty" set:html={CHALLENGES.content1}></p>
+      <p class="pt-4 text-gray-300 font-extralight text-pretty" set:html={CHALLENGES.content2}></p>
+    </div>
+    <div class="flex-1 flex justify-center items-end">
+      <video controls preload="none" poster="/services/custom/el-arbol-de-las-historias.webp"  class="flex-1 w-full rounded-xl border-[5px]">
+        <source src="/services/custom/el-arbol-de-las-historias.webm" type="video/webm" />
+        <source src="/services/custom/el-arbol-de-las-historias.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+  <ListOfItems items={CHALLENGES.items} />
+  <div class="w-full text-xl text-white flex flex-col gap-4 p-6">
+    <h3 class="text-2xl font-semibold font-IBMCondensed text-teal-500">{SOLUTIONS.title}</h3>
+    <p class="pt-4 text-xl md:text-2xl font-light text-pretty">{SOLUTIONS.description}</p>
+    <BentoGrid tag="ul" class="mt-8 flex flex-col gap-4">
+      {
+        SOLUTIONS.items.map(({title, description, lottieJson}) => (
+          <BentoItem
+            tag="li"
+            class="bento-item sm:col-span-2 md:col-span-3 text-xl text-white flex flex-col md:flex-row gap-4 border rounded-xl p-4"
+          >
+            <LottieAnimation src={lottieJson} autoplay="visible" class="w-24" />
+            <div class="flex flex-col flex-1">
+              <h4 class="text-xl md:text-2xl text-secondary font-medium text-balance font-IBMCondensed">{title}</h4>
+              <p class="pt-4 text-gray-300 font-extralight text-pretty">{description}</p>
+            </div>
+          </BentoItem>
+        ))
+      }
+    </BentoGrid>
+  </div>
+
+  <div class="w-full text-xl text-white flex flex-col gap-4 p-6">
+    <h3 class="text-2xl font-semibold font-IBMCondensed text-teal-500">{TECHNOLOGIES.title}</h3>
+    <p class="pt-4 text-xl md:text-2xl font-light text-pretty">{TECHNOLOGIES.content}</p>
+    <div class="mx-auto mt-10 flex max-w-lg items-center justify-center gap-8 flex-wrap">
+      {
+        TECHNOLOGIES.items.map(({src, alt}) => (
+          <Image width={50} height={50} src={src} alt={alt} />
+        ))
+      }
+    </div>
+    <ListOfItems items={TECHNOLOGIES.list} showlistImage={false} class="mt-8" />
+  </div>
+
+  <div class="w-full text-xl text-white flex flex-col gap-4 p-6">
+    <h3 class="text-2xl font-semibold font-IBMCondensed text-teal-500">{RESULTS.title}</h3>
+    <p class="pt-4 text-xl md:text-2xl font-light text-pretty">{RESULTS.content}</p>
+    <BentoGrid tag="ul" class="mt-8 flex flex-col gap-4">
+      {
+        RESULTS.items.map(({title, description, image}, index) => {
+          const isPar = index % 2 === 0;
+          return (
+            <BentoItem
+              tag="li"
+              class:list={[
+                "bento-item sm:col-span-2 md:col-span-3 text-xl text-white flex flex-col gap-4",
+                isPar ? "md:flex-row-reverse" : "md:flex-row"
+              ]}
+            >
+              <div class="flex flex-col justify-center items-center flex-[2]">
+                <h4 class:list={[
+                  "text-2xl md:text-3xl font-medium text-balance font-IBMCondensed",
+                  isPar ? "text-primary" : "text-secondary"
+                ]}>{title}</h4>
+                <p class="pt-4 text-gray-300 font-extralight text-pretty">{description}</p>
+              </div>
+              <Image width={500} height={500} src={image || ''} alt={title} class="flex-1 self-center max-w-80" />
+            </BentoItem>
+          )
+        })
+      }
+    </BentoGrid>
+  </div>
+</SectionContainer>

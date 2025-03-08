@@ -1,0 +1,24 @@
+---
+import LottieAnimation from "astro-integration-lottie/Lottie.astro";
+import ListOfItems from "./ListOfItems.astro";
+
+interface Props {
+  lottieJson: string;
+  title: string;
+  content: string;
+  options: string[];
+  class?: string;
+  tag?: string;
+  titleClass?: string;
+}
+
+const { lottieJson, title, content, options, titleClass = '' } = Astro.props;
+---
+
+<LottieAnimation src={lottieJson} autoplay="visible" class="w-20 self-center" />
+<h3 class:list={[
+  "text-2xl font-semibold font-IBMCondensed mb-4",
+  titleClass
+]}>{title}</h3>
+<p class="pb-4 text-gray-300 font-extralight text-pretty">{content}</p>
+<ListOfItems items={options} />

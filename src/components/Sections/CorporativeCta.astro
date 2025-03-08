@@ -18,7 +18,7 @@ const { title, text, ctaText, lottieJson } = Astro.props;
       </defs>
     </svg>
     <div class="mx-auto text-center md:mx-0 md:flex-auto md:py-16 md:text-left">
-      <h2 class="bg-gradient-to-r from-secondary via-accent to-primary font-IBMCondensed md:leading-tight bg-clip-text text-transparent text-3xl md:text-5xl text-balance">{title}</h2>
+      <h2 class="bg-gradient-to-r from-secondary via-accent to-primary font-IBMCondensed md:leading-none bg-clip-text text-transparent text-3xl md:text-5xl text-balance">{title}</h2>
       <p class="pt-6 text-white text-lg md:text-xl font-thin text-pretty" set:html={text} />
       <div class="mt-10 flex items-center justify-center gap-x-6 md:justify-start">
         <Blendy id="cta" text={ctaText} />
