@@ -809,6 +809,34 @@
             }
           ]
         },
+        "WHAT_CAN_I_GET": {
+          "TITLE": "¿Qué conseguirás con tu Desarrollo Web a Medida?",
+          "CONTENT": "Cuando contratas nuestro servicio de desarrollo web a medida, obtienes una solución integral creada específicamente para tu negocio, con funcionalidades únicas y adaptadas completamente a tus objetivos.",
+          "CONTENT2": "Al finalizar el proyecto, recibirás:",
+          "IMAGE": "/services/custom/what-can-i-get.svg",
+          "ITEMS": [
+            {
+              "title": "Una web completamente personalizada",
+              "description": "Hecha desde cero, alineada con la identidad visual y necesidades específicas de tu negocio."
+            },
+            {
+              "title": "Optimización total del rendimiento",
+              "description": "Una web rápida, segura y eficiente, preparada para posicionar en buscadores y brindar la mejor experiencia al usuario."
+            },
+            {
+              "title": "Integraciones y automatizaciones",
+              "description": "Realizaremos las integraciones o automatizaciones necesarias para el buen funcionamiento de tu web en función de los requisitos de tu proyecto."
+            },
+            {
+              "title": "Escalabilidad y flexibilidad",
+              "description": "Tu web estará diseñada para ampliarse y escalarse fácilmente con nuevas funcionalidades."
+            },
+            {
+              "title": "Manual personalizado de gestión de contenidos",
+              "description": "Te entregaremos un manual completo adaptado a tu web, donde aprenderás paso a paso cómo actualizar, gestionar, organizar y operar tu página web."
+            }
+          ]
+        },
         "FAQS": {
           "ID": "preguntas-frecuentes",
           "TITLE": "Preguntas Frecuentes sobre Desarrollo Web a Medida",
@@ -830,6 +858,11 @@
               "answer": "Sí, ofrecemos planes de mantenimiento para asegurar que tu web se mantenga optimizada y segura."
             }
           ]
+        },
+        "LAST_CTA": {
+          "title": "¿Listo para una Web sin Límites?",
+          "text": "Cada proyecto es único y en AstraHub nos encargamos de que tu web lo sea también. Si necesitas una solución sin límites, escalable y optimizada, hablemos y creemos algo increíble juntos.",
+          "ctaText": "Quiero un desarrollo web a medida"
         }
       }
     },

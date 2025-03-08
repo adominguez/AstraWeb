@@ -10,8 +10,9 @@ import FaqsSection from '@components/Sections/FaqsSection.astro';
 import WhatDoWeOffer from '@components/Sections/WhatDoWeOffer.astro';
 import BasicCta from '@components/Sections/BasicCta.astro';
 import IsForYouDevelopmentSection from '@components/Sections/IsForYouDevelopmentSection.astro';
+import WhatCanIGetSection from '@components/Sections/WhatCanIGetSection.astro';
 
-const { META_TITLE, META_DESCRIPTION, HERO_SECTION, FIRST_SECTION, SECOND_CTA, FIRST_CTA, PROCESS, FAQS, ITS_FOR_YOU } = language.PAGES.SERVICES.CUSTOM_WEB_DEVELOPMENT;
+const { META_TITLE, META_DESCRIPTION, HERO_SECTION, FIRST_SECTION, SECOND_CTA, FIRST_CTA, PROCESS, FAQS, ITS_FOR_YOU, LAST_CTA, WHAT_CAN_I_GET } = language.PAGES.SERVICES.CUSTOM_WEB_DEVELOPMENT;
 ---
 
 <Layout simpleLogo title={META_TITLE} description={META_DESCRIPTION}>
@@ -30,7 +31,9 @@ const { META_TITLE, META_DESCRIPTION, HERO_SECTION, FIRST_SECTION, SECOND_CTA, F
     <SuccessHistoryCustom />
     <CorporativeCta {...SECOND_CTA} />
     <ProcessSection {...PROCESS} />
+    <WhatCanIGetSection {...WHAT_CAN_I_GET} />
     <FaqsSection {...FAQS} />
+    <BasicCta {...LAST_CTA} />
   </main>
 </Layout>
 
