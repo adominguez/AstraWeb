@@ -813,7 +813,8 @@
           "TITLE": "¿Qué conseguirás con tu Desarrollo Web a Medida?",
           "CONTENT": "Cuando contratas nuestro servicio de desarrollo web a medida, obtienes una solución integral creada específicamente para tu negocio, con funcionalidades únicas y adaptadas completamente a tus objetivos.",
           "CONTENT2": "Al finalizar el proyecto, recibirás:",
-          "IMAGE": "/services/custom/what-can-i-get.svg",
+          "FIRST_IMAGE": "/services/custom/what-can-i-get-1.svg",
+          "SECOND_IMAGE": "/services/custom/what-can-i-get-2.svg",
           "ITEMS": [
             {
               "title": "Una web completamente personalizada",
@@ -834,6 +835,10 @@
             {
               "title": "Manual personalizado de gestión de contenidos",
               "description": "Te entregaremos un manual completo adaptado a tu web, donde aprenderás paso a paso cómo actualizar, gestionar, organizar y operar tu página web."
+            },
+            {
+              "title": "Sesión personalizada de formación inicial",
+              "description": "Al finalizar el desarrollo web, además del manual, recibirás una sesión formativa en directo en la que te explicaremos paso a paso cómo utilizar y gestionar tu web."
             }
           ]
         },

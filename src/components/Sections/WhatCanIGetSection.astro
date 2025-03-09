@@ -4,7 +4,7 @@ import SectionContainer from "./SectionContainer.astro";
 import BentoGrid from "@components/Bento/BentoGrid.astro";
 import BentoItem from "@components/Bento/BentoItem.astro";
 
-const { TITLE, CONTENT, CONTENT2, IMAGE, ITEMS } = Astro.props;
+const { TITLE, CONTENT, CONTENT2, FIRST_IMAGE, SECOND_IMAGE, ITEMS } = Astro.props;
 ---
 
 <SectionContainer id="que-conseguire" class="mb-20 flex flex-col">
@@ -23,8 +23,9 @@ const { TITLE, CONTENT, CONTENT2, IMAGE, ITEMS } = Astro.props;
         ))
       }
     </BentoGrid>
-    <div class="flex-1 flex-col">
-      <Image width={400} height={400} src={IMAGE} alt={TITLE} class="md:max-w-80 lg:max-w-[40rem] max-w-60" />
+    <div class="flex-1 flex flex-col gap-8 justify-center items-center">
+      <Image width={300} height={300} src={FIRST_IMAGE} alt={TITLE} class="md:max-w-80 lg:max-w-[40rem] max-w-60 hidden md:block" />
+      <Image width={300} height={300} src={SECOND_IMAGE} alt={TITLE} class="md:max-w-80 lg:max-w-[40rem] max-w-60" />
     </div>
   </div>
 </SectionContainer>
