@@ -11,8 +11,9 @@ import CorporativeCta from '@components/Sections/CorporativeCta.astro';
 import ProcessSection from '@components/Sections/ProcessSection.astro';
 import FaqsSection from '@components/Sections/FaqsSection.astro';
 import BasicCta from '@components/Sections/BasicCta.astro';
+import WhatCanIGetSection from "@components/Sections/WhatCanIGetSection.astro";
 
-const { META_TITLE, META_DESCRIPTION, HERO_SECTION, FIRST_SECTION, SECOND_CTA, FIRST_CTA, PROCESS, FAQS } = language.PAGES.SERVICES.CORPORATIVE_WEB_DESIGN;
+const { META_TITLE, META_DESCRIPTION, HERO_SECTION, FIRST_SECTION, SECOND_CTA, FIRST_CTA, PROCESS, WHAT_CAN_I_GET, FAQS } = language.PAGES.SERVICES.CORPORATIVE_WEB_DESIGN;
 ---
 
 <Layout simpleLogo title={META_TITLE} description={META_DESCRIPTION}>
@@ -31,6 +32,7 @@ const { META_TITLE, META_DESCRIPTION, HERO_SECTION, FIRST_SECTION, SECOND_CTA, F
     <SuccessHistoryCorporative />
     <CorporativeCta {...SECOND_CTA} />
     <ProcessSection {...PROCESS} />
+    <WhatCanIGetSection {...WHAT_CAN_I_GET} />
     <FaqsSection {...FAQS} />
   </main>
 </Layout>

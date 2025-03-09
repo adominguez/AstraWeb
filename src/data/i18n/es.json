@@ -499,6 +499,39 @@
             }
           ]
         },
+        "WHAT_CAN_I_GET": {
+          "TITLE": "¿Qué conseguirás con tu Web Corporativa?",
+          "CONTENT": "Al invertir en una web corporativa personalizada, obtendrás una presencia online profesional que refleja la esencia de tu marca y potencia la confianza de tus clientes. Una solución integral que une diseño, funcionalidad y optimización para destacar en un entorno competitivo.",
+          "CONTENT2": "Al finalizar el proyecto, recibirás:",
+          "FIRST_IMAGE": "/services/corporative/what-can-i-get-1.svg",
+          "SECOND_IMAGE": "/services/corporative/what-can-i-get-2.svg",
+          "ITEMS": [
+            {
+              "title": "Una imagen de marca renovada",
+              "description": "Una web diseñada desde cero que se alinea con la identidad visual y los valores de tu empresa, creando una imagen corporativa coherente y profesional."
+            },
+            {
+              "title": "Experiencia de usuario optimizada",
+              "description": "Un sitio rápido, intuitivo y adaptado a todo tipo de dispositivos, que mejora la interacción y fideliza a tus clientes."
+            },
+            {
+              "title": "Integración de herramientas y sistemas",
+              "description": "Implementamos las integraciones necesarias para conectar tu web con sistemas CRM, redes sociales y otras herramientas clave para el crecimiento de tu negocio."
+            },
+            {
+              "title": "Escalabilidad y flexibilidad",
+              "description": "Tu web estará preparada para crecer con tu empresa, permitiendo añadir nuevas funcionalidades y adaptarse a futuros cambios del mercado."
+            },
+            {
+              "title": "Guía personalizada de gestión de contenidos",
+              "description": "Recibirás un manual adaptado a tu web para que puedas actualizar y gestionar el contenido de forma autónoma, manteniendo siempre tu sitio al día."
+            },
+            {
+              "title": "Sesión formativa inicial",
+              "description": "Te ofrecemos una capacitación personalizada para que puedas aprovechar al máximo todas las herramientas y funcionalidades de tu nueva web corporativa."
+            }
+          ]
+        },
         "FAQS": {
           "ID": "preguntas-frecuentes",
           "TITLE": "Resuelve tus dudas sobre la creación de una web corporativa profesional",
