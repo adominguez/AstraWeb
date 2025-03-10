@@ -46,8 +46,6 @@ export const POST: APIRoute = async ({ request }) => {
     html: emailHtml,
   });
 
-  console.log(data, error);
-
   return new Response(
     JSON.stringify({
       message: 'Formulario enviado',

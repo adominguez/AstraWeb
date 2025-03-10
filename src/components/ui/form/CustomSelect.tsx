@@ -11,7 +11,6 @@ interface CustomSelectProps {
 }
 
 const CustomSelect = ({ options, name, value, onChange, placeholder = 'Selecciona una opción', className = '', error = '' } : CustomSelectProps) => {
-  console.log(value);
   return (
   <div class="mb-4">
     <select
