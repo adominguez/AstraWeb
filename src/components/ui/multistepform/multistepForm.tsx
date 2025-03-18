@@ -58,6 +58,8 @@ const MultiStepForm = () => {
       const valueString = typeof value === 'boolean' ? value.toString() : value; // Convert boolean value to string
       body.append(key, valueString);
     });
+
+    body.append('url', window.location.href);
     // Enviar el formulario a la API
     const response = await fetch("/api/form", {
       method: "POST",

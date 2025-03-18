@@ -10,7 +10,7 @@ interface CustomSelectProps {
   error?: string;
 }
 
-const CustomSelect = ({ options, name, value, onChange, placeholder = 'Selecciona una opción', className = '', error = '' } : CustomSelectProps) => {
+const CustomSelect = ({ options, name, value, onChange, placeholder = 'Selecciona una opción', error = '' } : CustomSelectProps) => {
   return (
   <div class="mb-4">
     <select

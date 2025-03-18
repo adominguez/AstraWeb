@@ -9,7 +9,7 @@ interface CustomTextareaProps {
   className?: string;
 }
 
-const CustomTextarea = ({ error, name, value, onChange, placeholder = 'Inserta algo de contenido aquí', className }: CustomTextareaProps) => (
+const CustomTextarea = ({ error, name, value, onChange, placeholder = 'Inserta algo de contenido aquí' }: CustomTextareaProps) => (
   <div class="mb-4">
     <textarea
       name={name}
