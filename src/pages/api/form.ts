@@ -20,6 +20,7 @@ export const POST: APIRoute = async ({ request }) => {
   const budget = form.get('budget')?.toString() ?? '';
   const projectDetails = form.get('projectDetails')?.toString() ?? '';
   const privacyPolicy = form.get('privacyPolicy')?.toString() ?? '';
+  const url = form.get('url')?.toString() ?? '';
 
   // // Validate the data - you'll probably want to do more than this
   // if (!name || !email || !message || !country || !phone || !subject) {
@@ -48,7 +49,7 @@ export const POST: APIRoute = async ({ request }) => {
   });
 
   // Send the event to Facebook
-  await sendContact({ fullName, email, phone, project, web, projectType, projectGoal, budget, projectDetails, privacyPolicy });
+  await sendContact({ fullName, email, phone }, url);
 
   return new Response(
     JSON.stringify({
