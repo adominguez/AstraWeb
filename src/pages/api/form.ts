@@ -2,6 +2,7 @@ import type { APIRoute } from "astro";
 import { Resend } from 'resend';
 import EmailTemplate from '@email/EmailTemplate';
 import renderToString from 'preact-render-to-string';
+import { sendContact } from "@lib/fbEvents";
 // import { getI18N } from "@/shared/i18n";
 // import CompanyEmailTemplate from '@/en/email-template/CompanyEmailTemplate';
 
@@ -45,6 +46,9 @@ export const POST: APIRoute = async ({ request }) => {
     subject: `⭐ Nuevo formulario de contacto de ${fullName}`,
     html: emailHtml,
   });
+
+  // Send the event to Facebook
+  await sendContact({ fullName, email, phone, project, web, projectType, projectGoal, budget, projectDetails, privacyPolicy });
 
   return new Response(
     JSON.stringify({
