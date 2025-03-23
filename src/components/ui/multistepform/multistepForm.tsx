@@ -7,6 +7,19 @@ import Step4 from './Step4';
 import Step5 from './Step5';
 import type { FormData as FormDataType } from '@components/ui/multistepform/Types';
 
+const composeFormData = (formData: FormDataType) => {
+  const body = new FormData();
+  Object.keys(formData).forEach((key) => {
+    const value = formData[key as keyof typeof formData] || ''; // Provide a default value of an empty string if formData[key] is undefined
+    const valueString = typeof value === 'boolean' ? value.toString() : value; // Convert boolean value to string
+    body.append(key, valueString);
+  });
+
+  body.append('url', window.location.href);
+
+  return body;
+}
+
 const MultiStepForm = () => {
   const [step, setStep] = useState(1);
   const [loading, setLoading] = useState(false);
@@ -47,19 +60,22 @@ const MultiStepForm = () => {
     }
   }, [step]);
 
-  const nextStep = () => setStep(step + 1);
+  const nextStep = async () => {
+    setStep(step + 1)
+    if (step === 2) {
+      const body = composeFormData(formData);
+      // Enviar el formulario a la API
+      await fetch("/api/start-lead", {
+        method: "POST",
+        body,
+      });
+    }
+  };
   const prevStep = () => setStep(step - 1);
   const submitForm = async () => {
     setLoading(true);
     // Crear un nuevo FormData con los datos de formData
-    const body = new FormData();
-    Object.keys(formData).forEach((key) => {
-      const value = formData[key as keyof typeof formData] || ''; // Provide a default value of an empty string if formData[key] is undefined
-      const valueString = typeof value === 'boolean' ? value.toString() : value; // Convert boolean value to string
-      body.append(key, valueString);
-    });
-
-    body.append('url', window.location.href);
+    const body = composeFormData(formData);
     // Enviar el formulario a la API
     const response = await fetch("/api/form", {
       method: "POST",

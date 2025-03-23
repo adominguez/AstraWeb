@@ -17,7 +17,7 @@ interface Errors {
 }
 
 const Step3 = ({ formData, setFormData, nextStep, prevStep }: Step3Props) => {
-  const [errors, setErrors] = useState<Errors>({});
+  const [errors] = useState<Errors>({});
 
   const handleChange = (e: any) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });

@@ -94,7 +94,6 @@ const Step2 = ({ formData, setFormData, nextStep, prevStep } : Step2Props) => {
             { value: 'corporate', label: 'Página Web Corporativa' },
             { value: 'ecommerce', label: 'Tienda Online' },
             { value: 'landing', label: 'Landing Page' },
-            { value: 'portfolio', label: 'Portafolio' },
             { value: 'custom', label: 'Proyecto Personalizado' },
           ]}
           className="w-full p-2 mb-4 rounded-2xl"

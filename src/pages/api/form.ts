@@ -2,7 +2,7 @@ import type { APIRoute } from "astro";
 import { Resend } from 'resend';
 import EmailTemplate from '@email/EmailTemplate';
 import renderToString from 'preact-render-to-string';
-import { sendContact } from "@lib/fbEvents";
+import { sendLead } from "@lib/fbEvents";
 // import { getI18N } from "@/shared/i18n";
 // import CompanyEmailTemplate from '@/en/email-template/CompanyEmailTemplate';
 
@@ -49,7 +49,7 @@ export const POST: APIRoute = async ({ request }) => {
   });
 
   // Send the event to Facebook
-  await sendContact({ fullName, email, phone }, url);
+  await sendLead({ fullName, email, phone }, url);
 
   return new Response(
     JSON.stringify({
