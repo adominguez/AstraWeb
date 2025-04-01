@@ -10,3 +10,16 @@ export interface FormData {
   projectDetails?: string;
   privacyPolicy: boolean;
 }
+
+export interface FormDataCalculator {
+  fullName: string;
+  email: string;
+  phone: string;
+  siteType: string;
+  auditSEO: boolean;
+  landingDesign?: string;
+  corporativeDesign?: string;
+  ecommerceDesign?: string;
+  customDesign?: string;
+  privacyPolicy: boolean;
+}

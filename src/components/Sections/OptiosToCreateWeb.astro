@@ -1,0 +1,33 @@
+---
+import BentoGrid from "@components/Bento/BentoGrid.astro";
+import BentoItem from "@components/Bento/BentoItem.astro";
+import SectionContainer from "@components/Sections/SectionContainer.astro";
+import PricingOption from "@components/ui/PricingOption.astro";
+
+
+const { TITLE, CONTENT, TITLE_2, CONTENT_2, ITEMS } = Astro.props;
+const { LANDING, CORPORATIVE, ECOMMERCE, DEVELOPMENT } = ITEMS;
+---
+
+<SectionContainer class="mb-20" id="es-para-ti">
+  <div class="w-full text-xl text-white flex flex-col gap-6">
+    <h2 class="text-4xl md:text-5xl text-accent font-medium font-IBMCondensed text-balance">{TITLE}</h2>
+    <p class="pt-4 text-xl md:text-2xl font-light text-pretty">{CONTENT}</p>
+    <h3 class="pt-4 text-2xl font-semibold font-IBMCondensed text-balance">{TITLE_2}</h3>
+    <p class="pb-4 text-gray-300 font-extralight text-pretty">{CONTENT_2}</p>
+  </div>
+  <BentoGrid cols={1} class="gap-12">
+    <BentoItem tag="article" class="bento-item flex flex-col">
+      <PricingOption {...LANDING}/>
+    </BentoItem>
+    <BentoItem tag="article" class="bento-item flex flex-col">
+      <PricingOption {...CORPORATIVE}/>
+    </BentoItem>
+    <BentoItem tag="article" class="bento-item flex flex-col">
+      <PricingOption {...ECOMMERCE}/>
+    </BentoItem>
+    <BentoItem tag="article" class="bento-item flex flex-col">
+      <PricingOption {...DEVELOPMENT}/>
+    </BentoItem>
+  </BentoGrid>
+</SectionContainer>
