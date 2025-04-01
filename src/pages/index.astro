@@ -1,6 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import HeroSection from '@components/Sections/HeroSection.astro';
 import FeaturesSection from '@components/Sections/FeaturesSection.astro';
 import ProjectsSection from '@components/Sections/ProjectsSection.astro';
@@ -10,6 +9,7 @@ import FaqsSection from '@components/Sections/FaqsSection.astro';
 import WhyChooseSection from '@components/Sections/WhyChooseSection.astro';
 import IsForYouSection from '@components/Sections/IsForYouSection.astro';
 import CorporativeCta from '@components/Sections/CorporativeCta.astro';
+import BlogListSection from '@components/Sections/BlogListSection.astro'
 
 const { TITLE, DESCRIPTION, SECTIONS } = language.PAGES.HOME
 const { PROCESS, CALL_TO_ACTION, FAQS } = SECTIONS;
@@ -25,6 +25,7 @@ const { PROCESS, CALL_TO_ACTION, FAQS } = SECTIONS;
 		<FaqsSection {...FAQS} />
 		<IsForYouSection />
 		<WhyChooseSection />
+		<BlogListSection />
 	</main>
 </Layout>
 

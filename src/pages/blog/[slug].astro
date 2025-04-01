@@ -1,0 +1,35 @@
+---
+import Layout from "@layouts/Layout.astro";
+import SectionContainer from '@components/Sections/SectionContainer.astro';
+import BlogHeroSection from "@components/Sections/BlogHeroSection.astro";
+import { getPostInfo, getAllPostsSlugs } from "@lib/wp";
+import type { ProcessedPost } from '@ts/wp';
+
+const { slug } = Astro.params;
+
+const { title, content, image: postImage, excerpt, seo } = await getPostInfo(slug as string) as ProcessedPost;
+const image = postImage?.large;
+
+---
+
+<Layout simpleLogo title={seo.title} description={seo.description}>
+  <main class="text-white flex flex-col items-center">
+    <BlogHeroSection title={title} image={image} text={excerpt} />
+    <SectionContainer class="pb-16 prose prose-invert prose-img:rounded-xl prose-headings:underline prose-a:text-blue-600">
+      <div class="w-full text-xl text-white flex flex-col gap-4 p-6" set:html={content} />
+    </SectionContainer>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+</style>
+
+
+<div>{slug}</div>

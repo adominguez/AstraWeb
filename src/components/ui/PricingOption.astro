@@ -1,0 +1,47 @@
+---
+import ListOfItems from "./ListOfItems.astro";
+import Image from "astro/components/Image.astro";
+
+interface Items {
+  title: string;
+  items: string[];
+}
+
+interface Price {
+  title: string;
+  content: string;
+}
+
+interface Cta {
+  text: string;
+  url: string;
+}
+
+interface Props {
+  image: string;
+  title: string;
+  description: string;
+  FEATURES: Items;
+  WHO_IS_IT_FOR: Items;
+  PRICE: Price;
+  CTA: Cta;
+}
+
+const { title, image, description, FEATURES, WHO_IS_IT_FOR, PRICE, CTA } = Astro.props;
+---
+
+<h3 class="text-4xl font-semibold font-IBMCondensed mb-4">{title}</h3>
+<p class="pt-4 text-xl md:text-2xl font-light text-pretty">{description}</p>
+<div class="flex flex-col md:flex-row">
+  <div class="flex-col flex items-center justify-center flex-1">
+    <h4 class="mt-4 text-lg font-semibold font-IBMCondensed mb-4">{FEATURES.title}</h4>
+    <ListOfItems items={FEATURES.items} />
+    <h4 class="mt-4 text-lg font-semibold font-IBMCondensed mb-4">{WHO_IS_IT_FOR.title}</h4>
+    <ListOfItems items={WHO_IS_IT_FOR.items} />
+  </div>
+  <div class="flex flex-col gap-2 justify-center items-center flex-1">
+    <Image src={image} width={300} height={300} class="w-96 self-center" alt={title} />
+    <p class="text-gray-300 text-center font-extralight text-pretty">{PRICE.content}</p>
+    <a href={CTA.url} class="rounded-[2rem] text-balance hover:bg-slate-700 border-4 border-secondary hover:border-primary text-center px-4 py-2 transition-colors">{CTA.text}</a>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SectionContainer from '@components/Sections/SectionContainer.astro';
+import language from "@data/i18n/es.json";
+import PageHeroSection from "@components/Sections/PageHeroSection.astro";
+import Blendy from "@components/Blendy.astro";
+import SuccessHistoryCustom from '@components/Sections/SuccessHistoryCustom.astro';
+import CorporativeCta from '@components/Sections/CorporativeCta.astro';
+import ProcessSection from '@components/Sections/ProcessSection.astro';
+import FaqsSection from '@components/Sections/FaqsSection.astro';
+import WhatDoWeOffer from '@components/Sections/WhatDoWeOffer.astro';
+import BasicCta from '@components/Sections/BasicCta.astro';
+import IsForYouDevelopmentSection from '@components/Sections/IsForYouDevelopmentSection.astro';
+import WhatCanIGetSection from '@components/Sections/WhatCanIGetSection.astro';
+import OptiosToCreateWeb from "@components/Sections/OptiosToCreateWeb.astro";
+import CalculatorForm from "@components/ui/calculator/CalculatorForm";
+
+const { META_TITLE, META_DESCRIPTION, HERO_SECTION, FIRST_SECTION, FACTORS, OPTIONS_TO_CREATE, SECOND_CTA, FIRST_CTA, PROCESS, FAQS, BUDGET_TIPS, LAST_CTA, WHAT_CAN_I_GET } = language.PAGES.TOOLS.BUDGET;
+---
+
+<Layout simpleLogo title={META_TITLE} description={META_DESCRIPTION}>
+  <main class="text-white flex flex-col items-center">
+    <PageHeroSection title={HERO_SECTION.TITLE} subtitle={HERO_SECTION.SUBTITLE} image={HERO_SECTION.IMAGE} text={HERO_SECTION.TEXT} cta={HERO_SECTION.CTA}>
+      <Blendy id="calculator" text={HERO_SECTION.CTA}>
+        <CalculatorForm client:visible />
+      </Blendy>
+    </PageHeroSection>
+    <SectionContainer class="pb-16">
+      <div class="w-full text-xl text-white flex flex-col gap-4 p-6">
+        <h2 class="text-3xl md:text-4xl font-IBMCondensed text-accent font-medium text-balance">{FIRST_SECTION.TITLE}</h2>
+        <div set:html={FIRST_SECTION.CONTENT} />
+        <div set:html={FIRST_SECTION.CONTENT2} />
+      </div>
+    </SectionContainer>
+    <WhatCanIGetSection {...FACTORS} />
+    <OptiosToCreateWeb {...OPTIONS_TO_CREATE} />
+    <BasicCta {...FIRST_CTA} />
+    <IsForYouDevelopmentSection {...BUDGET_TIPS} />
+    <!-- <WhatDoWeOffer />
+      <SuccessHistoryCustom />
+      <ProcessSection {...PROCESS} />
+      <CorporativeCta {...SECOND_CTA} />
+    <FaqsSection {...FAQS} />
+    <BasicCta {...LAST_CTA} /> -->
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+</style>
