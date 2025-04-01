@@ -516,7 +516,7 @@
             },
             {
               "title": "Integración de herramientas y sistemas",
-              "description": "Implementamos las integraciones necesarias para conectar tu web con sistemas CRM, redes sociales y otras herramientas clave para el crecimiento de tu negocio."
+              "description": "Implementamos las integraciones necesarias para conectar tu web con sistemas CRM, CMS, redes sociales y otras herramientas clave para el crecimiento de tu negocio."
             },
             {
               "title": "Escalabilidad y flexibilidad",
@@ -636,7 +636,7 @@
           "TITLE_2": "¿Necesito un desarrollo web a medida?",
           "CONTENT_2": "Si te identificas con alguno de estos perfiles, es muy probable que una web a medida sea la mejor opción para ti",
           "ITEMS": {
-            "STARTUPS": {
+            "FIRST_ITEM": {
               "TITLE": "Startups y emprendedores con ideas innovadoras",
               "CONTENT": "¿Tienes una idea de negocio única y las soluciones estándar no se adaptan a lo que necesitas? Con el desarrollo web a medida podemos construir desde cero la plataforma que necesitas, asegurando escalabilidad y flexibilidad para crecer con tu negocio.",
               "LOTTIE_JSON": "/services/custom/startup.json",
@@ -646,7 +646,7 @@
                 "Integraciones con APIs y servicios específicos."
               ]
             },
-            "INTERNAL_SOFTWARE": {
+            "SECOND_ITEM": {
               "TITLE": "Empresas que necesitan integración con software interno",
               "CONTENT": "Si tu empresa ya trabaja con herramientas como ERP, CRM o sistemas de gestión interna, una web a medida te permite conectarlas de manera eficiente.",
               "LOTTIE_JSON": "/services/custom/internal_software.json",
@@ -656,7 +656,7 @@
                 "Conexión con APIs y plataformas de terceros."
               ]
             },
-            "ECOMMERCE": {
+            "THIRD_ITEM": {
               "TITLE": "E-commerce con funcionalidades avanzadas",
               "CONTENT": "Para tiendas online que buscan una experiencia de compra personalizada, integraciones con sistemas de pago específicos o funcionalidades únicas, el desarrollo web a medida es la mejor opción.",
               "LOTTIE_JSON": "/services/custom/ecommerce.json",
@@ -666,7 +666,7 @@
                 "Optimización para conversión y SEO técnico."
               ]
             },
-            "AUTOMATE": {
+            "FOURTH_ITEM": {
               "TITLE": "Negocios que requieren automatización y digitalización",
               "CONTENT": "Las empresas que buscan optimizar procesos manuales pueden beneficiarse enormemente del desarrollo web a medida. Automatizar tareas reduce costos y mejora la eficiencia operativa.",
               "LOTTIE_JSON": "/services/custom/automate.json",
@@ -901,6 +901,257 @@
           "title": "¿Listo para una Web sin Límites?",
           "text": "Cada proyecto es único y en AstraHub nos encargamos de que tu web lo sea también. Si necesitas una solución sin límites, escalable y optimizada, hablemos y creemos algo increíble juntos.",
           "ctaText": "Quiero un desarrollo web a medida"
+        }
+      }
+    },
+    "TOOLS": {
+      "BUDGET": {
+        "META_TITLE": "Presupuesto y precio para tu Página Web | Calcula el Precio de tu Web",
+        "META_DESCRIPTION": "Descubre cuánto cuesta crear una página web. Calcula tu presupuesto web en minutos con nuestra herramienta y obtén una estimación precisa.",
+        "HERO_SECTION": {
+          "TITLE": "Presupuesto y precio para tu Página Web",
+          "SUBTITLE": "Obtén una estimación rápida con nuestra <span class='text-yellow-gradient text-balance'>calculadora de presupuesto web</span>",
+          "TEXT": "Descubre una estimación del precio de tu página web según sus funcionalidades, diseño y tipo. Usa nuestra calculadora para obtener una estimación en minutos.",
+          "IMAGE": {
+            "src": "/tools/budget/calculator.svg",
+            "alt": "Calculadora de Presupuesto Web"
+          },
+          "CTA": "Calcular mi presupuesto"
+        },
+        "FIRST_SECTION": {
+          "TITLE": "¿Cuánto cuesta hacer una página web profesional? Guía Completa + Calculadora",
+          "CONTENT": "<p class='pt-4 text-xl md:text-2xl font-light text-pretty'>No todas las páginas web tienen el mismo precio porque cada negocio tiene necesidades y objetivos distintos. Algunas webs solo requieren una estructura básica con información de contacto, mientras que otras necesitan funciones avanzadas como pasarelas de pago, integraciones con CRM, CMS, sistemas de reservas...</p>",
+          "CONTENT2": "<p class='pt-4 text-gray-300 font-extralight text-pretty'>En esta guía, te explicamos todo lo que debes saber sobre el precio de una página web profesional, qué factores influyen en su coste y cómo elegir la mejor opción para tu negocio. Si quieres saber cómo calcular un presupuesto web acorde a tus necesidades continúa leyendo, que esto te interesa.</p>"
+        },
+        "SECOND_SECTION": {
+          "TITLE": "Qué factores que influyen en el precio de una web",
+          "CONTENT": "El precio de una página web puede variar significativamente según sus características y funcionalidades. Algunos de los factores que influyen en el coste de una web son:",
+          "ITEMS": [{
+            
+          }]
+
+        },
+        "FACTORS": {
+          "TITLE": "¿Qué factores influyen en el precio de una web?",
+          "CONTENT": "El precio de una página web puede variar significativamente según sus características y funcionalidades.",
+          "CONTENT2": "Algunos de los factores que influyen en el coste de una web son:",
+          "ITEMS": [
+            {
+              "title": "Tipo de web",
+              "description": "¿Es una web corporativa, un eCommerce o un sitio con funcionalidades personalizadas?"
+            },
+            {
+              "title": "Diseño",
+              "description": "La web tiene un diseño o al menos una idea clara de lo que se quiere conseguir y transmitir al usuario."
+            },
+            {
+              "title": "Contenido y funcionalidades",
+              "description": "¿Necesitas área privada, funcionalidades específicas, integración con otros sistemas, automatizaciones etc.?"
+            },
+            {
+              "title": "Número de páginas",
+              "description": "¿Cuantas páginas tiene tu web? ¿Necesitas una landing page o un sitio con múltiples secciones?"
+            },
+            {
+              "title": "SEO",
+              "description": "¿Es necesario realizar una auditoría SEO inicial? (Todas las webs que quieran posicionarse en Google deberían tenerla)"
+            },
+            {
+              "title": "Optimización",
+              "description": "¿La web está optimizada para móviles y tablets? ¿Es rápida y segura?"
+            },
+            {
+              "title": "Soporte multilingüe",
+              "description": "¿Necesitas que tu web esté en varios idiomas?, ¿Será necesario traducción?"
+            },
+            {
+              "title": "Plazo de entrega",
+              "description": "¿Necesitas la web para ayer o tienes un plazo flexible? (El tiempo es dinero)"
+            }
+          ]
+        },
+        "OPTIONS_TO_CREATE": {
+          "TITLE": "¿Qué tipo de página web deberia de crear?",
+          "CONTENT": "El tipo de página web que necesitas dependerá de tus objetivos, del tipo de negocio que tengas, y cuales sean las funcionalidades que necesites.",
+          "TITLE_2": "Tipos de páginas web más comunes",
+          "CONTENT_2": "A continuación te mostramos los tipos de webs más comunes:",
+          "ITEMS": {
+            "LANDING": {
+              "title": "Landing Page",
+              "image": "/services/landing/landing.svg",
+              "description": "Página web con un único objetivo, normalmente captar leads o ventas.",
+              "FEATURES": {
+                "title": "Características de una Landing Page",
+                "items": [
+                  "Página única optimizada para conversión.",
+                  "Formulario de contacto o generación de leads.",
+                  "Mensaje claro y directo sobre un servicio/producto concreto.",
+                  "Botones de llamada a la acción (CTA)."
+                ]
+              },
+              "WHO_IS_IT_FOR": {
+                "title": "¿Para quién es una Landing Page?",
+                "items": [
+                  "Empresas que quieran promocionar un producto o servicio concreto.",
+                  "Negocios que buscan captar clientes rápidamente con publicidad digital.",
+                  "Startups que buscan validar una idea de negocio.",
+                  "Eventos o lanzamientos temporales."
+                ]
+              },
+              "PRICE": {
+                "title": "Precio de una Landing Page",
+                "content": "El precio de una Landing Page puede variar entre 500€ y 2.000€, dependiendo de la complejidad y funcionalidades."
+              },
+              "CTA": {
+                "text": "Quiero una Landing Page",
+                "url": "/servicios/landing-page"
+              }
+            },
+            "CORPORATIVE": {
+              "title": "Web corporativa",
+              "image": "/services/corporative/corporative-web-design.svg",
+              "description": "Página web que presenta la empresa, sus servicios y productos.",
+              "FEATURES": {
+                "title": "Características de una Web Corporativa",
+                "items": [
+                  "Entre 5 y 10 páginas principales (Inicio, Nosotros, Servicios, Contacto, Blog…).",
+                  "Diseño profesional alineado con la imagen corporativa.",
+                  "Presentación de servicios y productos de la empresa."
+                ]
+              },
+              "WHO_IS_IT_FOR": {
+                "title": "¿Para quién es una web corporativa?",
+                "items": [
+                  "Empresas, pymes, autónomos o profesionales que necesitan presencia digital profesional.",
+                  "Empresas que quieran exponer sus servicios y productos.",
+                  "Negocios que buscan aumentar su visibilidad y credibilidad en internet.",
+                  "Empresas que quieran captar clientes potenciales."
+                ]
+              },
+              "PRICE": {
+                "title": "Precio de una web corporativa",
+                "content": "El precio de una web corporativa puede variar entre 1.000€ y 5.000€, dependiendo de la complejidad y funcionalidades."
+              },
+              "CTA": {
+                "text": "Quiero una Web Corporativa",
+                "url": "/diseno-web-corporativo"
+              }
+            },
+            "ECOMMERCE": {
+              "title": "Tienda Online",
+              "description": "Página web que permite la venta de productos o servicios online.",
+              "image": "/services/ecommerce/ecommerce-web.svg",
+              "FEATURES": {
+                "title": "Características de una Tienda Online",
+                "items": [
+                  "Catálogo de productos con fichas detalladas.",
+                  "Carrito de compra y pasarelas de pago seguras.",
+                  "Gestión de pedidos y facturación.",
+                  "Optimización SEO para captar ventas desde buscadores."
+                ]
+              },
+              "WHO_IS_IT_FOR": {
+                "title": "¿Para quién es una Tienda Online?",
+                "items": [
+                  "Empresas que quieran vender productos o servicios online.",
+                  "Negocios que buscan ampliar su mercado y vender a nivel nacional o internacional.",
+                  "Emprendedores que quieran lanzar su propia tienda online.",
+                  "Tiendas físicas que quieran digitalizar su negocio."
+                ]
+              },
+              "PRICE": {
+                "title": "Precio de una Tienda Online",
+                "content": "El precio de una Tienda Online puede variar entre 2.000€ y 10.000€, dependiendo de la complejidad y funcionalidades."
+              },
+              "CTA": {
+                "text": "Quiero una Tienda Online",
+                "url": "/servicios/tienda-online"
+              }
+            },
+            "DEVELOPMENT": {
+              "title": "Desarrollo a medida",
+              "description": "Página web personalizada con funcionalidades específicas y adaptadas a las necesidades del negocio.",
+              "image": "/services/custom/custom-web-development.svg",
+              "FEATURES": {
+                "title": "Características de un Desarrollo a Medida",
+                "items": [
+                  "Diseño y funcionalidades personalizadas.",
+                  "Desarrollo de funcionalidades específicas (reservas avanzadas, integraciones con sistemas externos, áreas privadas para usuarios, etc.).",
+                  "Optimización SEO y UX de la página.",
+                  "Escalabilidad y flexibilidad para futuras ampliaciones.",
+                  "Gestión y administración de roles y permisos."
+                ]
+              },
+              "WHO_IS_IT_FOR": {
+                "title": "¿Para quién es un Desarrollo a Medida?",
+                "items": [
+                  "Empresas que necesitan funcionalidades específicas no disponibles en soluciones estándar.",
+                  "Negocios que buscan integrar su web con sistemas internos o externos.",
+                  "Empresas que quieran una web escalable y flexible para futuras ampliaciones.",
+                  "Startups que buscan una solución personalizada desde el inicio."
+                ]
+              },
+              "PRICE": {
+                "title": "Precio de un Desarrollo a Medida",
+                "content": "El precio de un Desarrollo a Medida puede variar entre 5.000€ y 20.000€, dependiendo de la complejidad y funcionalidades."
+              },
+              "CTA": {
+                "text": "Quiero un Desarrollo a Medida",
+                "url": "/desarrollo-web-a-medida"
+              }
+            }
+          }
+        },
+        "FIRST_CTA": {
+          "title": "¿Quieres saber exactamente cuánto cuesta tu página web?",
+          "text": "Usa nuestra calculadora gratuita y descubre el presupuesto aproximado para la web que tienes en mente. Rápido, fácil y ajustado a tus necesidades, para que no pagues de más.",
+          "ctaText": "¡Calcular mi presupuesto ahora!"
+        },
+        "BUDGET_TIPS": {
+          "TITLE": "Consejos rápidos para optimizar tu presupuesto web",
+          "CONTENT": "Crear una página web no tiene que suponer un gran gasto. Sigue estos consejos rápidos y consigue una web ajustada a tus necesidades, optimizando tu inversión desde el inicio.",
+          "ITEMS": {
+            "FIRST_ITEM": {
+              "TITLE": "Define claramente tus objetivos",
+              "CONTENT": "Cuanto más específicos sean tus objetivos, menos ajustes y gastos adicionales necesitarás durante el desarrollo.",
+              "LOTTIE_JSON": "/tools/budget/goals.json",
+              "OPTIONS": [
+                "Define exactamente qué necesitas antes de empezar.",
+                "Evita cambios drásticos a mitad del proyecto.",
+                "Facilita una comunicación fluida con desarrolladores."
+              ]
+            },
+            "SECOND_ITEM": {
+              "TITLE": "Prioriza funcionalidades esenciales",
+              "CONTENT": "Empieza con lo imprescindible para tu negocio y añade mejoras progresivamente. Esto te permite controlar mejor el presupuesto inicial y evaluar claramente qué funcionalidades necesitas realmente.",
+              "LOTTIE_JSON": "/tools/budget/features.json",
+              "OPTIONS": [
+                "Selecciona funciones esenciales en una primera fase.",
+                "Reduce costes iniciales innecesarios.",
+                "Evalúa el impacto real de cada funcionalidad antes de implementarla."
+              ]
+            },
+            "THIRD_ITEM": {
+              "TITLE": "Elige plataformas escalables como WordPress",
+              "CONTENT": "Plataformas flexibles y escalables, como WordPress, permiten empezar con una web sencilla y añadir nuevas funciones cuando realmente las necesites, sin necesidad de grandes inversiones posteriores.",
+              "LOTTIE_JSON": "/tools/budget/scale.json",
+              "OPTIONS": [
+                "Empieza con una web básica y amplíala según crezca tu negocio.",
+                "Minimiza costes iniciales y escala gradualmente.",
+                "Aprovecha plugins y funcionalidades adicionales según necesidad."
+              ]
+            },
+            "FOURTH_ITEM": {
+              "TITLE": "Planifica con antelación para evitar costes extra",
+              "CONTENT": "Las prisas pueden aumentar considerablemente los costes. Si planificas tu proyecto con tiempo, podrás gestionar mejor tu presupuesto.",
+              "LOTTIE_JSON": "/tools/budget/planing.json",
+              "OPTIONS": [
+                "Evita tarifas por entregas urgentes.",
+                "Consigue mejores condiciones al negociar plazos realistas.",
+                "Logra mejores resultados con una planificación adecuada."
+              ]
+            }
+          }
         }
       }
     },

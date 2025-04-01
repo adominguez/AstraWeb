@@ -6,51 +6,53 @@ import FeatureItem from "@components/ui/FeatureItem.astro";
 
 
 const { TITLE, CONTENT, TITLE_2, CONTENT_2, ITEMS } = Astro.props;
-const { STARTUPS, INTERNAL_SOFTWARE, ECOMMERCE, AUTOMATE } = ITEMS;
+const { FIRST_ITEM, SECOND_ITEM, THIRD_ITEM, FOURTH_ITEM } = ITEMS;
 ---
 
 <SectionContainer class="mb-20" id="es-para-ti">
   <div class="w-full text-xl text-white flex flex-col gap-4 p-6">
     <h2 class="text-4xl md:text-5xl text-accent font-medium font-IBMCondensed text-balance">{TITLE}</h2>
     <p class="pt-4 text-xl md:text-2xl font-light text-pretty">{CONTENT}</p>
-    <h3 class="pt-4 text-2xl font-semibold font-IBMCondensed text-balance">{TITLE_2}</h3>
-    <p class="pb-4 text-gray-300 font-extralight text-pretty">{CONTENT_2}</p>
+    {
+      TITLE_2 && CONTENT_2 && <h3 class="pt-4 text-2xl font-semibold font-IBMCondensed text-balance">{TITLE_2}</h3>
+      <p class="pb-4 text-gray-300 font-extralight text-pretty">{CONTENT_2}</p>
+    }
   </div>
   <BentoGrid cols={2}>
     <BentoItem tag="article" class="bento-item bg-gradient-to-br from-sky-900/60 to-blue-900/60 backdrop-blur-sm rounded-xl p-6 border border-blue-500/20 shadow-lg shadow-blue-500/10">
       <FeatureItem
         titleClass="text-blue-400"
-        lottieJson={STARTUPS.LOTTIE_JSON}
-        title={STARTUPS.TITLE}
-        content={STARTUPS.CONTENT}
-        options={STARTUPS.OPTIONS}
+        lottieJson={FIRST_ITEM.LOTTIE_JSON}
+        title={FIRST_ITEM.TITLE}
+        content={FIRST_ITEM.CONTENT}
+        options={FIRST_ITEM.OPTIONS}
       />
     </BentoItem>
     <BentoItem tag="article" class="bento-item bg-gradient-to-br from-indigo-900/60 to-purple-900/60 backdrop-blur-sm rounded-xl p-6 border border-indigo-500/20 shadow-lg shadow-indigo-500/10">
       <FeatureItem
         titleClass="text-indigo-400"
-        lottieJson={INTERNAL_SOFTWARE.LOTTIE_JSON}
-        title={INTERNAL_SOFTWARE.TITLE}
-        content={INTERNAL_SOFTWARE.CONTENT}
-        options={INTERNAL_SOFTWARE.OPTIONS}
+        lottieJson={SECOND_ITEM.LOTTIE_JSON}
+        title={SECOND_ITEM.TITLE}
+        content={SECOND_ITEM.CONTENT}
+        options={SECOND_ITEM.OPTIONS}
       />
     </BentoItem>
     <BentoItem tag="article" class="bento-item bg-gradient-to-br from-purple-900/60 to-pink-900/60 backdrop-blur-sm rounded-xl p-6 border border-purple-500/20 shadow-lg shadow-purple-500/10">
       <FeatureItem
         titleClass="text-purple-400"
-        lottieJson={ECOMMERCE.LOTTIE_JSON}
-        title={ECOMMERCE.TITLE}
-        content={ECOMMERCE.CONTENT}
-        options={ECOMMERCE.OPTIONS}
+        lottieJson={THIRD_ITEM.LOTTIE_JSON}
+        title={THIRD_ITEM.TITLE}
+        content={THIRD_ITEM.CONTENT}
+        options={THIRD_ITEM.OPTIONS}
       />
     </BentoItem>
     <BentoItem tag="article" class="bento-item bg-gradient-to-br from-cyan-900/60 to-blue-900/60 backdrop-blur-sm rounded-xl p-6 border border-cyan-500/20 shadow-lg shadow-cyan-500/10">
       <FeatureItem
         titleClass="text-cyan-400"
-        lottieJson={AUTOMATE.LOTTIE_JSON}
-        title={AUTOMATE.TITLE}
-        content={AUTOMATE.CONTENT}
-        options={AUTOMATE.OPTIONS}
+        lottieJson={FOURTH_ITEM.LOTTIE_JSON}
+        title={FOURTH_ITEM.TITLE}
+        content={FOURTH_ITEM.CONTENT}
+        options={FOURTH_ITEM.OPTIONS}
       />
     </BentoItem>
   </BentoGrid>
