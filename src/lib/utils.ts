@@ -15,4 +15,15 @@ function mergeClasses(defaultClasses: string, propClasses: string): string {
   return clsx(mergedClasses);
 }
 
-export { mergeClasses };
+function generateTextSummary(form: FormData): string {
+  let summary = '📝 Resumen del formulario\n\n';
+
+  for (const [key, value] of form.entries()) {
+    if (key === 'materials') continue; // omitimos los archivos
+    summary += `${key}: ${value?.toString() ?? ''}\n`;
+  }
+
+  return summary;
+}
+
+export { mergeClasses, generateTextSummary };
