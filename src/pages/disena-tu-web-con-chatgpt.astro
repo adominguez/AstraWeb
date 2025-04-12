@@ -1,0 +1,212 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SectionContainer from '@components/Sections/SectionContainer.astro';
+import language from "@data/i18n/es.json";
+import PageHeroSection from "@components/Sections/PageHeroSection.astro";
+import BentoItem from "@components/Bento/BentoItem.astro";
+import BentoGrid from "@components/Bento/BentoGrid.astro";
+import ListOfItems from "@components/ui/ListOfItems.astro";
+import { Code } from 'astro-expressive-code/components'
+import Image from "astro/components/Image.astro";
+import Prompt from "@components/ui/Prompt.astro";
+import Browser from "@components/ui/Browser.astro";
+import BasicCta from '@components/Sections/BasicCta.astro';
+import CorporativeCta from "@components/Sections/CorporativeCta.astro";
+// import SwiperComponent from "@components/ui/Swiper/SwiperComponent.astro";
+
+
+const COLORS: { [key: string]: { border: string } } = {
+  PINK: {
+    border: 'border-pink-500',
+  },
+  PURPLE: {
+    border: 'border-purple-500',
+  },
+  YELLOW: {
+    border: 'border-yellow-500',
+  },
+  TEAL: {
+    border: 'border-teal-500',
+  },
+  INDIGO: {
+    border: 'border-indigo-500',
+  },
+} as const;
+
+const { META_TITLE, META_DESCRIPTION, HERO_SECTION, FIRST_SECTION, WHAT_DO_YOU_GET, SECOND_CTA, FIRST_CTA } = language.PAGES.CHATGPT_WEB_DESIGN;
+const type = 'FREE_DESIGN';
+---
+
+<Layout simpleLogo title={META_TITLE} description={META_DESCRIPTION}>
+  <main class="text-white flex flex-col items-center">
+    <PageHeroSection title={HERO_SECTION.TITLE} subtitle={HERO_SECTION.SUBTITLE} image={HERO_SECTION.IMAGE} text={HERO_SECTION.TEXT} cta={HERO_SECTION.CTA} type={type} />
+    <SectionContainer class="pb-16">
+      <h2 class="text-3xl md:text-4xl font-medium mb-10 text-balance font-IBMCondensed text-primary">{FIRST_SECTION.TITLE}</h2>
+      <div class="space-y-12 text-lg leading-relaxed">
+        {
+          FIRST_SECTION.ITEMS.map(({TITLE, DESCRIPTION, DESCRIPTION_2, CLASS = 'PURPLE'}) => (
+            <div class={`border-l-4 ${COLORS[CLASS].border} pl-6`}>
+              <h3 class="text-2xl font-semibold mb-2">{TITLE}</h3>
+              <p set:html={DESCRIPTION} />
+              { DESCRIPTION_2
+                  ? (
+                  <p class="mt-4" set:html={DESCRIPTION_2} />
+                ) : null
+              }
+            </div>
+          ))
+        }
+      </div>
+    </SectionContainer>
+    <BasicCta {...FIRST_CTA} />
+    <SectionContainer class="pb-16">
+      <div class="w-full text-xl text-white flex flex-col gap-4 p-6">
+        <h2 class="text-3xl md:text-4xl font-medium text-balance font-IBMCondensed text-secondary">{WHAT_DO_YOU_GET.TITLE}</h2>
+        <p class="mt-4" set:html={WHAT_DO_YOU_GET.CONTENT} />
+        <div class="flex flex-col md:flex-row gap-4">
+          <ListOfItems items={WHAT_DO_YOU_GET.ITEMS.map(({TITLE, DESCRIPTION}) => `<strong>${TITLE}:</strong> ${DESCRIPTION}`)} />
+          <Image 
+            src={WHAT_DO_YOU_GET.IMAGE.src}
+            alt={WHAT_DO_YOU_GET.IMAGE.alt}
+            width={WHAT_DO_YOU_GET.IMAGE.width}
+            height={WHAT_DO_YOU_GET.IMAGE.height}
+          />
+        </div>
+      </div>
+    </SectionContainer>
+    <SectionContainer class="pb-16">
+      <div class="w-full text-xl text-white flex flex-col gap-4 p-6">
+        <h2 class="text-3xl md:text-4xl font-medium text-balance font-IBMCondensed text-primary">{WHAT_DO_YOU_GET.TUTORIAL.TITLE}</h2>
+        <p class="mt-4" set:html={WHAT_DO_YOU_GET.TUTORIAL.PRESENTATION.CONTENT_1} />
+        <p class="mt-4" set:html={WHAT_DO_YOU_GET.TUTORIAL.PRESENTATION.CONTENT_2} />
+        <p class="mt-4" set:html={WHAT_DO_YOU_GET.TUTORIAL.PRESENTATION.CONTENT_3} />
+        <p class="my-4 bg-slate-600/40 rounded-lg border-yellow-400 px-4 py-2 border" set:html={WHAT_DO_YOU_GET.TUTORIAL.PRESENTATION.WARNING} />
+        <h3 class="text-2xl md:text-3xl text-balance font-IBMCondensed text-accent mt-6">{WHAT_DO_YOU_GET.TUTORIAL.STEP_1.TITLE}</h3>
+        <p class="mt-4" set:html={WHAT_DO_YOU_GET.TUTORIAL.STEP_1.CONTENT_1} />
+        <p class="mt-4" set:html={WHAT_DO_YOU_GET.TUTORIAL.STEP_1.CONTENT_2} />
+        <Prompt title={WHAT_DO_YOU_GET.TUTORIAL.STEP_1.PROMPT_TITLE} text={WHAT_DO_YOU_GET.TUTORIAL.STEP_1.PROMPT}/>
+        <p class="mt-4" set:html={WHAT_DO_YOU_GET.TUTORIAL.STEP_1.CONTENT_3} />
+        <swiper-container pagination="true" navigation="true" pagination-type="fraction">
+          {
+            Object.values(WHAT_DO_YOU_GET.TUTORIAL.STEP_1.RESPONSE.SECTIONS).map(({TITLE, LIST}) => (
+              <swiper-slide>
+                <h3 class="text-2xl md:text-3xl text-balance font-IBMCondensed text-accent">{TITLE}</h3>
+                <ListOfItems items={LIST} />
+              </swiper-slide>
+            ))
+          }
+        </swiper-container>
+        <p class="my-4" set:html={WHAT_DO_YOU_GET.TUTORIAL.STEP_1.CONTENT_4} />
+        <h3 class="text-2xl md:text-3xl text-balance font-IBMCondensed text-accent mt-6">{WHAT_DO_YOU_GET.TUTORIAL.STEP_2.TITLE}</h3>
+        <p class="mt-4" set:html={WHAT_DO_YOU_GET.TUTORIAL.STEP_2.CONTENT_1} />
+        <p class="mt-4" set:html={WHAT_DO_YOU_GET.TUTORIAL.STEP_2.CONTENT_2} />
+        <p class="mt-4 bg-slate-600/40 rounded-lg border-yellow-400 px-4 py-2 border" set:html={WHAT_DO_YOU_GET.TUTORIAL.STEP_2.WARNING} />
+        <p class="mt-4" set:html={WHAT_DO_YOU_GET.TUTORIAL.STEP_2.CONTENT_3} />
+        <Prompt title={WHAT_DO_YOU_GET.TUTORIAL.STEP_2.PROMPT_TITLE} text={WHAT_DO_YOU_GET.TUTORIAL.STEP_2.PROMPT}/>
+        <div class="flex flex-col md:flex-row gap-4 my-4">
+          <div class="flex-1">
+            <p set:html={WHAT_DO_YOU_GET.TUTORIAL.STEP_2.CONTENT_4} />
+            <p class="mt-4" set:html={WHAT_DO_YOU_GET.TUTORIAL.STEP_2.CONTENT_5} />
+          </div>
+          <Image 
+            class="md:max-w-80 lg:max-w-[40rem] max-w-60 rounded-lg"
+            src={WHAT_DO_YOU_GET.TUTORIAL.STEP_2.RESPONSE.IMAGE.src}
+            alt={WHAT_DO_YOU_GET.TUTORIAL.STEP_2.RESPONSE.IMAGE.alt}
+            width={WHAT_DO_YOU_GET.TUTORIAL.STEP_2.RESPONSE.IMAGE.width}
+            height={WHAT_DO_YOU_GET.TUTORIAL.STEP_2.RESPONSE.IMAGE.height}
+          />
+        </div>
+        <h3 class="text-2xl md:text-3xl text-balance font-IBMCondensed text-accent mt-6">{WHAT_DO_YOU_GET.TUTORIAL.STEP_3.TITLE}</h3>
+        <p class="mt-4" set:html={WHAT_DO_YOU_GET.TUTORIAL.STEP_3.CONTENT_1} />
+        <p class="mt-4" set:html={WHAT_DO_YOU_GET.TUTORIAL.STEP_3.CONTENT_2} />
+        <swiper-container pagination="true" navigation="true" pagination-type="fraction">
+          {
+            Object.values(WHAT_DO_YOU_GET.TUTORIAL.STEP_3.PROMPT).map(({TITLE, CONTENT}) => (
+              <swiper-slide>
+                <Prompt title={TITLE} text={CONTENT}/>
+              </swiper-slide>
+            ))
+          }
+        </swiper-container>
+        <p class="my-4" set:html={WHAT_DO_YOU_GET.TUTORIAL.STEP_3.CONTENT_3} />
+        <Browser>
+          <div class="flex flex-col">
+            {
+              WHAT_DO_YOU_GET.TUTORIAL.STEP_3.IMAGES.map(({src, alt, width = 1200, height = 800}) => (
+                <Image 
+                  class="w-full"
+                  src={src}
+                  alt={alt}
+                  width={width}
+                  height={height}
+                />
+              ))
+            }
+          </div>
+        </Browser>
+        <p class="mt-4" set:html={WHAT_DO_YOU_GET.TUTORIAL.STEP_3.CONTENT_4} />
+        <p class="mt-4" set:html={WHAT_DO_YOU_GET.TUTORIAL.STEP_3.CONTENT_5} />
+        <p class="mt-4" set:html={WHAT_DO_YOU_GET.TUTORIAL.STEP_3.CONTENT_6} />
+      </div>
+    </SectionContainer>
+    <CorporativeCta {...SECOND_CTA} />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  p, ul {
+    @apply text-white text-lg md:text-xl font-thin text-pretty;
+  }
+
+  ul {
+    @apply my-2
+  }
+
+  a {
+    @apply text-secondary underline transition-colors;
+  }
+
+  a:hover {
+    @apply text-primary;
+  }
+
+  swiper-container {
+    width: 100%;
+    height: 100%;
+
+    .swiper-button-next svg{
+      @apply text-secondary;
+    }
+    .swiper-button-prev svg{
+      @apply text-secondary;
+    }
+  }
+
+  swiper-slide {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: auto;
+    @apply rounded-lg bg-slate-600/40 p-4;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
