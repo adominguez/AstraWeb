@@ -2,8 +2,9 @@
 import { useState } from 'preact/hooks';
 import CustomTextarea from '@components/ui/form/CustomTextarea';
 import CustomSelect from '../form/CustomSelect';
-import type { FormData } from '@components/ui/multistepform/Types';
+import type { FreeDesignFormData as FormData } from '@components/ui/multistepform/Types';
 import Footer from '@components/ui/multistepform/Footer';
+import FileDropzone from '@components/ui/fileDropzone/FileDropzone';
 
 interface Step3Props {
   formData: FormData;
@@ -13,7 +14,7 @@ interface Step3Props {
 }
 
 interface Errors {
-  budget?: string;
+  projectDetails?: string;
 }
 
 const Step3 = ({ formData, setFormData, nextStep, prevStep }: Step3Props) => {
@@ -21,9 +22,9 @@ const Step3 = ({ formData, setFormData, nextStep, prevStep }: Step3Props) => {
 
   const validateField = (name: string, value: string) => {
     let tempErrors = {};
-    if (name === 'budget' && !value) {
+    if (name === 'projectDetails' && !value) {
       tempErrors = {
-        budget: 'selecciona tu presupuesto'
+        projectDetails: 'Añade algunos detalles sobre el proyecto'
       }
     };
     setErrors(tempErrors);
@@ -36,7 +37,7 @@ const Step3 = ({ formData, setFormData, nextStep, prevStep }: Step3Props) => {
 
   const validate = () => {
     let tempErrors = {} as Errors;
-    if (!formData.budget) tempErrors.budget = 'selecciona tu presupuesto';
+    if (!formData.projectDetails) tempErrors.projectDetails = 'Añade algunos detalles sobre el proyecto';
     setErrors(tempErrors);
     return tempErrors; // Return the errors object
   };
@@ -48,30 +49,32 @@ const Step3 = ({ formData, setFormData, nextStep, prevStep }: Step3Props) => {
     }
   };
 
+  const onFilesChange = (materials: File[]) => {
+    setFormData({ ...formData, materials });
+  }
+
   return (
     <div class="flex flex-col max-h-[500px]">
-      <h2 class="text-2xl mb-4 text-secondary">Paso 3: Presupuesto</h2>
+      <h2 class="text-2xl mb-4 text-secondary">Paso 3: Información para el diseño</h2>
       <div class="overflow-auto pr-3 flex-1">
-        <CustomSelect
-          name="budget"
-          value={formData.budget}
-          onChange={handleChange}
-          placeholder="Selecciona tu rango de presupuesto"
-          options={[
-            { value: '500-1000', label: '500€ - 1.000€' },
-            { value: '1000-3000', label: '1000€ - 3.000€' },
-            { value: '3000-5000', label: '3.000€ - 5.000€' },
-            { value: '5000+', label: 'Más de 5.000€' },
-          ]}
-          className="w-full p-2 mb-4 rounded-2xl"
-          error={errors.budget}
-        />
         <CustomTextarea
           name="projectDetails"
           value={formData.projectDetails || ''}
           onChange={handleChange}
-          placeholder="¿Quieres añadir algún detalle más sobre tu proyecto?"
+          placeholder="¿Añade algunos detalles sobre tu proyecto, ¿qué colores te gustaría? ¿qué funcionalidades necesitas?"
           className="w-full p-2 mb-4 rounded-2xl"
+          error={errors.projectDetails}
+        />
+        <FileDropzone
+          onFilesChange={onFilesChange}
+          maxFiles={10}
+          acceptedFileTypes={['image/jpeg', 'image/png', 'image/webp', 'image/svg+xml', 'application/pdf']}
+          initialFiles={formData.materials}
+          errorMessages={{
+            validFiles: "Sólo puedes subir imágenes (jpg, png, svg) y PDFs",
+            maxFiles: "No puedes subir más de 10 archivos",
+          }}
+          placeholder="Sube tus archivos de referencia (imágenes, PDFs)"
         />
       </div>
       <Footer handleNext={handleNext} handlePrev={prevStep} />

@@ -3,11 +3,11 @@ import { useState } from 'preact/hooks';
 import CustomInput from '@components/ui/form/CustomInput';
 import CustomTextarea from '@components/ui/form/CustomTextarea';
 import CustomSelect from '../form/CustomSelect';
-import type { FormData } from '@components/ui/multistepform/Types';
+import type { Step2Props as Step } from '@components/ui/multistepform/Types';
 import Footer from '@components/ui/multistepform/Footer';
 
 interface Step2Props {
-  formData: FormData;
+  formData: Step;
   setFormData: (data: any) => void;
   nextStep: () => void;
   prevStep: () => void;
@@ -17,7 +17,6 @@ interface Errors {
   project?: string;
   web?: string;
   projectType?: string;
-  projectGoal?: string;
 }
 
 const Step2 = ({ formData, setFormData, nextStep, prevStep } : Step2Props) => {
@@ -40,11 +39,6 @@ const Step2 = ({ formData, setFormData, nextStep, prevStep } : Step2Props) => {
     } else if (name === 'projectType') {
       delete tempErrors.projectType;
     }
-    if (name === 'projectGoal' && !value) {
-      tempErrors.projectGoal = 'Objetivo del Proyecto es requerido';
-    } else if (name === 'projectGoal') {
-      delete tempErrors.projectGoal;
-    }
     setErrors(tempErrors);
   };
 
@@ -52,7 +46,6 @@ const Step2 = ({ formData, setFormData, nextStep, prevStep } : Step2Props) => {
     let tempErrors = {} as Errors;
     if (!formData.project) tempErrors.project = 'El nombre del proyecto es requerido';
     if (!formData.projectType) tempErrors.projectType = 'Tipo de Proyecto es requerido';
-    if (!formData.projectGoal) tempErrors.projectGoal = 'Objetivo del Proyecto es requerido';
     setErrors(tempErrors);
     return Object.keys(tempErrors).length === 0;
   };
@@ -98,14 +91,6 @@ const Step2 = ({ formData, setFormData, nextStep, prevStep } : Step2Props) => {
           ]}
           className="w-full p-2 mb-4 rounded-2xl"
           error={errors.projectType}
-        />
-        <CustomTextarea
-          name="projectGoal"
-          value={formData.projectGoal || ''}
-          onChange={handleChange}
-          placeholder="¿Cuál es el objetivo principal de tu página web?"
-          className="w-full p-2 mb-4 rounded-2xl"
-          error={errors.projectGoal}
         />
       </div>
       <Footer handleNext={handleNext} handlePrev={prevStep} />

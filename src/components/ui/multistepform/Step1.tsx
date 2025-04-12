@@ -1,11 +1,11 @@
 // src/components/Step1.tsx
 import { useState } from 'preact/hooks';
 import CustomInput from '@components/ui/form/CustomInput';
-import type { FormData } from '@components/ui/multistepform/Types';
+import type { Step1Props as Step } from '@components/ui/multistepform/Types';
 import Footer from '@components/ui/multistepform/Footer';
 
 interface Step1Props {
-  formData: FormData;
+  formData: Step;
   setFormData: (data: any) => void;
   nextStep: () => void;
 }
@@ -39,7 +39,7 @@ const Step1 = ({ formData, setFormData, nextStep }: Step1Props) => {
   };
 
   return (
-    <div class="flex flex-col max-h-[400px]">
+    <div class="flex flex-col max-h-[500px]">
       <h2 class="text-2xl mb-4 text-secondary">Paso 1: Información Personal</h2>
       <div class="overflow-auto pr-3 flex-1">
         <CustomInput

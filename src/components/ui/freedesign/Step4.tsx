@@ -1,11 +1,12 @@
 // src/components/Step4.tsx
 import { useState } from 'preact/hooks';
 import Footer from '@components/ui/multistepform/Footer';
+import type { FreeDesignFormData } from '@components/ui/multistepform/Types';
+import FileList from '@components/ui/fileDropzone/FileList';
 import CustomCheckbox from '@components/ui/form/CustomCheckbox';
-import type { FormData } from '@components/ui/multistepform/Types';
 
 interface Step4Props {
-  formData: FormData;
+  formData: FreeDesignFormData;
   submitForm: () => void;
   prevStep: () => void;
   loading?: boolean;
@@ -42,7 +43,8 @@ const Step4 = ({ formData, prevStep, submitForm, setFormData, loading = false, e
 
   return (
     <div class="flex flex-col max-h-[500px]">
-      <h2 class="text-2xl text-secondary">Paso 4: Confirmación</h2>
+      <h3 class="text-2xl text-secondary">Paso 4: Revisa todos los datos.</h3>
+      <p class="text-slate-400 text-base text-pretty">Si algo hay algún dato mal puedes volver atrás y modificarlo.</p>
       <div class="relative wrapper-text px-4 overflow-auto flex-1">
         {
           error ? <p class="text-red-400 text-base text-pretty mb-4">{error}</p> : null
@@ -60,10 +62,15 @@ const Step4 = ({ formData, prevStep, submitForm, setFormData, loading = false, e
               <p><strong className="text-accent">Nombre del proyecto:</strong> {formData.project}</p>
               <p><strong className="text-accent">Web:</strong> {formData.web}</p>
               <p><strong className="text-accent">Tipo de Proyecto:</strong> {formData.projectType}</p>
-              <p><strong className="text-accent">Objetivo del Proyecto:</strong> {formData.projectGoal}</p>
               <h3 class="text-xl mt-4 mb-2 text-primary">Presupuesto y detalles</h3>
-              <p><strong className="text-accent">Presupuesto:</strong> {formData.budget}</p>
               <p><strong className="text-accent">Detalles del Proyecto:</strong> {formData.projectDetails}</p>
+              <p className="mb-2"><strong className="text-accent">Materiales para el diseño:</strong></p>
+              {
+                formData.materials ? (
+                  <FileList files={formData.materials || []} hideRemoveButton />
+                ) : <span>No hay materiales seleccionados</span>
+              }
+              
             </>
           )
         }
