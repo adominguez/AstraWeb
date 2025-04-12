@@ -6,6 +6,8 @@ import vercel from '@astrojs/vercel/serverless';
 import sitemap from '@astrojs/sitemap';
 import lottie from "astro-integration-lottie";
 
+import expressiveCode from 'astro-expressive-code';
+
 // https://astro.build/config
 export default defineConfig({
   experimental: {
@@ -20,7 +22,9 @@ export default defineConfig({
       }
       return item;
     }
-  }), preact()],
+  }), preact(), expressiveCode({
+    themes: ['dracula'],
+  })],
   output: 'server',
   adapter: vercel({
     edgeMiddleware: true,
