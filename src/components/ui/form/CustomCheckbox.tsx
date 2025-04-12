@@ -1,6 +1,5 @@
 // src/components/CustomCheckbox.tsx
 
-import { h } from 'preact';
 import { useState } from 'preact/hooks';
 
 interface CustomCheckboxProps {
@@ -69,9 +68,7 @@ const CustomCheckbox = ({
           `}
         />
         {label && (
-          <span class="text-white">
-            {label}
-          </span>
+          <div class="text-white" dangerouslySetInnerHTML={{ __html: label }} />
         )}
       </label>
 

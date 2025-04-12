@@ -16,7 +16,7 @@ const CustomTextarea = ({ error, name, value, onChange, placeholder = 'Inserta a
       value={value}
       onChange={onChange}
       placeholder={placeholder}
-      class="w-full px-4 py-2 bg-transparent border border-white rounded-3xl text-white hover:border-secondary outline-secondary"
+      class="w-full px-4 py-2 bg-transparent border border-white rounded-3xl text-white hover:border-secondary focus:border-secondary hover:bg-white/5 focus:bg-white/5 outline-none"
     />
     {error && <p class="text-red-500 text-sm mt-2">{error}</p>}
   </div>
