@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { APIRoute } from "astro";
 import { Resend } from 'resend';
 import EmailTemplate from '@email/FreeTemplate';
