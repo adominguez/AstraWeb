@@ -14,7 +14,7 @@ const { title, subtitle, image, text, cta, type } = Astro.props
       </div>
       <p class="text-white text-lg md:text-xl text-center px-8 font-thin text-pretty">{text}</p>
       <slot>
-        <Blendy id="hero" text={cta} />
+        <Blendy id="hero" text={cta} type={type} />
       </slot>
     </div>
   </div>

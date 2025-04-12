@@ -1,6 +1,9 @@
 ---
 import MultistepForm from "@components/ui/multistepform/multistepForm";
-const { id, text = 'Quiero una web que brille', buttonClass } = Astro.props;
+import FreeDesign from "@components/ui/freedesign/FreeDesign";
+import language from "@data/i18n/es.json";
+const { id, buttonClass, type = "INITIAL" } = Astro.props;
+const { TEXT, CONTENT } = language.FORMS[type as keyof typeof language.FORMS];
 ---
 
 <!-- Source element -->
@@ -9,7 +12,7 @@ const { id, text = 'Quiero una web que brille', buttonClass } = Astro.props;
   buttonClass
   ]} data-blendy-from="modal">
   <slot>
-    <span data-blendy-from="title">{text}</span>
+    <span data-blendy-from="title">{TEXT}</span>
   </slot>
 </button>
 
@@ -19,14 +22,22 @@ const { id, text = 'Quiero una web que brille', buttonClass } = Astro.props;
   <div class="modal fixed left-0 top-10 right-0 flex flex-col justify-self-center self-center place-self-center z-50 w-11/12 max-w-3xl rounded-2xl bg-slate-800 text-white border-primary border-2" data-blendy-to="modal">
     <div class="w-full px-4 py-2 flex justify-between text-2xl">
       <header class="flex flex-col">
-        <h2 data-blendy-to="title text-balance">{text}</h2>
-        <p class="text-slate-400 text-base text-pretty">Completa este formulario en menos de 5 minutos para que podamos enviarte un presupuesto personalizado para tu proyecto.</p>
+        <h2 data-blendy-to="title text-balance">{TEXT}</h2>
+        <p class="text-slate-400 text-base text-pretty">{CONTENT}</p>
       </header>
       <button class="close w-5 h-5 justify-center flex items-center">x</button>
     </div>
     <div class="px-4 py-2">
-      
-      <MultistepForm client:visible />
+      {
+        type === "FREE_DESIGN" && (
+          <FreeDesign client:visible />
+        )
+      }
+      {
+        type === 'INITIAL' && (
+          <MultistepForm client:visible />
+        )
+      }
     </div>
   </div>
 </template>
