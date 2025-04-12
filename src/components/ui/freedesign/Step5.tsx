@@ -1,8 +1,8 @@
 // src/components/Step4.tsx
-import type { FormData } from '@components/ui/multistepform/Types';
+import type { FreeDesignFormData } from '@components/ui/multistepform/Types';
 
 interface Step4Props {
-  formData: FormData;
+  formData: FreeDesignFormData;
   submitForm: () => void;
   prevStep: () => void;
 }

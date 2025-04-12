@@ -4,7 +4,7 @@ import Step1 from '../multistepform/Step1';
 import Step2 from './Step2';
 import Step3 from './Step3';
 import Step4 from './Step4';
-import Step5 from '../multistepform/Step5';
+import Step5 from './Step5';
 import type { FreeDesignFormData as FormDataType } from '@components/ui/multistepform/Types';
 
 const composeFormData = (formData: FormDataType) => {
