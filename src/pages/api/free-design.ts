@@ -1,6 +1,6 @@
 import type { APIRoute } from "astro";
 import { Resend } from 'resend';
-import EmailTemplate from '@email/EmailTemplate';
+import EmailTemplate from '@email/FreeTemplate';
 import renderToString from 'preact-render-to-string';
 import { sendLead } from "@lib/fbEvents";
 import { createFolder, uploadFile, createTextSummaryFile } from "@lib/google";
@@ -55,13 +55,6 @@ export const POST: APIRoute = async ({ request }) => {
     EmailTemplate({
       fullName,
       email,
-      phone,
-      project,
-      web,
-      projectType,
-      projectDetails,
-      privacyPolicy,
-      uploadedUrls,
     })
   );
 
