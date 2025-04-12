@@ -904,6 +904,275 @@
         }
       }
     },
+    "CHATGPT_WEB_DESIGN": {
+      "META_TITLE": "Haz el diseño de tu nueva página web con ChatGPT ",
+      "META_DESCRIPTION": "Aprende a crear el diseño de tu próxima página web utilizando ChatGPT, haz que tu web sea más profesional.",
+      "HERO_SECTION": {
+        "TITLE": "Crea el Diseño de tu página web con ChatGPT",
+        "SUBTITLE": "Crea el diseño de una web profesional y atractiva <span class='text-gradient text-balance'>utilizando ChatGPT</span>",
+        "TEXT": "¿Te imaginas tener el diseño de tu página web listo en minutos gracias a la IA? En este tutorial verás cómo puedes usar ChatGPT para generar el diseño completo de una web: desde la estructura hasta los textos.",
+        "IMAGE": {
+          "src": "/heros/Chatbot.svg",
+          "alt": "Haz el diseño de tu nueva página web con ChatGPT"
+        },
+        "CTA": "Quiero un diseño GRATIS"
+      },
+      "FIRST_SECTION": {
+        "TITLE": "¿Por qué querrías usar la IA para diseñar tu página web?",
+        "ITEMS": [{
+          "TITLE": "“Quiero una web, pero no sé cómo explicarle al programador lo que quiero…”",
+          "DESCRIPTION": "¿Has intentado alguna vez describir tu idea a un diseñador y acabas dibujándola en una servilleta? ¿O buscando ejemplos de webs parecidas, aunque ninguna te convenza del todo?",
+          "DESCRIPTION_2": "Con ChatGPT puedes generar una propuesta <strong>visual, estructurada y con textos incluidos</strong>, lista para enviar o empezar a construir. Ganas <strong>tiempo, claridad y evitas malentendidos</strong>.",
+          "CLASS": "PINK"
+        }, {
+          "TITLE": "“Soy programador, pero me cuesta proponer diseños originales”",
+          "DESCRIPTION": "¿Si eres desarrollador, sabes lo frustrante que es tener que ajustarte siempre a plantillas o a ideas poco definidas. ChatGPT puede ser tu aliado creativo: genera propuestas <strong>frescas, coherentes y personalizadas</strong>. Rompe la rutina y ofrece webs diferentes sin complicarte.",
+          "CLASS": "PURPLE"
+        }, {
+          "TITLE": "“He pedido presupuestos, pero se me va de precio”",
+          "DESCRIPTION": "El diseño web puede ser caro, sobre todo si no sabes exactamente lo que necesitas. Y eso te lleva a usar plantillas genéricas o a dejarlo para más adelante. Esta guía te da <strong>una propuesta personalizada gratis</strong>, sin invertir todavía en herramientas o servicios.",
+          "CLASS": "YELLOW"
+        }, {
+          "TITLE": "“No tengo ni idea de por dónde empezar”",
+          "DESCRIPTION": "¿Empiezo por los textos? ¿Por el diseño? ¿Por los colores? Deja que la IA lo haga por ti. Describe tu idea, y ChatGPT te devolverá una propuesta <strong>coherente, profesional y adaptada a ti</strong> en minutos.",
+          "CLASS": "TEAL"
+        }, {
+          "TITLE": "“Tengo claro lo que quiero, pero no sé cómo convertirlo en una web real”",
+          "DESCRIPTION": "Con el diseño generado podrás <strong>construirlo tú mismo</strong> con herramientas como Webflow, WordPress o Astro. O puedes <strong>mandarlo tal cual a un profesional</strong>. Incluso pedirme que te ayude 😉",
+          "CLASS": "INDIGO"
+        }]
+      },
+      "FIRST_CTA": {
+        "title": "¿Quieres un diseño web profesional y atractivo?",
+        "text": "Tanto si eres alguien que necesita una web como si eres quien la construye esta es una buena alternativa para diseñar tu página web.",
+        "ctaText": "Quiero un diseño GRATIS"
+      },
+      "SECOND_CTA": {
+        "title": "¿Ya tienes tu diseño web?",
+        "text": "No lo dejes en un archivo o en tu imaginación. Hazlo realidad y transforma tu idea en una web profesional que enamore a tus clientes desde el primer clic.",
+        "ctaText": "🚀 Quiero una web real",
+        "lottieJson": "/services/corporative/cta.json"
+      },
+      "WHAT_DO_YOU_GET": {
+        "TITLE": "¿Qué vas a conseguir con esta guía?",
+        "CONTENT": "Esta guía no solo te enseñará cómo usar ChatGPT para crear el diseño de tu web. Te ayudará a <strong>materializar una idea</strong>, a <strong>entender qué necesita tu página</strong>, y a <strong>ver con claridad cómo podría verse y sonar tu sitio</strong> sin que tengas que escribir una sola línea de código.",
+        "ITEMS": [{
+          "TITLE": "Estructura clara y profesional",
+          "DESCRIPTION": "Define cada sección que tu web necesita, en el orden adecuado y pensada para guiar al usuario hacia la conversión."
+        }, {
+          "TITLE": "Textos redactados para conectar",
+          "DESCRIPTION": "Recibe textos hechos para captar la atención de tu público ideal, con el tono y enfoque adecuados para tu tipo de negocio."
+        }, {
+          "TITLE": "Concepto visual adaptado a ti",
+          "DESCRIPTION": "Colores, estilo y tipografía recomendados según tu marca o el mensaje que quieras transmitir. Incluso referencias visuales."
+        }, {
+          "TITLE": "Un diseño base para avanzar con seguridad",
+          "DESCRIPTION": "Podrás construirlo tú, entregarlo a un desarrollador, o usarlo como punto de partida. Y lo mejor: creado en minutos, sin bloqueos ni dudas."
+        }],
+        "IMAGE": {
+          "src": "/disena-web-con-chat/checklist.svg",
+          "alt": "Checklist",
+          "width": 300,
+          "height": 300
+        },
+        "TUTORIAL": {
+          "TITLE": "Cómo diseñar tu web con ChatGPT paso a paso",
+          "PRESENTATION": {
+            "CONTENT_1": "Antes de empezar pongámonos en situación. Imagina que eres una diseñadora de interiores freelance llamada Clara. Estás empezando a trabajar por tu cuenta y necesitas una web que refleje tu estilo, profesionalidad y gusto estético. Quieres algo moderno, visualmente impactante, pero no sabes por dónde empezar. Tampoco quieres depender de plantillas genéricas que no te representan.",
+            "CONTENT_2": "En este tutorial, vamos a diseñar paso a paso una web para Clara. Con la ayuda de ChatGPT, generaremos la estructura ideal, redactaremos textos pensados para atraer clientes, definiremos un estilo visual elegante y armonioso, para crear una base visual que después podamos llevarlo a la realidad en una web.",
+            "CONTENT_3": "Recuerda que este tutorial es solo una guía y que los resultados pueden variar. La creatividad y la originalidad son clave para que tu web destaque y conecte con tu audiencia.",
+            "WARNING": "<strong>Importante:</strong> Para seguir este tutorial y acceder a GPT-4o (el modelo que genera los mejores resultados), necesitarás una cuenta de OpenAI. Si no la tienes o prefieres que lo hagamos por ti, puedes pedírnoslo de forma gratuita."
+          },
+          "STEP_1": {
+            "TITLE": "Paso 1: Define claramente tu objetivo y tu público",
+            "CONTENT_1": "Antes de comenzar, ten claro para quién es tu web y qué quieres conseguir con ella. Define tu <strong>objetivo principal</strong> (vender, informar, captar clientes) y tu <strong>buyer persona</strong>: edad, intereses, nivel de conocimiento técnico, etc. Incluso si no sabes esta información puedes pedírsela también a ChatGPT.",
+            "CONTENT_2": "Esta información ayudará a que la IA te dé resultados más ajustados a lo que realmente necesitas, puedes incluso añadirle información de tu situación previa, o problemas que estás teniendo, por ejemplo.",
+            "PROMPT_TITLE": "Prompt utilizado para definir el objetivo y el público",
+            "PROMPT": "Quiero crear una web profesional para un estudio de interiorismo en Valencia. Está dirigida a mujeres entre 30 y 55 años interesadas en transformar su vivienda con un estilo contemporáneo, cálido y elegante. Actualmente tiene redes sociales pero no una web que refleje su trabajo y que le ayude a obtener clientas. Dime qué estructura y textos necesita para captar más clientas.",
+            "CONTENT_3": "Esta ha sido la respuesta que me ha dado ChatGPT:",
+            "RESPONSE": {
+              "TITLE": "🧭 Estructura recomendada para la web de interiorismo",
+              "SECTIONS": {
+                "SECTION_1": {
+                  "TITLE": "Inicio (Home)",
+                  "LIST": [
+                    "Hero impactante con imagen de proyecto destacado",
+                    "Frase potente: “Transformamos tu hogar en un espacio que te abraza.”",
+                    "Botón CTA: Solicita tu primera asesoría gratuita o Ver proyectos"
+                  ]
+                },
+                "SECTION_2": {
+                  "TITLE": "Sobre Nosotras",
+                  "LIST": [
+                    "Historia del estudio, quién lo lidera, visión y valores.",
+                    "Enfoque cercano: destacar sensibilidad estética, escucha activa, experiencia.",
+                    "Foto profesional de la interiorista o del equipo.",
+                    "Testimonios si los hay."
+                  ]
+                },
+                "SECTION_3": {
+                  "TITLE": "Servicios",
+                  "LIST": [
+                    "Asesoría de interiorismo (online y presencial)",
+                    "Proyectos completos de reforma",
+                    "Decoración de espacios",
+                    "Home staging para venta o alquiler",
+                    "Para cada uno: breve texto con beneficios + CTA: Descubre más"
+                  ]
+                },
+                "SECTION_4": {
+                  "TITLE": "Proyectos",
+                  "LIST": [
+                    "Galería visual ordenada por tipo de espacio o estilo.",
+                    "Título",
+                    "Breve descripción del reto y la solución",
+                    "Antes y después (si aplica)",
+                    "Frase destacada de la clienta (testimonio)"
+                  ]
+                },
+                "SECTION_5": {
+                  "TITLE": "Proceso de Trabajo",
+                  "LIST": [
+                    "Explicación clara en 4-5 pasos:",
+                    "- Primer contacto",
+                    "- Visita o reunión online",
+                    "- Propuesta y diseño",
+                    "- Ejecución y seguimiento",
+                    "- Resultado final",
+                    "Refuerza profesionalismo y cercanía"
+                  ]
+                },
+                "SECTION_6": {
+                  "TITLE": "Blog / Consejos",
+                  "LIST": [
+                    "Artículos útiles: cómo elegir colores, cómo decorar un salón pequeño, errores comunes...",
+                    "Posicionamiento SEO + aporta valor"
+                  ]
+                },
+                "SECTION_7": {
+                  "TITLE": "Contacto",
+                  "LIST": [
+                    "Formulario directo + botón WhatsApp",
+                    "Teléfono / email",
+                    "Enlace a redes sociales",
+                    "Dirección si tiene estudio físico"
+                  ]
+                },
+                "SECTION_8": {
+                  "TITLE": "Lead Magnet (opcional pero recomendado)",
+                  "LIST": [
+                    "Ebook gratuito o checklist: “5 claves para crear un hogar elegante y acogedor”",
+                    "A cambio del email (captación de leads)"
+                  ]
+                },
+                "TEXT_STYLE": {
+                  "TITLE": "✍️ Estilo de los Textos",
+                  "LIST": [
+                    "Tono: profesional, cálido y cercano.",
+                    "Lenguaje: claro, emocional, evocador. Que conecte con el deseo de sentirse bien en casa.",
+                    "Llamadas a la acción suaves pero efectivas:",
+                    "“Descubre cómo podemos ayudarte”",
+                    "“Convierte tu hogar en tu refugio”",
+                    "“Solicita tu asesoría inicial sin compromiso”"
+                  ]
+                }
+              }
+            },
+            "CONTENT_4": "Como ves, ChatGPT ha dado una estructura clara y efectiva para la web. Ahora vamos a por el estilo visual."
+          },
+          "STEP_2": {
+            "TITLE": "Paso 2: Vamos a pedirle que haga el diseño visual de cada sección",
+            "CONTENT_1": "Ahora que tenemos la estructura, vamos a pedirle a ChatGPT que nos ayude con el diseño visual. Vamos a pedirle que nos recomiende colores, tipografías, estilos de imágenes, etc. para que la web tenga un aspecto profesional y atractivo, ten en cuenta que incluso puedes subirle imágenes que te interesen que aparezca o que las adapte en tu diseño.",
+            "CONTENT_2": "Indica claramente si prefieres un estilo <strong>oscuro o claro</strong>, qué colores quieres transmitir, si debe verse <strong>elegante, minimalista, divertido o técnico</strong>... ChatGPT puede darte una guía visual muy completa.",
+            "WARNING": "Aquí es importante para salga bien que vayas sección por sección y le vayas dando información y feedback a ChatGPT para que pueda ajustar el diseño a tus necesidades, si le pides que te haga todo el diseño completo de la web en una sóla imagen probablemente cortará las secciones y no lo hará bien.",
+            "CONTENT_3": "Recuerda que la creatividad es clave en este paso. Si tienes una idea clara de cómo quieres que se vea tu web, ¡compártela con ChatGPT! Cuanta más información le des, más ajustado será el resultado.",
+            "PROMPT_TITLE": "Prompt utilizado para definir el diseño visual",
+            "PROMPT": "Crea una imagen del Hero de la página web, quiero que sea un diseño muy elegante, con colores cálidos que transmitan confianza y bienestar. Quiero que el diseño sea minimalista y moderno, añade una o varias imágenes que impacten al usuario. El tamaño de la imagen debe ser de 1920x1080px, el contenido debe de quedar centrado. Piensa en el público al que va dirigido, y como podría impactarles más. Para los textos piensa también de cara al SEO, por ejemplo podríamos tratar de posicionar interiorismo para mujeres",
+            "CONTENT_4": "Ésta ha sido la primera imagen que me ha dado ChatGPT, A mi la verdad que me gusta y me vale, está sacando esta imagen de la nada, no le he pasado ninguna imagen, y yo creo que es una imagen bastante buena para poder comenzar a crear el diseño de la web.",
+            "CONTENT_5": "En el caso de que no te haya dado una imagen que te guste puedes pedirle que te haga más imágenes, o que te haga variaciones de esta imagen, o incluso que te haga una versión en otros colores, o por ejemplo subirle una imagen para que la utilice.",
+            "RESPONSE": {
+              "IMAGE": {
+                "src": "/disena-web-con-chat/hero.webp",
+                "alt": "Hero de la página web",
+                "width": 1200,
+                "height": 800
+              }
+            }
+          },
+          "STEP_3": {
+            "TITLE": "Paso 3: Genera las siguientes secciones",
+            "CONTENT_1": "Ahora que tienes la estructura y el diseño visual, puedes seguir generando imágenes del resto de las secciones. Nuevamente cuanto más específico seas a la hora de decirle a ChatGPT lo que quieres, más fácil será para él generar el contenido que necesitas.",
+            "CONTENT_2": "A continuación voy a poner los prompts utilizados para cada una de las secciones y finalmente verás el resultado final de la web.",
+            "PROMPT": {
+              "SECTION_1": {
+                "TITLE": "Prompt para la sección Sobre nosotras",
+                "CONTENT": "Ahora me gustaría crear el apartado de sobre nosotras, puede romper un poco este apartado y que tenga por ejemplo un tono más oscuro y hacer que resalte, como no tengo imagen de la clienta, puedes inventarte a una mujer de 40 a 45 años. El texto debe de tener coherencia, intenta atacar palabras clave por las que se podría posicionar."
+              },
+              "SECTION_2": {
+                "TITLE": "Prompt para la sección Proyectos",
+                "CONTENT": "Ahora me gustaría el apartado de proyectos, esta parte debe de quedar especialmente bien, es la carta de presentación de la empresa, tiene que ser muy elegante y fino, que den ganas de hacerle click, Deben mostrarse al menos 4 o 5 proyectos."
+              },
+              "SECTION_3": {
+                "TITLE": "Prompt para la sección Caso de éxito",
+                "CONTENT": "Me gustaría añadir un caso de éxito, por ejemplo el del ático Ensanche, ese tiene muy buena pinta, podemos volver de nuevo a los tonos claros del principio, tipo el hero, deberían de aparecer algunas imágenes del antes y el después, lo que se hizo, el estilo que se utilizó, algo que quede muy bien, en la tónica del resto de imágenes, que quede muy elegante y fino."
+              },
+              "SECTION_4": {
+                "TITLE": "Prompt para la sección de contacto",
+                "CONTENT": "Ahora la sección de contacto, volvemos nuevamente a los tonos amarillentos. Un formulario de contacto, los enlaces a las redes sociales y la dirección."
+              },
+              "SECTION_5": {
+                "TITLE": "Prompt para la sección de Lead magnet",
+                "CONTENT": "Lead magnet, Ebook gratuito 5 claves para crear un hogar elegante y acogedor. Volvemos al tono más oscuro marron, y mostramos a la protagonista."
+              },
+              "SECTION_6": {
+                "TITLE": "Prompt para la sección de Blog y footer",
+                "CONTENT": "La última sección el apartado de blog con el footer."
+              }
+            },
+            "CONTENT_3": "Este es el resultado final de como podría quedar la web.",
+            "IMAGES": [{
+              "src": "/disena-web-con-chat/hero.webp",
+              "alt": "Hero de la página web",
+              "width": 1200,
+              "height": 800
+            }, {
+              "src": "/disena-web-con-chat/section-2.webp",
+              "alt": "Sección de la página web",
+              "width": 1200,
+              "height": 800
+            }, {
+              "src": "/disena-web-con-chat/section-3.webp",
+              "alt": "Sección de la página web",
+              "width": 1200,
+              "height": 800
+            }, {
+              "src": "/disena-web-con-chat/section-4.webp",
+              "alt": "Sección de la página web",
+              "width": 1200,
+              "height": 800
+            }, {
+              "src": "/disena-web-con-chat/section-5.webp",
+              "alt": "Sección de la página web",
+              "width": 1200,
+              "height": 800
+            }, {
+              "src": "/disena-web-con-chat/section-6.webp",
+              "alt": "Sección de la página web",
+              "width": 1200,
+              "height": 800
+            }, {
+              "src": "/disena-web-con-chat/section-7.webp",
+              "alt": "Sección de la página web",
+              "width": 1200,
+              "height": 800
+            }],
+            "CONTENT_4": "Como ves, el resultado es bastante bueno, y lo mejor de todo es que lo hemos hecho en menos de 10 minutos. Evidentemente hay errores que deberían de corregirse como faltas de ortografía, centrar bien las imágenes, mantener los colores... Pero sinceramente, creo que es una base sólida para empezar a construir tu web o entregársela a un desarrollador.",
+            "CONTENT_5": "Recuerda que este es solo un ejemplo, y que puedes adaptar el proceso a tus necesidades. La clave está en ser claro y específico con la IA, y en usar tu creatividad para darle un toque personal a tu diseño.",
+            "CONTENT_6": "Espero que esta guía te haya sido útil y que ahora tengas una idea más clara de cómo usar ChatGPT para diseñar tu web. Si tienes alguna duda o quieres que te ayudemos a crear tu web, no dudes en contactarnos. ¡Estamos aquí para ayudarte!"
+          }
+        }
+      }
+    },
     "TOOLS": {
       "BUDGET": {
         "META_TITLE": "Presupuesto y precio para tu Página Web | Calcula el Precio de tu Web",
@@ -1442,6 +1711,16 @@
           "CONTENT": "La relación entre Alberto Domínguez Martín y el usuario se regirá por la normativa vigente en España. Para la resolución de todas las cuestiones litigiosas que pudieran derivarse del acceso o uso de este sitio web, el usuario se somete a la jurisdicción de los tribunales de Cáceres, salvo que la ley aplicable disponga otra cosa."
         }
       }
+    }
+  },
+  "FORMS": {
+    "INITIAL": {
+      "TEXT": "Quiero una web que brille",
+      "CONTENT": "Completa este formulario en menos de 5 minutos para que podamos enviarte un presupuesto personalizado para tu proyecto."
+    },
+    "FREE_DESIGN": {
+      "TEXT": "Quiero un diseño GRATIS",
+      "CONTENT": "Completa este formulario con los datos de tu web y consigue un diseño web gratis."
     }
   }
 }
