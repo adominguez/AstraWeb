@@ -1,0 +1,46 @@
+---
+import BentoGrid from "@components/Bento/BentoGrid.astro";
+import BentoItem from "@components/Bento/BentoItem.astro";
+import SectionContainer from "@components/Sections/SectionContainer.astro";
+import IsForYou from "@components/ui/IsForYou.astro";
+import language from '@data/i18n/es.json';
+import Image from "astro/components/Image.astro";
+
+const { DISENO_WEB_GRATUITO } = language.PAGES
+const { title: TITLE, items, id, content, content_2 } = DISENO_WEB_GRATUITO.SECTIONS.ITS_FOR_YOU
+---
+
+<SectionContainer class="mb-20" id={id}>
+  <div
+    class="w-full text-xl text-white flex flex-col gap-4"
+  >
+    <h2 class="text-4xl md:text-5xl text-primary font-medium font-IBMCondensed text-balance">{TITLE}</h2>
+    <p class="pt-4 text-xl md:text-2xl font-light text-pretty">{content}</p>
+    <p class="pt-4 text-gray-300 font-extralight text-pretty">{content_2}</p>
+    <BentoGrid tag="ul" class="mt-8 flex flex-col gap-4">
+      {
+        items.map(({title, description, image}, index) => {
+          const isPar = index % 2 === 0;
+          return (
+            <BentoItem
+              tag="li"
+              class:list={[
+                "bento-item sm:col-span-2 md:col-span-3 text-xl text-white flex flex-col gap-4",
+                isPar ? "md:flex-row-reverse" : "md:flex-row"
+              ]}
+            >
+              <div class="flex flex-col justify-center items-center flex-[2]">
+                <h4 class:list={[
+                  "text-2xl md:text-3xl font-medium text-balance font-IBMCondensed",
+                  isPar ? "text-primary" : "text-secondary"
+                ]}>{title}</h4>
+                <p class="pt-4 text-gray-300 font-extralight text-pretty">{description}</p>
+              </div>
+              <Image width={500} height={500} src={image || ''} alt={title} class="flex-1 self-center max-w-80" />
+            </BentoItem>
+          )
+        })
+      }
+    </BentoGrid>
+  </div>
+</SectionContainer>

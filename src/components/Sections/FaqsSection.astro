@@ -11,8 +11,16 @@ const { TITLE, FIRST_CONTENT, SECOND_CONTENT, ID, ITEMS } = Astro.props
   >
     <slot>
       <h2 class="text-4xl md:text-5xl text-secondary font-medium font-IBMCondensed text-balance">{TITLE}</h2>
-      <p class="pt-4 text-xl md:text-2xl font-light text-pretty">{FIRST_CONTENT}</p>
-      <p class="pt-4 text-gray-300 font-extralight text-pretty">{SECOND_CONTENT}</p>
+      {
+        FIRST_CONTENT && (
+          <p class="pt-4 text-xl md:text-2xl font-light text-pretty">{FIRST_CONTENT}</p>
+        )
+      }
+      {
+        SECOND_CONTENT && (
+          <p class="px-6 py-3 border border-yellow-500 bg-slate-600/50 rounded-lg">{SECOND_CONTENT}</p>
+        )
+      }
     </slot>
   </div>
   <Faqs items={ITEMS} />

@@ -1,0 +1,28 @@
+---
+import Blendy from "@components/Blendy.astro";
+import IconConstellation from "@components/Icons/IconConstellation.astro";
+import SectionContainer from "@components/Sections/SectionContainer.astro";
+
+const { TITLE, FIRST_PARAGRAPH, SECOND_PARAGRAPH, THIRD_PARAGRAPH, FOURTH_CONTENT, FIFTH_CONTENT, SIXTH_CONTENT, ID } = Astro.props
+---
+
+<SectionContainer class="mb-20 flex flex-col gap-4" id={ID}>
+  <h2 class="text-4xl md:text-5xl text-accent font-medium font-IBMCondensed text-balance">{TITLE}</h2>
+  <p class="pt-4 text-xl md:text-2xl font-light text-pretty">{FIRST_PARAGRAPH}</p>
+  <div class="flex flex-col md:flex-row gap-4 relative">
+    <div class="flex flex-col gap-4">
+      <p class="text-gray-300 font-extralight text-pretty max-w-[60ch]" set:html={SECOND_PARAGRAPH} />
+      <p class="text-gray-300 font-extralight text-pretty max-w-[60ch]" set:html={THIRD_PARAGRAPH} />
+      <p class="text-gray-300 font-extralight text-pretty max-w-[60ch]" set:html={FOURTH_CONTENT} />
+      <p class="text-gray-300 font-extralight text-pretty max-w-[60ch]" set:html={FIFTH_CONTENT} />
+      <p class="text-gray-300 font-extralight text-pretty max-w-[60ch]" set:html={SIXTH_CONTENT} />
+    </div>
+    <div class="max-w-96 self-center md:max-w-72 absolute md:relative flex flex-col justify-center items-center gap-4">
+      <IconConstellation class="w-full" />
+      <h2 class="bg-gradient-to-r from-secondary via-accent to-primary font-IBMCondensed md:leading-none bg-clip-text text-transparent md:text-3xl text-balance hidden md:block text-center">No te lo pienses más</h2>
+      <Blendy type="FREE_DESIGN" buttonClass="hidden md:block" />
+    </div>
+    <h2 class="bg-gradient-to-r from-secondary via-accent to-primary font-IBMCondensed md:leading-none bg-clip-text text-transparent text-3xl text-balance block md:hidden text-center">No te lo pienses más</h2>
+    <Blendy type="FREE_DESIGN" buttonClass="block md:hidden" />
+  </div>
+</SectionContainer>

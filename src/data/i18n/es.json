@@ -266,6 +266,161 @@
         }
       }
     },
+    "DISENO_WEB_GRATUITO": {
+      "TITLE": "Desarrollo Web Profesional para Marcas que Quieren Destacar",
+      "DESCRIPTION": "En AstraHub creamos páginas web únicas y optimizadas para captar clientes, combinando diseño a medida, rendimiento y SEO para que tu sitio web destaque y cumpla tus objetivos.",
+      "SECTIONS": {
+        "HERO": {
+          "PRETITLE": "Diseño web personalizado",
+          "TITLE": "¿Te gustaría tener un <span class='text-gradient text-balance'>diseño web personalizado</span>?",
+          "SUBTITLE": "Estamos buscando un proyecto especial al que regalarle el diseño de su página web",
+          "PARAGRAPH": "Si tienes un negocio, una idea o un proyecto personal… Esta puede ser tu oportunidad para tener un diseño de una web profesional, moderna y adaptado a tu negocio.",
+          "CTA": "Quiero participar"
+        },
+        "COUNTDOWN": {
+          "TITLE": "Apúntate antes de que se acabe el tiempo",
+          "SUBTITLE": "Tienes hasta el 28 de abril para apuntarte",
+          "PARAGRAPH": "El 28 de abril a las 23:59 (hora de España) se cerrará el plazo para apuntarse.",
+          "PARAGRAPH_2": "El 30 de abril se anunciará el ganador del diseño web gratuito a través de las redes sociales Instagram y Facebook.",
+          "CTA": "Quiero participar"
+        },
+        "WHAT_CAN_I_GET": {
+          "TITLE": "¿Qué incluye este regalo?",
+          "CONTENT": "Tener una web no es solo cuestión de estar en internet, es una forma de contar quién eres, mostrar lo que haces y conectar con tu audiencia desde el primer segundo. Por eso, vamos a diseñar de forma totalmente gratuita una propuesta visual única para un proyecto especial, utilizando herramientas de inteligencia artificial combinadas con creatividad y el punto de vista de negocio. El objetivo: que puedas visualizar con claridad cómo podría lucir tu web, incluso antes de desarrollarla.",
+          "CONTENT2": "El proyecto elegido recibirá:",
+          "FIRST_IMAGE": "/diseno-web-gratuito/can-i-get.svg",
+          "ITEMS": [
+            {
+              "title": "Un diseño visual completo de tu web.",
+              "description": "No se utilizarán plantillas genéricas si no que el diseño estará adaptado a tu proyecto, estilo y negocio."
+            },
+            {
+              "title": "Un diseño creado con herramientas de IA.",
+              "description": "El diseño estará creado con herramientas de inteligencia artificial, pero adaptado a tu negocio y a tus necesidades."
+            },
+            {
+              "title": "Libertad para usar el diseño como quieras.",
+              "description": "puedes desarrollarlo tú mismo/a, contratar a otro profesional, o si lo prefieres, puedes contar con nosotros para convertir ese diseño en una web real (con presupuesto aparte)."
+            },
+            {
+              "title": "El proceso será documentado y compartido",
+              "description": "El proyecto será realizado y difundido en las redes sociales y el canal de YouTube, como parte de una muestra pública de lo que se puede conseguir diseñando con IA."
+            }
+          ]
+        },
+        "FIRST_CTA": {
+          "title": "No esperes a que se acabe el tiempo",
+          "text": "Apúntate ya y podrás ganar un diseño web gratuito para llevar a cabo tu idea o mejorar tu negocio.",
+          "ctaText": "Quiero una web corporativa"
+        },
+        "CALL_TO_ACTION": {
+          "title": "Es el momento, rellena el formulario",
+          "text": "Si quieres participar, solo tienes que rellenar el formulario, y comentar en la publicación de redes sociales.",
+          "ctaText": "Quiero un diseño web gratuito",
+          "lottieJson": "/call-to-action/cta.json"
+        },
+        "ITS_FOR_YOU": {
+          "id": "es-para-ti",
+          "title": "Este regalo es para ti si...",
+          "content": "Tienes una idea que merece ser contada, un negocio que está despegando, o simplemente quieres mostrar lo que haces al mundo de una forma profesional y visualmente impactante, este regalo es para ti.",
+          "content_2": "Esta convocatoria está abierta a personas reales con ideas reales. No necesitas tener una empresa consolidada, una gran marca o experiencia en diseño. Lo único que importa es que tengas un proyecto con alma y muchas ganas de hacerlo brillar.",
+          "items": [{
+            "title": "Un emprendedor/a que quiere mejorar su presencia online",
+            "description": "Si tienes un negocio y quieres mejorar tu presencia online, este regalo es para ti. Te ayudaremos a crear una web que refleje la esencia de tu marca y te ayude a atraer más clientes.",
+            "image": "/diseno-web-gratuito/freelance.svg"
+          }, {
+            "title": "Un artista, interiorista, coach, asesor/a de imagen, terapeuta, creativo, creador independiente...",
+            "description": "Si eres un profesional independiente y quieres mostrar tu trabajo de una forma profesional, este regalo es para ti. Podrás tener una web que refleje tu estilo y a que puedas conectar con tu audiencia.",
+            "image": "/diseno-web-gratuito/artist.svg"
+          }, {
+            "title": "Alguien que tiene una idea en marcha (aunque aún no esté al 100%) y necesita un empujón visual para avanzar.",
+            "description": "Si tienes una idea en marcha y necesitas un empujón visual para avanzar, este regalo es para ti. Puede que sea el empujón que necesitas para dar el siguiente paso y hacer que tu idea se haga realidad.",
+            "image": "/diseno-web-gratuito/idea.svg"
+          }, {
+            "title": "Una persona que valora el diseño, pero no sabe por dónde empezar a crear su web.",
+            "description": "Si valoras el diseño y no sabes por dónde empezar a crear tu web, este regalo es para ti. Nos encantará ayudarte a llevar a cabo tu idea y a crear una web que refleje tu estilo y personalidad.",
+            "image": "/diseno-web-gratuito/lost.svg"
+          }]
+        },
+        "STEPS": {
+          "id": "como-participar",
+          "title": "¿Cómo participar?",
+          "content1": "Participar es muy fácil. Solo tienes que seguir estos 3 pasos:",
+          "items": [
+            "<strong>Comenta en mi publicación de Instagram o Facebook:</strong> Comenta por qué crees que tú deberías ser la persona seleccionada. Puedes hablar de tu proyecto, tu historia o lo que quieras lograr con tu web.",
+            "<strong>(Opcional, pero recomendable) Síguenos en redes:</strong> Así podrás ver si has sido seleccionado/a cuando se anuncie el resultado. Además, podrás ver contenido útil que te puede interesar y que te puede ayudar igualmente.",
+            "<strong>Rellena el formulario:</strong> con algunos datos sobre ti y tu proyecto para poder valorar bien tu candidatura. ¡Solo tardas 2-3 minutos!."
+          ],
+          "content2": "💡 Importante: Solo se tendrán en cuenta las personas que hayan completado al menos el formulario. El comentario en redes me ayuda a descubrirte, pero el formulario es obligatorio."
+        },
+        "SOCIAL_MEDIA": {
+          "ID": "redes-sociales",
+          "TITLE": "¡Síguenos en redes sociales!",
+          "PARAGRAPH": "No es obligatorio, pero tendrás más posibilidades de ser seleccionado si lo haces."
+        },
+        "BASES": {
+          "ID": "Condiciones",
+          "TITLE": "Condiciones",
+          "FEATURES": [
+            "<strong class=\"block mb-2\">Solo se seleccionará un proyecto ganador</strong>",
+            "<strong class=\"block mb-2\">El proyecto elegido obtendrá un diseño visual de la web.</strong> No su desarrollo funcional",
+            "<strong class=\"block mb-2\">El diseño podrá ser utilizado libremente por el ganador/a.</strong>",
+            "<strong class=\"block mb-2\">El diseño será compartido en las redes como parte del proceso creativo.</strong>",
+            "<strong class=\"block mb-2\">Nos reservamos el derecho de seleccionar el proyecto que más se alinee con el objetivo de esta campaña.</strong>Esta convocatoria no se rige por sorteo aleatorio. La elección será personal y creativa, basada en la propuesta y el potencial del proyecto.",
+            "<strong class=\"block mb-2\">Malas prácticas en redes sociales.</strong>Cualquier comportamiento sospechoso o considerado como intento de manipulación (comentarios duplicados, cuentas falsas, etc.) será motivo de desestimación.",
+            "<strong class=\"block mb-2\">Al registrarte aceptas recibir correos relacionados con esta acción y otros contenidos sobre diseño web.</strong>"
+          ]
+        },
+        "FAQS": {
+          "ID": "preguntas-frecuentes",
+          "TITLE": "Preguntas Frecuentes",
+          "ITEMS": [
+            {
+                "question": "¿Qué incluye exactamente el regalo?",
+                "answer": "Incluye el diseño visual completo de una página web, adaptado a tu proyecto y estilo. Eso significa que recibirás una propuesta personalizada con el aspecto que podría tener tu web: colores, estructura, tipografías, imágenes de referencia y vistas previas en diferentes formatos."
+            },
+            {
+                "question": "¿Incluye la creación funcional de la página web?",
+                "answer": "No incluye el desarrollo web funcional, pero si deseas convertir el diseño en una web real, podrás hacerlo por tu cuenta o contratarnos para desarrollar tu nueva web."
+            },
+            {
+                "question": "¿Hasta cuándo puedo participar?",
+                "answer": "Tienes tiempo hasta el 28 de abril a las 23:59 (hora peninsular española) para completar el formulario y dejar tu comentario en redes."
+            },
+            {
+                "question": "¿Cuándo se sabrá quién ha ganado?",
+                "answer": "El proyecto seleccionado será anunciado el 30 de abril en las redes sociales de AstraHub, tanto en Instagram como en Facebook. Por eso es importante que nos sigas para enterarte del resultado. También enviaremos un correo a todos los participantes."
+            },
+            {
+                "question": "¿Es obligatorio seguir en Instagram o Facebook?",
+                "answer": "No es obligatorio, pero sí recomendable. Además de enterarte del resultado, compartimos contenido útil que pueden interesarte y tips que pueden ayudarte aunque no resultes seleccionado/a."
+            },
+            {
+                "question": "¿Es obligatorio comentar en la publicación?",
+                "answer": "El comentario en la publicación es una parte fundamental de esta convocatoria. Así podremos conocer tu historia, tu motivación, y además ayuda a dar más visibilidad a la campaña. Así que sí, es un paso muy importante (aunque el formulario es el único paso obligatorio para ser considerado oficialmente)."
+            },
+            {
+                "question": "¿Qué pasa si no soy seleccionado/a?",
+                "answer": "Si no eres la persona elegida, no te preocupes. Enviaremos a todos los participantes un recurso gratuito exclusivo: un tutorial paso a paso donde podrás diseñar tu propia web con herramientas de inteligencia artificial, de la misma forma en la que lo haremos con el ganador."
+            },
+            {
+                "question": "¿Puedo participar si ya tengo una web?",
+                "answer": "¡Por supuesto! Puedes presentarte si deseas rediseñarla, mejorar su imagen o simplemente ver cómo podría evolucionar con un enfoque más moderno y adaptado a tu marca."
+            }
+          ] 
+        },
+        "WHY_THIS": {
+          "ID": "por-que-esto",
+          "TITLE": "¿Por qué hacemos esto?",
+          "FIRST_PARAGRAPH": "Esta iniciativa nace con un propósito claro: aportar valor, mostrar cómo el diseño con inteligencia artificial puede ayudar a pequeños proyectos a brillar y, sobre todo, crear algo bonito que pueda inspirarte.",
+          "SECOND_PARAGRAPH": "En AstraHub creemos que el <strong>diseño web es una herramienta poderosa para ayudar a las marcas a destacar</strong> y conectar con su audiencia. Queremos demostrarlo de una forma diferente, utilizando herramientas de inteligencia artificial para crear un diseño único y adaptado a un proyecto real.",
+          "THIRD_PARAGRAPH": "No es un sorteo aleatorio, <strong>es una forma de conectar contigo</strong>, con tu historia, y con las ganas de crear algo significativo.",
+          "FOURTH_CONTENT": "Por eso te pedimos que <strong>participes desde el respeto</strong>, la autenticidad y el fair play. Completa el formulario con cariño, Comenta con sinceridad y si decides compartirlo, hazlo porque crees que puede ayudar a alguien más a dar el paso.",
+          "FIFTH_CONTENT": "Aunque solo podamos elegir a una persona, <strong>si participas te llevarás algo</strong>: un recurso útil, inspiración o una chispa que te anime a seguir construyendo tu proyecto.",
+          "SIXTH_CONTENT": "<strong>Gracias por querer participar y por ser parte de esta comunidad. Estamos deseando conocer tu historia y tu proyecto. ¡Vamos a hacer algo increíble juntos!</strong>"
+        }
+      }
+    },
     "SERVICES": {
       "CORPORATIVE_WEB_DESIGN": {
         "META_TITLE": "Diseño Web Corporativo: Impulsa la imagen de tu empresa",

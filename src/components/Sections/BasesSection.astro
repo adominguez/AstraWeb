@@ -1,0 +1,49 @@
+---
+import SectionContainer from "@components/Sections/SectionContainer.astro";
+
+const { TITLE, FEATURES, ID } = Astro.props
+---
+
+<SectionContainer class="mb-20" id={ID}>
+  <div
+    class="w-full text-xl text-white flex flex-col gap-4 pb-6"
+  >
+    <slot>
+      <h2 class="text-4xl md:text-5xl text-primary font-medium font-IBMCondensed text-balance">{TITLE}</h2>
+      <ul class="features-list text-xl text-pretty pt-4">
+				{
+					FEATURES.map((feature: string) => (
+						<li class="feature-item mb-4 px-6 py-3 bg-slate-600/50 rounded-lg font-IBMCondensed border border-transparent hover:border-primary transition-all" set:html={feature} />
+					))
+				}
+			</ul>
+    </slot>
+  </div>
+</SectionContainer>
+
+<style>
+  	.features-list li {
+		@apply font-thin;
+	}
+
+	.features-list li strong {
+		display: block;
+	}
+
+  @media (prefers-reduced-motion: no-preference) {
+    .feature-item {
+      scale: 0.8;
+      opacity: 0;
+      animation: fade-in linear forwards;
+      animation-timeline: view();
+      animation-range: entry 20px;
+    }
+
+    @keyframes fade-in {
+      to {
+        scale: 1;
+        opacity: 1;
+      }
+    }
+  }
+</style>
