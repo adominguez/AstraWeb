@@ -26,10 +26,13 @@
       ],
       "@email/*": [
         "src/email/*"
-      ]
+      ],
+      "@react-mail/*": [
+        "react-email-starter/emails/*"
+      ],
     },
     "jsx": "react-jsx",
-    "jsxImportSource": "preact",
+    "jsxImportSource": "react",
     "strictNullChecks": true
   }
 }
