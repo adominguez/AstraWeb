@@ -1,8 +1,5 @@
 // src/components/CustomSwitch.tsx
 
-import { h } from 'preact';
-import { useState } from 'preact/hooks';
-
 interface CustomSwitchProps {
   /** Indica si el switch está activado (ON) o no (OFF). */
   checked: boolean;
@@ -39,11 +36,11 @@ const CustomSwitch = ({
   };
 
   return (
-    <div class={`mb-4 ${className || ''}`}>
+    <div className={`mb-4 ${className || ''}`}>
       {/* Contenedor para agrupar el switch y el label */}
       <label
-        for={switchId}
-        class={`inline-flex gap-2 cursor-pointer items-start ${
+        htmlFor={switchId}
+        className={`inline-flex gap-2 cursor-pointer items-start ${
           disabled ? 'opacity-50 cursor-not-allowed' : ''
         }`}
         onClick={handleToggle}
@@ -53,7 +50,7 @@ const CustomSwitch = ({
           id={switchId}
           type="checkbox"
           name={name}
-          class="sr-only"
+          className="sr-only"
           checked={checked}
           disabled={disabled}
           onChange={handleToggle}
@@ -61,7 +58,7 @@ const CustomSwitch = ({
 
         {/* Pista (track) del switch */}
         <div
-          class={`
+          className={`
             min-w-12
             w-12 h-7 
             rounded-full 
@@ -74,7 +71,7 @@ const CustomSwitch = ({
         >
           {/* Círculo interno (thumb) que se mueve a la derecha o izquierda */}
           <div
-            class={`
+            className={`
               absolute top-[1px] 
               left-0.5
               w-6 h-6 
@@ -92,13 +89,13 @@ const CustomSwitch = ({
 
         {/* Texto opcional al lado del switch */}
         {label && (
-          <span class="text-white">{label}</span>
+          <span className="text-white">{label}</span>
         )}
       </label>
 
       {/* Mensaje de error, si aplica */}
       {error && (
-        <p class="text-red-500 text-sm pt-2 px-1">
+        <p className="text-red-500 text-sm pt-2 px-1">
           {error}
         </p>
       )}

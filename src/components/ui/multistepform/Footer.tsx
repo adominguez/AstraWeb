@@ -12,7 +12,7 @@ interface FooterProps {
 }
 
 const Footer = ({ hideNext = false, hidePrev = false, handlePrev = () => {}, handleNext = () => {}, prevText = 'Anterior', nextText = 'Siguiente' } : FooterProps) => (
-  <footer class={classnames({
+  <footer className={classnames({
     'justify-start': hideNext,
     'justify-end': hidePrev,
     'justify-between': !hideNext && !hidePrev,

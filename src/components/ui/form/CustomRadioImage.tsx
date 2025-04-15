@@ -1,8 +1,5 @@
 // src/components/CustomRadioImage.tsx
 
-import { h } from 'preact';
-import { useState } from 'preact/hooks';
-
 interface CustomRadioImageOption {
   value: string;
   label: string;
@@ -27,14 +24,14 @@ const CustomRadioImage = ({
   className
 }: CustomRadioImageProps) => {
   return (
-    <div class={`my-2 mx-2 ${className || ''}`}>
-      <div class="flex flex-wrap gap-4">
+    <div className={`my-2 mx-2 ${className || ''}`}>
+      <div className="flex flex-wrap gap-4">
         {options.map((opt) => {
           const isSelected = opt.value === selectedValue;
           return (
             <button
               key={opt.value}
-              class={`
+              className={`
                 cursor-pointer 
                 px-4 py-2 
                 bg-transparent 
@@ -52,16 +49,16 @@ const CustomRadioImage = ({
               <img
                 src={opt.imageUrl}
                 alt={opt.label}
-                class="w-24 h-24 object-cover rounded-xl"
+                className="w-24 h-24 object-cover rounded-xl"
               />
-              <p class="mt-2 text-sm text-center">{opt.label}</p>
+              <p className="mt-2 text-sm text-center">{opt.label}</p>
             </button>
           );
         })}
       </div>
 
       {error && (
-        <p class="text-red-500 text-sm pt-2 px-4">
+        <p className="text-red-500 text-sm pt-2 px-4">
           {error}
         </p>
       )}

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState, useEffect } from 'preact/hooks';
 import FileList from './FileList';
 

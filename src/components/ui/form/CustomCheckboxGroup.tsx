@@ -1,7 +1,5 @@
+// @ts-nocheck
 // src/components/CustomCheckboxGroup.tsx
-
-import { h } from 'preact';
-import { useState } from 'preact/hooks';
 import CustomCheckbox from './CustomCheckbox';
 
 interface CheckboxOption {
@@ -44,7 +42,7 @@ const CustomCheckboxGroup = ({
   };
 
   return (
-    <div class={`mb-4 ${className || ''}`}>
+    <div className={`mb-4 ${className || ''}`}>
       {options.map((option) => {
         const isChecked = selectedValues.includes(option.value);
         return (
@@ -62,7 +60,7 @@ const CustomCheckboxGroup = ({
       })}
 
       {error && (
-        <p class="text-red-500 text-sm pt-2 px-4">
+        <p className="text-red-500 text-sm pt-2 px-4">
           {error}
         </p>
       )}

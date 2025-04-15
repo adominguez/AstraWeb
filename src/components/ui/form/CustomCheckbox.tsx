@@ -1,6 +1,7 @@
 // src/components/CustomCheckbox.tsx
 
 import { useState } from 'preact/hooks';
+import type { ChangeEvent } from 'react';
 
 interface CustomCheckboxProps {
   /**
@@ -11,7 +12,7 @@ interface CustomCheckboxProps {
   name: string;
   label?: string;
   checked: boolean;
-  onChange: (e: Event) => void;
+  onChange: (e: ChangeEvent) => void;
   value?: string;
   error?: string;
   className?: string;
@@ -38,10 +39,10 @@ const CustomCheckbox = ({
   const inputId = `${name}-${value || 'value'}`;
 
   return (
-    <div class={`mb-4 ${className || ''}`}>
+    <div className={`mb-4 ${className || ''}`}>
       <label
-        for={inputId}
-        class="inline-flex items-center cursor-pointer gap-2"
+        htmlFor={inputId}
+        className="inline-flex items-center cursor-pointer gap-2"
       >
         {/* Input base: checkbox o radio */}
         <input
@@ -51,7 +52,7 @@ const CustomCheckbox = ({
           value={value}
           checked={checked}
           onChange={onChange}
-          class={`
+          className={`
             appearance-none
             h-5 w-5
             border border-white
@@ -68,13 +69,13 @@ const CustomCheckbox = ({
           `}
         />
         {label && (
-          <div class="text-white" dangerouslySetInnerHTML={{ __html: label }} />
+          <div className="text-white" dangerouslySetInnerHTML={{ __html: label }} />
         )}
       </label>
 
       {/* Mensaje de error, si aplica */}
       {error && (
-        <p class="text-red-500 text-sm pt-2 px-4">
+        <p className="text-red-500 text-sm pt-2 px-4">
           {error}
         </p>
       )}

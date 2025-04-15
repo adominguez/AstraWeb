@@ -54,9 +54,9 @@ const Step3 = ({ formData, setFormData, nextStep, prevStep }: Step3Props) => {
   }
 
   return (
-    <div class="flex flex-col max-h-[500px]">
-      <h2 class="text-2xl mb-4 text-secondary">Paso 3: Información para el diseño</h2>
-      <div class="overflow-auto pr-3 flex-1">
+    <div className="flex flex-col max-h-[500px]">
+      <h2 className="text-2xl mb-4 text-secondary">Paso 3: Información para el diseño</h2>
+      <div className="overflow-auto pr-3 flex-1">
         <CustomTextarea
           name="projectDetails"
           value={formData.projectDetails || ''}
