@@ -26,3 +26,5 @@ pnpm-debug.log*
 .astro/
 .vercel/
 .vscode/
+
+seed.sql
