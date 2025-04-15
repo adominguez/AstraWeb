@@ -1,6 +1,6 @@
 // src/components/MultiStepForm.tsx
 import { useState, useEffect } from 'preact/hooks';
-import Step1 from '../multistepform/Step1';
+import Step1 from './Step1';
 import Step2 from './Step2';
 import Step3 from './Step3';
 import Step4 from './Step4';
@@ -34,6 +34,7 @@ const FreeDesign = () => {
     fullName: '',
     email: '',
     phone: '',
+    socialUser: '',
     project: '',
     web: '',
     projectType: '',
@@ -99,6 +100,7 @@ const FreeDesign = () => {
       setStep(5);
       setFormData({
         fullName: '',
+        socialUser: '',
         email: '',
         phone: '',
         project: '',

@@ -1,7 +1,7 @@
 // src/components/Step1.tsx
 import { useState } from 'preact/hooks';
 import CustomInput from '@components/ui/form/CustomInput';
-import type { Step1Props as Step } from '@components/ui/multistepform/Types';
+import type { Step1PropsWithSocial as Step } from '@components/ui/multistepform/Types';
 import Footer from '@components/ui/multistepform/Footer';
 
 interface Step1Props {
@@ -62,6 +62,15 @@ const Step1 = ({ formData, setFormData, nextStep }: Step1Props) => {
         />
         <CustomInput
           type="tel"
+          name="socialUser"
+          value={formData.socialUser || ''}
+          onChange={handleChange}
+          placeholder="@usuario"
+          className="w-full p-2 mb-4 rounded-2xl"
+          error={errors.phone}
+        />
+        <CustomInput
+          type="text"
           name="phone"
           value={formData.phone}
           onChange={handleChange}
