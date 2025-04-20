@@ -1,3 +1,4 @@
+import * as React from 'react';
 import {
   Body,
   Button,
@@ -16,11 +17,11 @@ import {
 } from '@react-email/components';
 
 interface WelcomeFreeDesignCampaignProps {
-  username?: string;
+  fullname: string;
 }
 
 export const WelcomeFreeDesignCampaign = ({
-  username,
+  fullname,
 }: WelcomeFreeDesignCampaignProps) => {
   const previewText = `Ver email online`;
 
@@ -44,7 +45,7 @@ export const WelcomeFreeDesignCampaign = ({
               ¡Gracias por compartir tu proyecto! 🌟
             </Heading>
             <Text className="text-lg leading-[24px]">
-              Hola {username},
+              Hola {fullname},
             </Text>
             <Text className="text-lg leading-[24px] font-thin">
               Hemos recibido correctamente tu formulario y nos encantará conocer más sobre tu proyecto. En los próximos días revisaremos todas las candidaturas con calma.
@@ -57,7 +58,7 @@ export const WelcomeFreeDesignCampaign = ({
                 <Column className="w-[50%] pr-[8px]" align='center'>
                   <Button
                     className="flex items-center gap-2 px-4 py-2 bg-pink-600 hover:bg-pink-500 rounded-full text-white transition"
-                    href="instagram.com/astrahub.dev"
+                    href="https://instagram.com/astrahub.dev"
                   >
                     Comentar en Instagram
                   </Button>
@@ -92,7 +93,7 @@ export const WelcomeFreeDesignCampaign = ({
                 <Column className="w-[50%] pr-[8px]" align='center'>
                   <Button
                     className="flex items-center gap-2 px-4 py-2 bg-pink-600 hover:bg-pink-500 rounded-full text-white transition"
-                    href="instagram.com/astrahub.dev"
+                    href="https://instagram.com/astrahub.dev"
                   >
                     Seguir en Instagram
                   </Button>
@@ -128,7 +129,7 @@ export const WelcomeFreeDesignCampaign = ({
 };
 
 WelcomeFreeDesignCampaign.PreviewProps = {
-  username: 'alanturing',
+  fullname: 'alanturing',
 } as WelcomeFreeDesignCampaignProps;
 
 export default WelcomeFreeDesignCampaign;

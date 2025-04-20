@@ -1,8 +1,9 @@
 // @ts-nocheck
 import type { APIRoute } from "astro";
 import { Resend } from 'resend';
-import WelcomeFreeDesignCampaign from '@react-mail/welcome-free-design-campaign';
+import WelcomeFreeTemplate from '@email/WelcomeFreeTemplate';
 import { sendLead } from "@lib/fbEvents";
+import renderToString from 'preact-render-to-string';
 import { sendMessage } from "@lib/twilio";
 import { createFolder, uploadFile, createTextSummaryFile } from "@lib/google";
 import { generateTextSummary } from "@lib/utils";
@@ -80,30 +81,32 @@ export const POST: APIRoute = async ({ request }) => {
   await createTextSummaryFile(folderId, 'resumen.txt', summary);
   console.log('Se crea añade el archivo de resumen en Google Drive');
 
-  const data = await insertNewUser(userParams);
+  await insertNewUser(userParams);
   console.log('Se insertan los datos en la base de datos');
 
   // Enviar un mensaje por WhatsApp
   await sendMessage({message: `🚀 Nueva participación desde el formulario:\n\n👤 Nombre: ${fullName}\n📧 Email: ${email}\n💬 Mensaje: ${summary}`})
   console.log('Se envía el mensaje por WhatsApp');
+  
+  const html: string = renderToString(WelcomeFreeTemplate({fullName}));
 
   // Enviar el mensaje por email al usuario
   await resend.emails.send({
     from: 'AstraHub <info@astrahub.dev>',
     to: [email],
     subject: '¡Gracias por compartir tu proyecto! 🌟',
-    react: WelcomeFreeDesignCampaign({username: fullName}),
+    html,
   });
   console.log('Se envía el mensaje por email al usuario');
 
-  await sendLead({ fullName, email, phone }, url);
-  console.log('Se envía el evento a Facebook');
+  // await sendLead({ fullName, email, phone }, url);
+  // console.log('Se envía el evento a Facebook');
 
   return new Response(
     JSON.stringify({
       message: 'Formulario enviado',
       uploadedUrls,
-      status: data?.id && dataSelf?.id ? 200 : 400
+      status: 200
     }),
   );
 };
