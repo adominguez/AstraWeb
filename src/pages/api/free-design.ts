@@ -52,6 +52,8 @@ export const POST: APIRoute = async ({ request }) => {
         fs.writeFileSync(tempPath, buffer);
   
         const uploaded = await uploadFile(tempPath, file.name, folderId, file.type || 'application/octet-stream');
+
+        console.log('Se sube el archivo a Google Drive');
   
         if (uploaded?.webViewLink) {
           uploadedUrls.push(uploaded.webViewLink);
