@@ -43,23 +43,27 @@ export const POST: APIRoute = async ({ request }) => {
   const folderId = await createFolder(folderName, CLIENT_FOLDER_ID);
   console.log('Se crea la carpeta en Google Drive');
 
-  for (const file of materials) {
-    if (file instanceof File) {
-      const buffer = Buffer.from(await file.arrayBuffer());
-      const tempPath = `/tmp/${file.name}`;
-
-      fs.writeFileSync(tempPath, buffer);
-
-      const uploaded = await uploadFile(tempPath, file.name, folderId, file.type || 'application/octet-stream');
-
-      if (uploaded?.webViewLink) {
-        uploadedUrls.push(uploaded.webViewLink);
+  try {
+    for (const file of materials) {
+      if (file instanceof File) {
+        const buffer = Buffer.from(await file.arrayBuffer());
+        const tempPath = `/tmp/${file.name}`;
+  
+        fs.writeFileSync(tempPath, buffer);
+  
+        const uploaded = await uploadFile(tempPath, file.name, folderId, file.type || 'application/octet-stream');
+  
+        if (uploaded?.webViewLink) {
+          uploadedUrls.push(uploaded.webViewLink);
+        }
+  
+        fs.unlinkSync(tempPath);
       }
-
-      fs.unlinkSync(tempPath);
     }
+    console.log('Se suben los archivos a Google Drive');
+  } catch (error) {
+    console.log(error);
   }
-  console.log('Se suben los archivos a Google Drive');
 
   const userParams = [
     fullName,
