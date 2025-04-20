@@ -19,11 +19,11 @@
     "@cloudfour/image-compare": "^1.0.5",
     "@fontsource/ibm-plex-sans": "^5.1.0",
     "@fontsource/ibm-plex-sans-condensed": "^5.1.0",
+    "@jop-software/astro-cookieconsent": "^3.0.1",
     "@libsql/client": "^0.15.4",
     "@lottiefiles/dotlottie-web": "^0.40.1",
     "@react-email/components": "^0.0.36",
     "@react-email/render": "^1.0.6",
-    "react-email": "^3.0.7",
     "astro": "^4.16.6",
     "astro-cloudinary": "^1.1.2",
     "astro-expressive-code": "^0.40.2",
@@ -39,11 +39,13 @@
     "preact-render-to-string": "^6.5.13",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-email": "^3.0.7",
     "resend": "^4.2.0",
     "swiper": "^11.1.14",
     "tailwindcss": "^3.4.14",
     "twilio": "^5.5.2",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "vanilla-cookieconsent": "^3.1.0"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.16",

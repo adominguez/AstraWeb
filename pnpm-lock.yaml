@@ -35,6 +35,9 @@ importers:
       '@fontsource/ibm-plex-sans-condensed':
         specifier: ^5.1.0
         version: 5.1.0
+      '@jop-software/astro-cookieconsent':
+        specifier: ^3.0.1
+        version: 3.0.1(vanilla-cookieconsent@3.1.0)
       '@libsql/client':
         specifier: ^0.15.4
         version: 0.15.4
@@ -110,6 +113,9 @@ importers:
       typescript:
         specifier: ^5.6.3
         version: 5.6.3
+      vanilla-cookieconsent:
+        specifier: ^3.1.0
+        version: 3.1.0
     devDependencies:
       '@tailwindcss/typography':
         specifier: ^0.5.16
@@ -962,6 +968,11 @@ packages:
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
     engines: {node: '>=12'}
+
+  '@jop-software/astro-cookieconsent@3.0.1':
+    resolution: {integrity: sha512-UXo6aMR9/kEEmUIZoRTRJXDf/ADju9qQ0qNRWM1twdf0vRCh2s/ucHqaYOcs57Q2PcKmcq+Sc+0Tq0gSUgVDzA==}
+    peerDependencies:
+      vanilla-cookieconsent: ^3.0.0
 
   '@jridgewell/gen-mapping@0.3.5':
     resolution: {integrity: sha512-IzL8ZoEDIBRWEzlCcRhOaCupYyN5gdIK+Q6fbFdPDg6HqX6jpkItn7DFIpW9LQzXG6Df9sA7+OKnq0qlz/GaQg==}
@@ -3827,6 +3838,9 @@ packages:
     resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
     hasBin: true
 
+  vanilla-cookieconsent@3.1.0:
+    resolution: {integrity: sha512-/McNRtm/3IXzb9dhqMIcbquoU45SzbN2VB+To4jxEPqMmp7uVniP6BhGLjU8MC7ZCDsNQVOp27fhQTM/ruIXAA==}
+
   vary@1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
@@ -4907,6 +4921,10 @@ snapshots:
       strip-ansi-cjs: strip-ansi@6.0.1
       wrap-ansi: 8.1.0
       wrap-ansi-cjs: wrap-ansi@7.0.0
+
+  '@jop-software/astro-cookieconsent@3.0.1(vanilla-cookieconsent@3.1.0)':
+    dependencies:
+      vanilla-cookieconsent: 3.1.0
 
   '@jridgewell/gen-mapping@0.3.5':
     dependencies:
@@ -8327,6 +8345,8 @@ snapshots:
   util-deprecate@1.0.2: {}
 
   uuid@9.0.1: {}
+
+  vanilla-cookieconsent@3.1.0: {}
 
   vary@1.1.2: {}
 
