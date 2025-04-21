@@ -1777,8 +1777,12 @@
         },
         "STORAGE": {
           "TITLE": "4. Almacenamiento y Seguridad de los Datos",
-          "CONTENT": "Los datos personales enviados a través del formulario de contacto no se almacenan en ninguna base de datos, sino que se envían directamente por correo electrónico a info@astrahub.dev.",
-          "DELETION_POLICY": "El titular del sitio web revisa regularmente los correos electrónicos y elimina aquellos que contienen datos personales cuando ya no son necesarios. Si un usuario no contrata el servicio, su información será eliminada en un plazo máximo de 6 meses."
+          "CONTENT": "Los datos personales enviados a través del formulario de contacto se almacenan de dos formas:",
+          "LIST": [
+            "1. <strong>Base de datos Turso</strong> alojada en la Unión Europea, protegida con acceso autenticado y cifrado en tránsito (TLS). Solo el titular (Alberto Domínguez Martín) dispone de las credenciales para acceder a ella.",
+            "2. <strong>Fichero en Google Drive</strong> privado, accesible únicamente con la cuenta corporativa. Google Drive aplica cifrado en reposo."
+          ],
+          "DELETION_POLICY": "Reviso periódicamente ambos repositorios y elimino toda la información de usuarios que no hayan contratado el servicio en un plazo máximo de 6 meses desde su envío. Si lo solicitan antes, la borro de inmediato."
         },
         "USER_RIGHTS": {
           "TITLE": "5. Derechos del Usuario",
@@ -1807,6 +1811,79 @@
         }
       }
     },
+    "COOKIE_POLICY": {
+      "TITLE": "Política de Cookies",
+      "DESCRIPTION": "Información sobre el uso de cookies en nuestro sitio web.",
+      "SECTIONS": {
+        "WHAT_ARE": {
+          "TITLE": "1. ¿Qué son las cookies?",
+          "CONTENT": [
+            "Las cookies son pequeños archivos de texto que los sitios web envían al navegador y que se almacenan en tu dispositivo cuando visitas una página.",
+            "Su función principal es reconocer el navegador, recordar tus preferencias y mejorar tu experiencia de navegación."
+          ]
+        },
+        "TYPES": {
+          "TITLE": "2. Tipos de cookies que utilizamos",
+          "LIST": [
+            {
+              "LABEL": "Cookies propias de consentimiento:",
+              "DESCRIPTION": "La cookie \"c_cookie\" almacena tus elecciones sobre qué categorías de cookies aceptas y recuerda tu configuración. Es una cookie funcional y no rastrea información adicional."
+            },
+            {
+              "LABEL": "Cookies de terceros:",
+              "DESCRIPTION": "Utilizamos servicios externos que generan sus propias cookies para proporcionar funcionalidades analíticas y de marketing."
+            }
+          ]
+        },
+        "THIRD_PARTY": {
+          "TITLE": "3. Cookies de terceros concretas",
+          "COOKIES": [
+            {
+              "NAME": "Facebook Pixel",
+              "PURPOSE": "Medir la eficacia de nuestras campañas de publicidad en Facebook y entender mejor el comportamiento de los visitantes.",
+              "LINK_TEXT": "Cookies de Facebook",
+              "URL": "https://www.facebook.com/about/privacy"
+            },
+            {
+              "NAME": "Hotjar",
+              "PURPOSE": "Analizar la forma en que los usuarios interactúan con el sitio (mapas de calor, grabación de sesiones), para mejorar la usabilidad.",
+              "LINK_TEXT": "Política de Cookies de Hotjar",
+              "URL": "https://www.hotjar.com/policies/do-not-track/"
+            }
+          ]
+        },
+        "DISABLING": {
+          "TITLE": "4. Cómo desactivar o eliminar cookies",
+          "CONTENT": "Puedes permitir, bloquear o eliminar las cookies instaladas en tu dispositivo a través de la configuración de las opciones del navegador:",
+          "BROWSERS": [
+            {
+              "NAME": "Chrome",
+              "URL": "https://support.google.com/chrome/answer/95647"
+            },
+            {
+              "NAME": "Firefox",
+              "URL": "https://support.mozilla.org/kb/enable-and-disable-cookies-website-preferences"
+            },
+            {
+              "NAME": "Edge",
+              "URL": "https://support.microsoft.com/topic/how-to-delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-4e4d4a9a8b60"
+            },
+            {
+              "NAME": "Safari",
+              "URL": "https://support.apple.com/es-es/guide/safari/sfri11471/mac"
+            }
+          ],
+          "NOTE": "Ten en cuenta que, si bloqueas o eliminas todas las cookies, es posible que algunas funcionalidades o servicios de la web no estén disponibles o no funcionen correctamente."
+        },
+        "UPDATES": {
+          "TITLE": "5. Actualizaciones de la Política de Cookies",
+          "CONTENT": [
+            "Podemos actualizar esta Política de Cookies para adaptarla a cambios legislativos o jurisprudenciales, o a novedades en las herramientas que utilizamos.",
+            "Te recomendamos revisarla periódicamente."
+          ]
+        }
+      }
+    },    
     "LEGAL_NOTICE": {
       "TITLE": "Aviso Legal",
       "DESCRIPTION": "Información legal sobre el sitio web y sus condiciones de uso.",
@@ -1885,7 +1962,7 @@
       "acceptAllBtn": "Aceptar todas",
       "acceptNecessaryBtn": "Rechazar todas",
       "showPreferencesBtn": "Gestionar preferencias",
-      "footer": "<a href=/privacidad>Política de Privacidad</a>\n<a href=/Cookies>Cookies</a>"
+      "footer": "<a href=/politica-de-privacidad>Política de Privacidad</a>\n<a href=/cookies>Cookies</a>"
     },
     "preferencesModal": {
       "title": "Centro de Preferencias de Consentimiento",
@@ -1903,11 +1980,6 @@
           "title": "Cookies Estrictamente Necesarias <span class=pm__badge>Siempre Habilitadas</span>",
           "description": "Estas cookies son esenciales para el funcionamiento del sitio web y no pueden ser deshabilitadas en nuestros sistemas. Permiten la navegación en el sitio y el acceso a áreas seguras. Sin estas cookies, los servicios solicitados no se pueden proporcionar.",
           "linkedCategory": "necessary"
-        },
-        {
-          "title": "Cookies de Funcionalidad",
-          "description": "Estas cookies permiten que el sitio web proporcione una funcionalidad mejorada y personalización. Pueden ser configuradas por nosotros o por proveedores de terceros cuyos servicios hemos añadido a nuestras páginas. Si no permites estas cookies, algunos servicios pueden no funcionar correctamente.",
-          "linkedCategory": "functionality"
         },
         {
           "title": "Cookies de Análisis",

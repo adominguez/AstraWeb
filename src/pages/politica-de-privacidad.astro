@@ -46,6 +46,11 @@ const { TITLE, DESCRIPTION, SECTIONS } = language.PAGES.PRIVACY_POLICY;
     <SectionContainer class="px-4 py-4">
       <h2>{SECTIONS.STORAGE.TITLE}</h2>
       <p>{SECTIONS.STORAGE.CONTENT}</p>
+      <ul>
+        {SECTIONS.STORAGE.LIST.map((paragraph) => (
+          <p set:html={paragraph} />
+        ))}
+      </ul>
       <p>{SECTIONS.STORAGE.DELETION_POLICY}</p>
     </SectionContainer>
 
