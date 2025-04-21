@@ -1,8 +1,7 @@
 ---
 import SectionContainer from "@components/Sections/SectionContainer.astro";
-import ListOfItems from "@components/ui/ListOfItems.astro";
+import SocialMediaIcons from "@components/ui/SocialMediaIcons.astro";
 import language from '@data/i18n/es.json';
-import { content } from "tailwindcss/defaultTheme";
 
 const { DISENO_WEB_GRATUITO } = language.PAGES
 const { TITLE, PARAGRAPH, ID } = DISENO_WEB_GRATUITO.SECTIONS.SOCIAL_MEDIA
@@ -11,14 +10,5 @@ const { TITLE, PARAGRAPH, ID } = DISENO_WEB_GRATUITO.SECTIONS.SOCIAL_MEDIA
 <SectionContainer class="mb-32 mt-10" id={ID}>
   <h2 class="text-4xl md:text-5xl text-primary font-medium font-IBMCondensed text-balance text-center">{TITLE}</h2>
   <p class="pt-6 text-xl md:text-2xl font-light text-pretty text-center">{PARAGRAPH}</p>
-  <div class="mt-8 flex justify-center gap-6">
-    <a href="https://www.instagram.com/astrahub.dev" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-pink-600 hover:bg-pink-500 rounded-full text-white transition">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.334 3.608 1.31.975.975 1.247 2.242 1.31 3.608.058 1.265.069 1.645.069 4.849s-.012 3.584-.07 4.849c-.062 1.366-.334 2.633-1.31 3.608-.975.975-2.242 1.247-3.608 1.31-1.265.058-1.645.069-4.849.069s-3.584-.012-4.849-.07c-1.366-.062-2.633-.334-3.608-1.31-.975-.975-1.247-2.242-1.31-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.849c.062-1.366.334-2.633 1.31-3.608.975-.975 2.242-1.247 3.608-1.31C8.416 2.175 8.796 2.163 12 2.163zm0 1.838c-3.135 0-3.502.012-4.737.069-1.107.051-1.713.235-2.115.391-.524.202-.898.446-1.29.838-.392.392-.636.766-.838 1.29-.156.402-.34 1.008-.391 2.115-.057 1.235-.069 1.602-.069 4.737s.012 3.502.069 4.737c.051 1.107.235 1.713.391 2.115.202.524.446.898.838 1.29.392.392.766.636 1.29.838.402.156 1.008.34 2.115.391 1.235.057 1.602.069 4.737.069s3.502-.012 4.737-.069c1.107-.051 1.713-.235 2.115-.391.524-.202.898-.446 1.29-.838.392-.392.636-.766.838-1.29.156-.402.34-1.008.391-2.115.057-1.235.069-1.602.069-4.737s-.012-3.502-.069-4.737c-.051-1.107-.235-1.713-.391-2.115a3.778 3.778 0 0 0-.838-1.29 3.778 3.778 0 0 0-1.29-.838c-.402-.156-1.008-.34-2.115-.391-1.235-.057-1.602-.069-4.737-.069zm0 3.338a6.5 6.5 0 1 1 0 13 6.5 6.5 0 0 1 0-13zm0 1.838a4.662 4.662 0 1 0 0 9.324 4.662 4.662 0 0 0 0-9.324zm5.838-.513a1.512 1.512 0 1 1-3.024 0 1.512 1.512 0 0 1 3.024 0z"/></svg>
-      Instagram
-    </a>
-    <a href="https://www.facebook.com/astrahub.dev" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-500 rounded-full text-white transition">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 24 24"><path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.407.593 24 1.324 24H12.82v-9.294H9.692V11.41h3.128V8.708c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.795.143v3.24l-1.917.001c-1.504 0-1.795.715-1.795 1.763v2.31h3.587l-.467 3.296h-3.12V24h6.116c.73 0 1.324-.593 1.324-1.324V1.324C24 .593 23.407 0 22.676 0"/></svg>
-      Facebook
-    </a>
-  </div>
+  <SocialMediaIcons class="mt-8" />
 </SectionContainer>
