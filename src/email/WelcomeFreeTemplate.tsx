@@ -144,7 +144,7 @@ const EmailComponent = ({ fullname }: EmailComponentProps) => {
                                 >
                                   <a
                                     className="hover:bg-pink-500"
-                                    href="https://www.facebook.com/618451624688376"
+                                    href="https://www.instagram.com/reel/DItu3brPK4T"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     style={{
@@ -168,7 +168,7 @@ const EmailComponent = ({ fullname }: EmailComponentProps) => {
                                 >
                                   <a
                                     className="hover:bg-blue-500"
-                                    href="https://www.facebook.com/1856548261812378"
+                                    href="https://www.facebook.com/reel/1215049683471156"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     style={{
