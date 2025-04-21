@@ -13,7 +13,7 @@ export default defineConfig({
   experimental: {
     contentLayer: true
   },
-  site: 'https://astrahub.dev',
+  site: 'https://www.astrahub.dev',
   integrations: [tailwind(), lottie(), sitemap({
     serialize(item) {
       const lastCharacter = item.url.slice(-1);
