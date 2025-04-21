@@ -4,6 +4,7 @@ import language from "@data/i18n/es.json";
 const translations = language.COOKIE_CONSENT;
 
 export const config: CookieConsentConfig = {
+  autoShow: false,
   guiOptions: {
     consentModal: {
       layout: 'box inline',
