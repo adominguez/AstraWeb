@@ -105,8 +105,8 @@ export const POST: APIRoute = async ({ request }) => {
   });
   console.log('Se envía el mensaje por email al usuario');
 
-  // await sendLead({ fullName, email, phone }, url);
-  // console.log('Se envía el evento a Facebook');
+  await sendLead({ fullName, email, phone }, url);
+  console.log('Se envía el evento a Facebook');
 
   return new Response(
     JSON.stringify({
