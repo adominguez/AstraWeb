@@ -9,7 +9,15 @@ import { CldImage } from 'astro-cloudinary';
 import ProjectsSection from '@components/Sections/ProjectsSection.astro';
 import { getColor } from '@lib/colors';
 import Image from "astro/components/Image.astro";
-export const prerender = false
+// 1) Fuerza la prerenderización de esta ruta, aunque el output sea SSR
+export const prerender = true;
+
+export async function getStaticPaths() {
+  return PROJECTS_DATA.map((project: Project) => ({
+    params: { slug: project.slug },
+    props: { project },
+  }));
+}
 
 const DEFAULT_COVER = {
   id: 'AstraWeb/projects/portico/assets/cover',
