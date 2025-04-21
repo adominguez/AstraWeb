@@ -67,7 +67,7 @@ const Step3 = ({ formData, setFormData, nextStep, prevStep }: Step3Props) => {
         />
         <FileDropzone
           onFilesChange={onFilesChange}
-          maxFiles={10}
+          maxFiles={4}
           acceptedFileTypes={['image/jpeg', 'image/png', 'image/webp', 'image/svg+xml', 'application/pdf']}
           initialFiles={formData.materials}
           errorMessages={{

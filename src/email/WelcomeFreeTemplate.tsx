@@ -144,7 +144,7 @@ const EmailComponent = ({ fullname }: EmailComponentProps) => {
                                 >
                                   <a
                                     className="hover:bg-pink-500"
-                                    href="https://instagram.com/astrahub.dev"
+                                    href="https://www.facebook.com/618451624688376"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     style={{
@@ -168,7 +168,7 @@ const EmailComponent = ({ fullname }: EmailComponentProps) => {
                                 >
                                   <a
                                     className="hover:bg-blue-500"
-                                    href="https://www.facebook.com/astrahub.dev"
+                                    href="https://www.facebook.com/1856548261812378"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     style={{

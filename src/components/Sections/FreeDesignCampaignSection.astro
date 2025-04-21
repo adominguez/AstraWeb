@@ -1,0 +1,21 @@
+---
+import BentoGrid from "@components/Bento/BentoGrid.astro";
+import SectionContainer from "./SectionContainer.astro";
+import BentoItem from "@components/Bento/BentoItem.astro";
+import Image from "astro/components/Image.astro";
+---
+
+<SectionContainer class="mb-20" id="diseno-web-gratuito">
+    <BentoItem
+      class:list={[
+        "bento-item sm:col-span-2 md:col-span-3 text-xl text-white flex flex-col md:flex-row gap-4",
+      ]}
+    >
+      <div class="flex flex-col justify-center items-center flex-[2]">
+        <h2 class="text-4xl md:text-5xl text-primary font-medium font-IBMCondensed text-balance text-center">¿Te gustaría tener un diseño web personalizado?</h2>
+        <p class="pt-4 text-2xl md:text-4xl px-4 text-balance text-center">Estamos buscando un proyecto especial al que regalarle el diseño de su página web</p>
+        <a class="rounded-[2rem] mt-4 text-balance hover:bg-slate-700 border-4 border-secondary hover:border-primary text-center px-4 py-2 transition-colors" href="/diseno-web-gratuito">Quiero un diseño web gratis</a>
+      </div>
+      <Image width={500} height={500} src="/diseno-web-gratuito/can-i-get.svg" alt="diseño web gratuito" class="flex-1 self-center max-w-80" />
+    </BentoItem>
+</SectionContainer>
