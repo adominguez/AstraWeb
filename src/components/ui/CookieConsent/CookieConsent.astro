@@ -2,11 +2,12 @@
 import 'vanilla-cookieconsent/dist/cookieconsent.css';
 ---
 <script>
-    import { run } from 'vanilla-cookieconsent';
-    import { config } from './config';
+  import { run, show } from 'vanilla-cookieconsent';
+  import { config } from './config';
 
-    // toggle custom black theme
-    document.body.classList.add('cc--darkmode');
+  // toggle custom black theme
+  document.body.classList.add('cc--darkmode');
 
-    run(config);
+  run(config);
+  setTimeout(show, 1000);
 </script>
