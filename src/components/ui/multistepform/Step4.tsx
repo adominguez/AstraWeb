@@ -45,7 +45,10 @@ const Step4 = ({ formData, prevStep, submitForm, setFormData, loading = false, e
       <h2 className="text-2xl text-secondary">Paso 4: Confirmación</h2>
       <div className="relative wrapper-text px-4 overflow-auto flex-1">
         {
-          error ? <p className="text-red-400 text-base text-pretty mb-4">{error}</p> : null
+          error ? <>
+            <p className="text-red-400 text-base text-pretty">{error}</p>
+            <p className="text-red-400 text-base text-pretty mb-4">Si el error persiste, por favor contacta con nosotros en <a href="mailto:info@astrahub.dev">info@astrahub.dev</a>.</p>
+          </> : null
         }
         {
           loading ? (
@@ -79,7 +82,7 @@ const Step4 = ({ formData, prevStep, submitForm, setFormData, loading = false, e
         />
         
       </div>
-      <Footer handleNext={sendForm} handlePrev={prevStep} nextText='Enviar' />
+      <Footer handleNext={sendForm} handlePrev={prevStep} nextText='Enviar' nextDisabled={loading} />
     </div>
   );
 };
